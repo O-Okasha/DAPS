@@ -16,5 +16,10 @@ namespace PHX
         {
             InitializeComponent();
         }
+
+        private void Submit_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

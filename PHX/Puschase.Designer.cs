@@ -35,6 +35,10 @@ namespace PHX
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -47,10 +51,6 @@ namespace PHX
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.medListlbl = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +67,7 @@ namespace PHX
             this.button1.TabIndex = 0;
             this.button1.Text = "New Purchaes";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -126,6 +127,48 @@ namespace PHX
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1175, 413);
             this.panel1.TabIndex = 4;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.White;
+            this.label14.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label14.Location = new System.Drawing.Point(850, 212);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(58, 23);
+            this.label14.TabIndex = 17;
+            this.label14.Text = "Status";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.White;
+            this.label13.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label13.Location = new System.Drawing.Point(450, 212);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(145, 23);
+            this.label13.TabIndex = 16;
+            this.label13.Text = "Payment Method";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(28, 255);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(1123, 17);
+            this.label12.TabIndex = 15;
+            this.label12.Text = resources.GetString("label12.Text");
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(28, 44);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(1123, 17);
+            this.label6.TabIndex = 14;
+            this.label6.Text = resources.GetString("label6.Text");
             // 
             // label11
             // 
@@ -251,48 +294,6 @@ namespace PHX
             this.medListlbl.Size = new System.Drawing.Size(135, 27);
             this.medListlbl.TabIndex = 0;
             this.medListlbl.Text = "Purchase List";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(28, 44);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(1123, 17);
-            this.label6.TabIndex = 14;
-            this.label6.Text = resources.GetString("label6.Text");
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(28, 255);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(1123, 17);
-            this.label12.TabIndex = 15;
-            this.label12.Text = resources.GetString("label12.Text");
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.White;
-            this.label13.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label13.Location = new System.Drawing.Point(450, 212);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(145, 23);
-            this.label13.TabIndex = 16;
-            this.label13.Text = "Payment Method";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.White;
-            this.label14.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label14.Location = new System.Drawing.Point(850, 212);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(58, 23);
-            this.label14.TabIndex = 17;
-            this.label14.Text = "Status";
             // 
             // Puschase
             // 

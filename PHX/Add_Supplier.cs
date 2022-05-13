@@ -16,5 +16,12 @@ namespace PHX
         {
             InitializeComponent();
         }
+
+        private void Submit_btn_Click(object sender, EventArgs e)
+        {
+            this.Parent.Controls[0].Controls.Clear();
+            Supplier_Page supplier_Page = new Supplier_Page();
+            this.Parent.Controls[0].Controls.Add(supplier_Page);
+        }
     }
 }

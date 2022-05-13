@@ -52,6 +52,8 @@ namespace PHX
             // MainContainer
             // 
             this.MainContainer.AutoScroll = true;
+            this.MainContainer.AutoScrollMargin = new System.Drawing.Size(0, 300);
+            this.MainContainer.AutoScrollMinSize = new System.Drawing.Size(0, 300);
             this.MainContainer.Location = new System.Drawing.Point(203, 67);
             this.MainContainer.Name = "MainContainer";
             this.MainContainer.Size = new System.Drawing.Size(1238, 695);
@@ -69,6 +71,7 @@ namespace PHX
             this.Controls.Add(this.LogoAcc_bar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main_Page";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login_Page";
             this.Load += new System.EventHandler(this.Login_Page_Load);
             this.ResumeLayout(false);

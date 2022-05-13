@@ -35,6 +35,8 @@ namespace PHX
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -51,8 +53,6 @@ namespace PHX
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.medListlbl = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,6 +69,7 @@ namespace PHX
             this.button1.TabIndex = 0;
             this.button1.Text = "New Sales";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -130,6 +131,24 @@ namespace PHX
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1175, 413);
             this.panel1.TabIndex = 4;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(28, 252);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(1123, 17);
+            this.label16.TabIndex = 19;
+            this.label16.Text = resources.GetString("label16.Text");
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(28, 44);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(1123, 17);
+            this.label15.TabIndex = 18;
+            this.label15.Text = resources.GetString("label15.Text");
             // 
             // label14
             // 
@@ -295,24 +314,6 @@ namespace PHX
             this.medListlbl.Size = new System.Drawing.Size(97, 27);
             this.medListlbl.TabIndex = 0;
             this.medListlbl.Text = "Sales List";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(28, 44);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(1123, 17);
-            this.label15.TabIndex = 18;
-            this.label15.Text = resources.GetString("label15.Text");
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(28, 252);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(1123, 17);
-            this.label16.TabIndex = 19;
-            this.label16.Text = resources.GetString("label16.Text");
             // 
             // Sales_Page
             // 

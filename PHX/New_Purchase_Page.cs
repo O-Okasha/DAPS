@@ -21,5 +21,12 @@ namespace PHX
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Parent.Controls[0].Controls.Clear();
+            Puschase puschase = new Puschase();
+            this.Parent.Controls[0].Controls.Add(puschase);
+        }
     }
 }

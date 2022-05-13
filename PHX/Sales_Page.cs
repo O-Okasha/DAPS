@@ -16,5 +16,12 @@ namespace PHX
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Parent.Controls[0].Controls.Clear();
+            New_Sales_Page sales_Page = new New_Sales_Page();
+            this.Parent.Controls[0].Controls.Add(sales_Page);
+        }
     }
 }

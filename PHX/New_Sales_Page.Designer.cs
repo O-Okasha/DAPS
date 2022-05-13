@@ -31,6 +31,7 @@ namespace PHX
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(New_Sales_Page));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
@@ -67,7 +68,6 @@ namespace PHX
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -75,6 +75,8 @@ namespace PHX
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
+            this.panel1.AutoScrollMargin = new System.Drawing.Size(0, 150);
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel1.Controls.Add(this.label22);
             this.panel1.Controls.Add(this.label21);
@@ -108,6 +110,15 @@ namespace PHX
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1116, 811);
             this.panel1.TabIndex = 0;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(36, 75);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(1048, 17);
+            this.label22.TabIndex = 27;
+            this.label22.Text = resources.GetString("label22.Text");
             // 
             // label21
             // 
@@ -231,6 +242,7 @@ namespace PHX
             this.button2.TabIndex = 16;
             this.button2.Text = "Save Sale";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -511,15 +523,6 @@ namespace PHX
             this.label1.Size = new System.Drawing.Size(71, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sales";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(36, 75);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(1048, 17);
-            this.label22.TabIndex = 27;
-            this.label22.Text = resources.GetString("label22.Text");
             // 
             // New_Sales_Page
             // 

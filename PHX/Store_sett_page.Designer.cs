@@ -31,6 +31,8 @@ namespace PHX
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.Submit_btn = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -44,8 +46,6 @@ namespace PHX
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,6 +83,26 @@ namespace PHX
             this.panel1.Size = new System.Drawing.Size(993, 657);
             this.panel1.TabIndex = 1;
             // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox6.Location = new System.Drawing.Point(39, 179);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(932, 25);
+            this.textBox6.TabIndex = 16;
+            this.textBox6.Text = "   Enter Currency";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox5.Location = new System.Drawing.Point(39, 108);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(932, 25);
+            this.textBox5.TabIndex = 15;
+            this.textBox5.Text = "   Enter Store Name";
+            // 
             // Submit_btn
             // 
             this.Submit_btn.AutoSize = true;
@@ -96,6 +116,7 @@ namespace PHX
             this.Submit_btn.TabIndex = 14;
             this.Submit_btn.Text = "Submit";
             this.Submit_btn.UseVisualStyleBackColor = false;
+            this.Submit_btn.Click += new System.EventHandler(this.Submit_btn_Click);
             // 
             // textBox4
             // 
@@ -227,26 +248,6 @@ namespace PHX
             this.label2.Size = new System.Drawing.Size(181, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "Update Store Setting";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox5.Location = new System.Drawing.Point(39, 108);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(932, 25);
-            this.textBox5.TabIndex = 15;
-            this.textBox5.Text = "   Enter Store Name";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox6.Location = new System.Drawing.Point(39, 179);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(932, 25);
-            this.textBox6.TabIndex = 16;
-            this.textBox6.Text = "   Enter Currency";
             // 
             // Store_sett_page
             // 

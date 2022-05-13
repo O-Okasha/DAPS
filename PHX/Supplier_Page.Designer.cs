@@ -35,6 +35,8 @@ namespace PHX
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -47,8 +49,6 @@ namespace PHX
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.medListlbl = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +65,7 @@ namespace PHX
             this.button1.TabIndex = 0;
             this.button1.Text = "Add Supplier";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -122,6 +123,24 @@ namespace PHX
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1175, 413);
             this.panel1.TabIndex = 4;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(30, 252);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(1123, 17);
+            this.label12.TabIndex = 14;
+            this.label12.Text = resources.GetString("label12.Text");
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(30, 43);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(1123, 17);
+            this.label6.TabIndex = 13;
+            this.label6.Text = resources.GetString("label6.Text");
             // 
             // label11
             // 
@@ -247,24 +266,6 @@ namespace PHX
             this.medListlbl.Size = new System.Drawing.Size(125, 27);
             this.medListlbl.TabIndex = 0;
             this.medListlbl.Text = "Supplier List";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(30, 43);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(1123, 17);
-            this.label6.TabIndex = 13;
-            this.label6.Text = resources.GetString("label6.Text");
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(30, 252);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(1123, 17);
-            this.label12.TabIndex = 14;
-            this.label12.Text = resources.GetString("label12.Text");
             // 
             // Supplier_Page
             // 

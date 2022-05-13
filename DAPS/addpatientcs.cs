@@ -22,5 +22,11 @@ namespace DAPS
 
         }
 
+        private void addpatients_Load(object sender, EventArgs e)
+        {
+            listviewUserControl listviewUserControl = new listviewUserControl();
+            slidebar.Controls.Add(listviewUserControl);
+
+        }
     }
 }

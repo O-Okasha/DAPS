@@ -217,7 +217,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(1544, 600);
+            this.ClientSize = new System.Drawing.Size(1580, 641);
             this.Controls.Add(this.save);
             this.Controls.Add(this.address);
             this.Controls.Add(this.addresss);
@@ -237,7 +237,9 @@
             this.Controls.Add(this.slidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "addpatients";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "addpatientcs";
+            this.Load += new System.EventHandler(this.addpatients_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

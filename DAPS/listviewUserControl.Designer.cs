@@ -89,6 +89,7 @@
             this.addpatient.TabIndex = 21;
             this.addpatient.Text = "Add Patient ";
             this.addpatient.UseVisualStyleBackColor = true;
+            this.addpatient.Click += new System.EventHandler(this.addpatient_Click);
             // 
             // listviewUserControl
             // 

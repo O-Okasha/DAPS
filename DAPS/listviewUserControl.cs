@@ -35,5 +35,12 @@ namespace DAPS
             calendar cal = new calendar();
             cal.Show();
         }
+
+        private void addpatient_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            addpatients addpatients = new addpatients();
+            addpatients.Show();
+        }
     }
 }

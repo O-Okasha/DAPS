@@ -32,6 +32,7 @@
             this.Calendar = new System.Windows.Forms.Button();
             this.PaymentInfo = new System.Windows.Forms.Button();
             this.DAPS = new System.Windows.Forms.Label();
+            this.addpatient = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Setting
@@ -79,10 +80,21 @@
             this.DAPS.Text = "DAPS";
             this.DAPS.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // addpatient
+            // 
+            this.addpatient.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addpatient.Location = new System.Drawing.Point(3, 260);
+            this.addpatient.Name = "addpatient";
+            this.addpatient.Size = new System.Drawing.Size(209, 52);
+            this.addpatient.TabIndex = 21;
+            this.addpatient.Text = "Add Patient ";
+            this.addpatient.UseVisualStyleBackColor = true;
+            // 
             // listviewUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.addpatient);
             this.Controls.Add(this.DAPS);
             this.Controls.Add(this.Setting);
             this.Controls.Add(this.Calendar);
@@ -100,5 +112,6 @@
         protected System.Windows.Forms.Button Calendar;
         protected System.Windows.Forms.Button PaymentInfo;
         private System.Windows.Forms.Label DAPS;
+        private System.Windows.Forms.Button addpatient;
     }
 }

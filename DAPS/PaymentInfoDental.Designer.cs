@@ -104,7 +104,7 @@
             // 
             this.Jaw.AutoSize = true;
             this.Jaw.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Jaw.Location = new System.Drawing.Point(227, 322);
+            this.Jaw.Location = new System.Drawing.Point(227, 310);
             this.Jaw.Name = "Jaw";
             this.Jaw.Size = new System.Drawing.Size(44, 27);
             this.Jaw.TabIndex = 13;
@@ -194,7 +194,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(227, 388);
+            this.label1.Location = new System.Drawing.Point(225, 388);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 27);
             this.label1.TabIndex = 24;

@@ -31,6 +31,7 @@ namespace PHX
         {
             this.LogoAcc_bar = new System.Windows.Forms.Panel();
             this.Side_Bar = new System.Windows.Forms.Panel();
+            this.MainContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // LogoAcc_bar
@@ -48,12 +49,20 @@ namespace PHX
             this.Side_Bar.Size = new System.Drawing.Size(203, 695);
             this.Side_Bar.TabIndex = 1;
             // 
+            // MainContainer
+            // 
+            this.MainContainer.Location = new System.Drawing.Point(203, 67);
+            this.MainContainer.Name = "MainContainer";
+            this.MainContainer.Size = new System.Drawing.Size(1238, 695);
+            this.MainContainer.TabIndex = 3;
+            // 
             // Main_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1439, 761);
+            this.Controls.Add(this.MainContainer);
             this.Controls.Add(this.Side_Bar);
             this.Controls.Add(this.LogoAcc_bar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -68,6 +77,7 @@ namespace PHX
 
         private System.Windows.Forms.Panel LogoAcc_bar;
         private System.Windows.Forms.Panel Side_Bar;
+        private System.Windows.Forms.FlowLayoutPanel MainContainer;
     }
 }
 

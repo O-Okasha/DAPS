@@ -64,7 +64,7 @@ namespace PHX
             this.Controls.Add(this.Logo);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Name = "Logo_Acc";
-            this.Size = new System.Drawing.Size(1432, 60);
+            this.Size = new System.Drawing.Size(1442, 66);
             this.Load += new System.EventHandler(this.Logo_Acc_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

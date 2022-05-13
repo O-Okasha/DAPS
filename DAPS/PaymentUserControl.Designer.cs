@@ -84,6 +84,7 @@
             this.Controls.Add(this.Servies);
             this.Name = "PaymentUserControl";
             this.Size = new System.Drawing.Size(362, 55);
+            this.Load += new System.EventHandler(this.PaymentUserControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

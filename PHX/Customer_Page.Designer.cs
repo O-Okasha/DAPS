@@ -35,6 +35,8 @@ namespace PHX
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -45,8 +47,6 @@ namespace PHX
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.medListlbl = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,6 +63,7 @@ namespace PHX
             this.button1.TabIndex = 0;
             this.button1.Text = "Add Customer";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -118,6 +119,24 @@ namespace PHX
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1175, 413);
             this.panel1.TabIndex = 4;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(28, 252);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(899, 16);
+            this.label11.TabIndex = 12;
+            this.label11.Text = resources.GetString("label11.Text");
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(34, 61);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(899, 16);
+            this.label10.TabIndex = 11;
+            this.label10.Text = resources.GetString("label10.Text");
             // 
             // label9
             // 
@@ -193,7 +212,7 @@ namespace PHX
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(28, 252);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 17);
+            this.label3.Size = new System.Drawing.Size(0, 16);
             this.label3.TabIndex = 3;
             // 
             // label1
@@ -213,7 +232,7 @@ namespace PHX
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(28, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 17);
+            this.label2.Size = new System.Drawing.Size(0, 16);
             this.label2.TabIndex = 1;
             // 
             // medListlbl
@@ -227,24 +246,6 @@ namespace PHX
             this.medListlbl.Size = new System.Drawing.Size(141, 27);
             this.medListlbl.TabIndex = 0;
             this.medListlbl.Text = "Customer List";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(34, 61);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(1123, 17);
-            this.label10.TabIndex = 11;
-            this.label10.Text = resources.GetString("label10.Text");
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(28, 252);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(1123, 17);
-            this.label11.TabIndex = 12;
-            this.label11.Text = resources.GetString("label11.Text");
             // 
             // Customer_Page
             // 

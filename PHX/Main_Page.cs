@@ -21,7 +21,9 @@ namespace PHX
 
         private void Login_Page_Load(object sender, EventArgs e)
         {
-            
+            Dashboard_Page dashboard_Page = new Dashboard_Page();
+            MainContainer.Controls.Add(dashboard_Page);
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -48,6 +50,11 @@ namespace PHX
         private void AccBar()
         {
             LogoAcc_bar.Controls.Add(new Logo_Acc());
+        }
+
+        public void MainContainer_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

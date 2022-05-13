@@ -24,9 +24,11 @@ namespace DAPS
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
-            loginpage loginpage = new loginpage();
-            panel2.Controls.Add(loginpage);
+            this.Hide();
+            calendar calender  = new calendar();
+            calender.Show();
+            
+
         }
     }
 }

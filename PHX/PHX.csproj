@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_New_Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add_New_Customer.Designer.cs">
+      <DependentUpon>Add_New_Customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_Supplier.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     <Compile Include="Supplier_Page.Designer.cs">
       <DependentUpon>Supplier_Page.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Add_New_Customer.resx">
+      <DependentUpon>Add_New_Customer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Add_Supplier.resx">
       <DependentUpon>Add_Supplier.cs</DependentUpon>
     </EmbeddedResource>

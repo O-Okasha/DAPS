@@ -51,10 +51,12 @@ namespace PHX
             // 
             // MainContainer
             // 
+            this.MainContainer.AutoScroll = true;
             this.MainContainer.Location = new System.Drawing.Point(203, 67);
             this.MainContainer.Name = "MainContainer";
             this.MainContainer.Size = new System.Drawing.Size(1238, 695);
             this.MainContainer.TabIndex = 3;
+            this.MainContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.MainContainer_Paint);
             // 
             // Main_Page
             // 

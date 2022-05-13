@@ -16,5 +16,24 @@ namespace DAPS
         {
             InitializeComponent();
         }
+
+        private void PaymentInfo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PaymentInfoDental pay = new PaymentInfoDental();
+            pay.Show();
+        }
+
+        private void listviewUserControl_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Calendar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            calendar cal = new calendar();
+            cal.Show();
+        }
     }
 }

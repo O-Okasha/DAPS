@@ -16,5 +16,12 @@ namespace PHX
         {
             InitializeComponent();
         }
+
+        private void Submit_btn_Click(object sender, EventArgs e)
+        {
+            this.Parent.Controls[0].Controls.Clear();
+            Medicine_Page medicine_Page = new Medicine_Page();
+            this.Parent.Controls[0].Controls.Add(medicine_Page);
+        }
     }
 }

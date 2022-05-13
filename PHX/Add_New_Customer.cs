@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace PHX
 {
-    public partial class Medicine_Page : UserControl
+    public partial class Add_New_Customer : UserControl
     {
-        public Medicine_Page()
+        public Add_New_Customer()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Submit_btn_Click(object sender, EventArgs e)
         {
             this.Parent.Controls[0].Controls.Clear();
-            New_Med_page new_Med_Page = new New_Med_page();
-            this.Parent.Controls[0].Controls.Add(new_Med_Page);
+            Customer_Page customer_Page = new Customer_Page();
+            this.Parent.Controls[0].Controls.Add(customer_Page);
         }
     }
 }

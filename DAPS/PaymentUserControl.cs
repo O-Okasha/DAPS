@@ -16,5 +16,10 @@ namespace DAPS
         {
             InitializeComponent();
         }
+
+        private void PaymentUserControl_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

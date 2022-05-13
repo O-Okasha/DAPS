@@ -15,25 +15,34 @@ namespace DAPS
         public PaymentInfoDental()
         {
             InitializeComponent();
+
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            listviewUserControl listview = new listviewUserControl();
-            panel1.Controls.Add(listview);
+
         }
 
         private void flowpanelservices_Paint(object sender, PaintEventArgs e)
         {
-            PaymentUserControl paymentUser = new PaymentUserControl ();
-
-            flowpanelservices.Controls.Add(paymentUser);
+            //PaymentUserControl paymentUserControl = new PaymentUserControl();
+          //  flowpanelservices.Controls.Add(paymentUserControl);
         }
 
         private void paneltotal_Paint(object sender, PaintEventArgs e)
         {
-            TotalUserControl totalUser = new TotalUserControl ();
+            TotalUserControl totalUser = new TotalUserControl();
             paneltotal.Controls.Add(totalUser);
+        }
+
+        private void PaymentInfoDental_Load(object sender, EventArgs e)
+        {
+            listviewUserControl listviewUserControl = new listviewUserControl();
+            panel1.Controls.Add(listviewUserControl);
+
+            PaymentUserControl paymentUserControl = new PaymentUserControl();
+            flowpanelservices.Controls.Add(paymentUserControl);
         }
     }
 }

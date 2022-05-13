@@ -56,6 +56,7 @@ namespace PHX
             this.Shelfbtn.Text = "Shelf";
             this.Shelfbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Shelfbtn.UseVisualStyleBackColor = true;
+            this.Shelfbtn.Click += new System.EventHandler(this.Shelfbtn_Click);
             // 
             // Purchasebtn
             // 
@@ -70,6 +71,7 @@ namespace PHX
             this.Purchasebtn.Text = "Purchase";
             this.Purchasebtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Purchasebtn.UseVisualStyleBackColor = true;
+            this.Purchasebtn.Click += new System.EventHandler(this.Purchasebtn_Click);
             // 
             // suppbtn
             // 
@@ -84,6 +86,7 @@ namespace PHX
             this.suppbtn.Text = "Suppliers";
             this.suppbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.suppbtn.UseVisualStyleBackColor = true;
+            this.suppbtn.Click += new System.EventHandler(this.suppbtn_Click);
             // 
             // Customersbtn
             // 
@@ -98,6 +101,7 @@ namespace PHX
             this.Customersbtn.Text = "Customer";
             this.Customersbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Customersbtn.UseVisualStyleBackColor = true;
+            this.Customersbtn.Click += new System.EventHandler(this.Customersbtn_Click);
             // 
             // Medbtn
             // 
@@ -112,6 +116,7 @@ namespace PHX
             this.Medbtn.Text = "Medicine";
             this.Medbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Medbtn.UseVisualStyleBackColor = true;
+            this.Medbtn.Click += new System.EventHandler(this.Medbtn_Click);
             // 
             // Categorybtn
             // 
@@ -125,6 +130,7 @@ namespace PHX
             this.Categorybtn.Text = "Category";
             this.Categorybtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Categorybtn.UseVisualStyleBackColor = true;
+            this.Categorybtn.Click += new System.EventHandler(this.Categorybtn_Click);
             // 
             // stockListbtn
             // 
@@ -139,6 +145,7 @@ namespace PHX
             this.stockListbtn.Text = "Stock List";
             this.stockListbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.stockListbtn.UseVisualStyleBackColor = true;
+            this.stockListbtn.Click += new System.EventHandler(this.stockListbtn_Click);
             // 
             // Salesbtn
             // 
@@ -153,6 +160,7 @@ namespace PHX
             this.Salesbtn.Text = "Sales";
             this.Salesbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Salesbtn.UseVisualStyleBackColor = true;
+            this.Salesbtn.Click += new System.EventHandler(this.Salesbtn_Click);
             // 
             // Settingsbtn
             // 
@@ -167,6 +175,7 @@ namespace PHX
             this.Settingsbtn.Text = "Store Settings";
             this.Settingsbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Settingsbtn.UseVisualStyleBackColor = true;
+            this.Settingsbtn.Click += new System.EventHandler(this.Settingsbtn_Click);
             // 
             // Logoutbtn
             // 
@@ -196,6 +205,7 @@ namespace PHX
             this.btnDashbourd.Text = "Dashboard";
             this.btnDashbourd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDashbourd.UseVisualStyleBackColor = true;
+            this.btnDashbourd.Click += new System.EventHandler(this.btnDashbourd_Click);
             // 
             // SideBar
             // 

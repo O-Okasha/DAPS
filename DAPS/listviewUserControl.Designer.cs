@@ -53,6 +53,7 @@
             this.Calendar.TabIndex = 18;
             this.Calendar.Text = "Calendar";
             this.Calendar.UseVisualStyleBackColor = true;
+            this.Calendar.Click += new System.EventHandler(this.Calendar_Click);
             // 
             // PaymentInfo
             // 
@@ -63,6 +64,7 @@
             this.PaymentInfo.TabIndex = 17;
             this.PaymentInfo.Text = "Payment Info";
             this.PaymentInfo.UseVisualStyleBackColor = true;
+            this.PaymentInfo.Click += new System.EventHandler(this.PaymentInfo_Click);
             // 
             // DAPS
             // 
@@ -87,6 +89,7 @@
             this.Controls.Add(this.PaymentInfo);
             this.Name = "listviewUserControl";
             this.Size = new System.Drawing.Size(215, 593);
+            this.Load += new System.EventHandler(this.listviewUserControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

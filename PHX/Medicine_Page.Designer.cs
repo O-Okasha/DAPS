@@ -35,17 +35,17 @@ namespace PHX
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.medListlbl = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.medListlbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +62,7 @@ namespace PHX
             this.button1.TabIndex = 0;
             this.button1.Text = "New Medicine";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -117,95 +118,26 @@ namespace PHX
             this.panel1.Size = new System.Drawing.Size(1175, 413);
             this.panel1.TabIndex = 4;
             // 
-            // medListlbl
+            // label9
             // 
-            this.medListlbl.AutoSize = true;
-            this.medListlbl.BackColor = System.Drawing.Color.White;
-            this.medListlbl.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.medListlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.medListlbl.Location = new System.Drawing.Point(26, 16);
-            this.medListlbl.Name = "medListlbl";
-            this.medListlbl.Size = new System.Drawing.Size(133, 27);
-            this.medListlbl.TabIndex = 0;
-            this.medListlbl.Text = "Medicine List";
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label9.Location = new System.Drawing.Point(50, 285);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(175, 20);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "No data avilable in table";
             // 
-            // label2
+            // textBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1123, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = resources.GetString("label2.Text");
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(41, 212);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 23);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Name (Batch No.)";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 252);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1123, 17);
-            this.label3.TabIndex = 3;
-            this.label3.Text = resources.GetString("label3.Text");
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(870, 110);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 23);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Search:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(991, 212);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 23);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "action";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(738, 212);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 23);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Selling Price";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(452, 212);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 23);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Buying Price";
+            this.textBox1.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBox1.Location = new System.Drawing.Point(948, 110);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(203, 22);
+            this.textBox1.TabIndex = 9;
+            this.textBox1.Text = "search anything";
             // 
             // label8
             // 
@@ -219,26 +151,95 @@ namespace PHX
             this.label8.TabIndex = 8;
             this.label8.Text = "Shelf";
             // 
-            // textBox1
+            // label7
             // 
-            this.textBox1.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox1.Location = new System.Drawing.Point(948, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 22);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.Text = "search anything";
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label7.Location = new System.Drawing.Point(452, 212);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(106, 23);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Buying Price";
             // 
-            // label9
+            // label6
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Open Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label9.Location = new System.Drawing.Point(50, 285);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(175, 20);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "No data avilable in table";
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.Location = new System.Drawing.Point(738, 212);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 23);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Selling Price";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label5.Location = new System.Drawing.Point(991, 212);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 23);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "action";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(870, 110);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 23);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Search:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(28, 252);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(899, 16);
+            this.label3.TabIndex = 3;
+            this.label3.Text = resources.GetString("label3.Text");
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(41, 212);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(148, 23);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Name (Batch No.)";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(28, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(899, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = resources.GetString("label2.Text");
+            // 
+            // medListlbl
+            // 
+            this.medListlbl.AutoSize = true;
+            this.medListlbl.BackColor = System.Drawing.Color.White;
+            this.medListlbl.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.medListlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.medListlbl.Location = new System.Drawing.Point(26, 16);
+            this.medListlbl.Name = "medListlbl";
+            this.medListlbl.Size = new System.Drawing.Size(133, 27);
+            this.medListlbl.TabIndex = 0;
+            this.medListlbl.Text = "Medicine List";
             // 
             // Medicine_Page
             // 

@@ -28,7 +28,8 @@ namespace PHX
             Main_Page main_Page = new Main_Page();
             this.Hide();
             main_Page.Show();
-            //this.Parent.Parent.Parent.Dispose();
+            
+            
         }
     }
 }

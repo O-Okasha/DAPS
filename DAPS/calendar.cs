@@ -25,6 +25,7 @@ namespace DAPS
         {
             listviewUserControl listview = new listviewUserControl();
             panel1.Controls.Add(listview);
+
         }
 
         private void calendar_Load(object sender, EventArgs e)

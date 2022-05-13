@@ -49,11 +49,11 @@ namespace PHX
             // Login_label
             // 
             this.Login_label.AutoSize = true;
-            this.Login_label.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login_label.Font = new System.Drawing.Font("Open Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login_label.ForeColor = System.Drawing.Color.White;
             this.Login_label.Location = new System.Drawing.Point(98, 24);
             this.Login_label.Name = "Login_label";
-            this.Login_label.Size = new System.Drawing.Size(204, 29);
+            this.Login_label.Size = new System.Drawing.Size(209, 33);
             this.Login_label.TabIndex = 1;
             this.Login_label.Text = "Log In Pharmplus";
             // 

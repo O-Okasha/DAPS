@@ -24,6 +24,7 @@ namespace PHX
 
         private void Login_btn_Click(object sender, EventArgs e)
         {
+            
             Main_Page main_Page = new Main_Page();
             this.Hide();
             main_Page.Show();

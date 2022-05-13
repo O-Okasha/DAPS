@@ -30,7 +30,6 @@ namespace PHX
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SideBar));
-            this.btnDashbourd = new System.Windows.Forms.Button();
             this.Shelfbtn = new System.Windows.Forms.Button();
             this.Purchasebtn = new System.Windows.Forms.Button();
             this.suppbtn = new System.Windows.Forms.Button();
@@ -41,22 +40,8 @@ namespace PHX
             this.Salesbtn = new System.Windows.Forms.Button();
             this.Settingsbtn = new System.Windows.Forms.Button();
             this.Logoutbtn = new System.Windows.Forms.Button();
+            this.btnDashbourd = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnDashbourd
-            // 
-            this.btnDashbourd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDashbourd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashbourd.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashbourd.Image = ((System.Drawing.Image)(resources.GetObject("btnDashbourd.Image")));
-            this.btnDashbourd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashbourd.Location = new System.Drawing.Point(0, 0);
-            this.btnDashbourd.Name = "btnDashbourd";
-            this.btnDashbourd.Size = new System.Drawing.Size(200, 54);
-            this.btnDashbourd.TabIndex = 0;
-            this.btnDashbourd.Text = "Dashboard";
-            this.btnDashbourd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDashbourd.UseVisualStyleBackColor = true;
             // 
             // Shelfbtn
             // 
@@ -179,7 +164,7 @@ namespace PHX
             this.Settingsbtn.Name = "Settingsbtn";
             this.Settingsbtn.Size = new System.Drawing.Size(200, 54);
             this.Settingsbtn.TabIndex = 9;
-            this.Settingsbtn.Text = "Settings";
+            this.Settingsbtn.Text = "Store Settings";
             this.Settingsbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Settingsbtn.UseVisualStyleBackColor = true;
             // 
@@ -196,6 +181,21 @@ namespace PHX
             this.Logoutbtn.Text = "Log Out";
             this.Logoutbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Logoutbtn.UseVisualStyleBackColor = true;
+            // 
+            // btnDashbourd
+            // 
+            this.btnDashbourd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDashbourd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashbourd.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashbourd.Image = ((System.Drawing.Image)(resources.GetObject("btnDashbourd.Image")));
+            this.btnDashbourd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashbourd.Location = new System.Drawing.Point(0, 0);
+            this.btnDashbourd.Name = "btnDashbourd";
+            this.btnDashbourd.Size = new System.Drawing.Size(200, 54);
+            this.btnDashbourd.TabIndex = 0;
+            this.btnDashbourd.Text = "Dashboard";
+            this.btnDashbourd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDashbourd.UseVisualStyleBackColor = true;
             // 
             // SideBar
             // 

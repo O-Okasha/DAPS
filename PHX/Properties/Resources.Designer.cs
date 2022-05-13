@@ -63,6 +63,26 @@ namespace PHX.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _617_6173786_small_icon_png_search_icon_svg_transparent_png {
+            get {
+                object obj = ResourceManager.GetObject("617-6173786_small-icon-png-search-icon-svg-transparent-png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download_icon_search_icon_1320085881930941832_512 {
+            get {
+                object obj = ResourceManager.GetObject("download-icon-search+icon-1320085881930941832_512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kisspng_computer_icons_electricity_meter_meter_vector_5adc26aabb1625_9341795815243772587663 {
             get {
                 object obj = ResourceManager.GetObject("kisspng-computer-icons-electricity-meter-meter-vector-5adc26aabb1625.934179581524" +

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,14 +17,55 @@ namespace PHX
         {
             InitializeComponent();
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private bool Validation()
         {
-            Login_control login = new Login_control();
-            Login_panel.Controls.Add(login);
+            //Email Validation
+            Regex check = new Regex(@"^?([A-Za-z0-9]{3,20})\@?([A-Za-z]{3,10}).?(com)$");
+            bool valid = check.IsMatch(Email_txtbox.Text);
+            if (Email_txtbox.Text == "" || valid == false)
+            {
+                label1.ForeColor = Color.Red;
+                label1.Text = "invalid input";
+                return false;
+            }
+            else
+            {
+                label1.Text = "";
+            }
+            //password validation
+            if (Pass_txtbox.Text == "")
+            {
+                label1.ForeColor = Color.Red;
+                label1.Text = "invalid input";
+                return false;
+            }
+            else
+            {
+                label1.Text = "";
+            }
+            return true;
+        }
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
 
         }
-        
 
+        private void Login_btn_Click(object sender, EventArgs e)
+        {
+            bool validation = Validation();
+            if (validation)
+            {
+                Main_Page main_Page = new Main_Page();
+                main_Page.Show();
+                this.Hide();
+            }
+
+
+        }
+
+        private void Login_control_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

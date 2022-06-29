@@ -76,12 +76,6 @@
     <Compile Include="Dashboard_Page.Designer.cs">
       <DependentUpon>Dashboard_Page.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login_control.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Login_control.Designer.cs">
-      <DependentUpon>Login_control.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login_Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,9 +176,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard_Page.resx">
       <DependentUpon>Dashboard_Page.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login_control.resx">
-      <DependentUpon>Login_control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Page.resx">
       <DependentUpon>Login_Page.cs</DependentUpon>

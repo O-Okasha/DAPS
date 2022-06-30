@@ -39,6 +39,7 @@ namespace PHX
             this.label2 = new System.Windows.Forms.Label();
             this.Category_Label = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -67,13 +68,12 @@ namespace PHX
             // Description_txtbox
             // 
             this.Description_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Description_txtbox.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.Description_txtbox.ForeColor = System.Drawing.Color.Black;
             this.Description_txtbox.Location = new System.Drawing.Point(40, 199);
             this.Description_txtbox.Multiline = true;
             this.Description_txtbox.Name = "Description_txtbox";
             this.Description_txtbox.Size = new System.Drawing.Size(409, 120);
             this.Description_txtbox.TabIndex = 6;
-            this.Description_txtbox.Text = "Description";
             // 
             // New_category_label
             // 
@@ -99,16 +99,16 @@ namespace PHX
             this.Submit_btn.TabIndex = 4;
             this.Submit_btn.Text = "Submit";
             this.Submit_btn.UseVisualStyleBackColor = false;
+            this.Submit_btn.Click += new System.EventHandler(this.Submit_btn_Click);
             // 
             // Name_txtbox
             // 
             this.Name_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name_txtbox.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.Name_txtbox.ForeColor = System.Drawing.Color.Black;
             this.Name_txtbox.Location = new System.Drawing.Point(40, 116);
             this.Name_txtbox.Name = "Name_txtbox";
             this.Name_txtbox.Size = new System.Drawing.Size(409, 22);
             this.Name_txtbox.TabIndex = 3;
-            this.Name_txtbox.Text = "Enter Name";
             // 
             // Description_lbl
             // 
@@ -139,7 +139,7 @@ namespace PHX
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label2.Location = new System.Drawing.Point(35, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(414, 52);
+            this.label2.Size = new System.Drawing.Size(412, 48);
             this.label2.TabIndex = 0;
             this.label2.Text = "-------------------------------------------------------------------\r\n\r\n";
             // 
@@ -150,13 +150,14 @@ namespace PHX
             this.Category_Label.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Category_Label.Location = new System.Drawing.Point(33, 22);
             this.Category_Label.Name = "Category_Label";
-            this.Category_Label.Size = new System.Drawing.Size(113, 33);
+            this.Category_Label.Size = new System.Drawing.Size(111, 32);
             this.Category_Label.TabIndex = 2;
             this.Category_Label.Text = "Category";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.flowLayoutPanel1);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label3);
@@ -165,20 +166,28 @@ namespace PHX
             this.panel2.Controls.Add(this.label6);
             this.panel2.Location = new System.Drawing.Point(558, 89);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(634, 221);
+            this.panel2.Size = new System.Drawing.Size(634, 260);
             this.panel2.TabIndex = 3;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(40, 164);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(569, 85);
+            this.flowLayoutPanel1.TabIndex = 8;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Open Sans", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label8.Location = new System.Drawing.Point(35, 164);
+            this.label8.Location = new System.Drawing.Point(35, 142);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(576, 130);
+            this.label8.Size = new System.Drawing.Size(574, 24);
             this.label8.TabIndex = 7;
             this.label8.Text = "---------------------------------------------------------------------------------" +
-    "-------------\r\n\r\n\r\n\r\n\r\n";
+    "-------------";
             // 
             // label7
             // 
@@ -232,7 +241,7 @@ namespace PHX
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label6.Location = new System.Drawing.Point(35, 52);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(576, 130);
+            this.label6.Size = new System.Drawing.Size(574, 120);
             this.label6.TabIndex = 0;
             this.label6.Text = "---------------------------------------------------------------------------------" +
     "-------------\r\n\r\n\r\n\r\n\r\n";
@@ -275,5 +284,6 @@ namespace PHX
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHX", "PHX\PHX.csproj", "{A542EB4D-0AE5-43CA-8822-6601D74199A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedUnit", "MedUnit\MedUnit.csproj", "{F6ECD5AD-8C6A-49B4-8662-91B4C318D5CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A542EB4D-0AE5-43CA-8822-6601D74199A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A542EB4D-0AE5-43CA-8822-6601D74199A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A542EB4D-0AE5-43CA-8822-6601D74199A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6ECD5AD-8C6A-49B4-8662-91B4C318D5CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6ECD5AD-8C6A-49B4-8662-91B4C318D5CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6ECD5AD-8C6A-49B4-8662-91B4C318D5CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6ECD5AD-8C6A-49B4-8662-91B4C318D5CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

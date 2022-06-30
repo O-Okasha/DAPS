@@ -39,24 +39,25 @@
             this.DataPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.DataPanel.Location = new System.Drawing.Point(0, 0);
             this.DataPanel.Name = "DataPanel";
-            this.DataPanel.Size = new System.Drawing.Size(1421, 167);
+            this.DataPanel.Size = new System.Drawing.Size(1421, 147);
             this.DataPanel.TabIndex = 0;
             // 
             // bar
             // 
             this.bar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bar.Location = new System.Drawing.Point(0, 167);
+            this.bar.Location = new System.Drawing.Point(0, 147);
             this.bar.Name = "bar";
-            this.bar.Size = new System.Drawing.Size(1421, 64);
+            this.bar.Size = new System.Drawing.Size(1421, 57);
             this.bar.TabIndex = 1;
+            this.bar.Paint += new System.Windows.Forms.PaintEventHandler(this.bar_Paint);
             // 
             // Content
             // 
             this.Content.AutoScroll = true;
             this.Content.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Content.Location = new System.Drawing.Point(0, 237);
+            this.Content.Location = new System.Drawing.Point(0, 210);
             this.Content.Name = "Content";
-            this.Content.Size = new System.Drawing.Size(1421, 477);
+            this.Content.Size = new System.Drawing.Size(1421, 504);
             this.Content.TabIndex = 2;
             // 
             // MedicalUnitMain

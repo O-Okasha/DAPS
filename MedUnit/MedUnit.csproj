@@ -46,11 +46,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActionNotes.Designer.cs">
+      <DependentUpon>ActionNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddedProcedureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddedProcedureControl.Designer.cs">
+      <DependentUpon>AddedProcedureControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProblem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddProblem.Designer.cs">
+      <DependentUpon>AddProblem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTreatment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTreatment.Designer.cs">
+      <DependentUpon>AddTreatment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Background.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Background.Designer.cs">
+      <DependentUpon>Background.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="DataBar.Designer.cs">
       <DependentUpon>DataBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="MedicalUnitMain.cs">
       <SubType>Form</SubType>
@@ -58,13 +94,58 @@
     <Compile Include="MedicalUnitMain.Designer.cs">
       <DependentUpon>MedicalUnitMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Navbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Navbar.Designer.cs">
+      <DependentUpon>Navbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProblemCarry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProblemCarry.Designer.cs">
+      <DependentUpon>ProblemCarry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcedureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProcedureControl.Designer.cs">
+      <DependentUpon>ProcedureControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ActionNotes.resx">
+      <DependentUpon>ActionNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddedProcedureControl.resx">
+      <DependentUpon>AddedProcedureControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProblem.resx">
+      <DependentUpon>AddProblem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTreatment.resx">
+      <DependentUpon>AddTreatment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Background.resx">
+      <DependentUpon>Background.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataBar.resx">
       <DependentUpon>DataBar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MedicalUnitMain.resx">
       <DependentUpon>MedicalUnitMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navbar.resx">
+      <DependentUpon>Navbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProblemCarry.resx">
+      <DependentUpon>ProblemCarry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcedureControl.resx">
+      <DependentUpon>ProcedureControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

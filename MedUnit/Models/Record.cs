@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models
+namespace MedUnit.Models
 {
     public class Record
     {
@@ -14,8 +14,8 @@ namespace Models
         public List<Service> Services { get; set; }
         public List<PerscribedInvestigation> PerscribedInvestigations { get; set; }
         public List<Visit> Visits { get; set; }
-        public string? FamilyHistory { get; set; }
-        public string? PersonalHistory { get; set; }
+        public string FamilyHistory { get; set; }
+        public string PersonalHistory { get; set; }
 
         public Record()
         {

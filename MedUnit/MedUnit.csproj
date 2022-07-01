@@ -118,7 +118,23 @@
     <Compile Include="MedicalUnitMain.Designer.cs">
       <DependentUpon>MedicalUnitMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Action.cs" />
+    <Compile Include="Models\Doctor.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Enums.cs" />
+    <Compile Include="Models\Investigation.cs" />
     <Compile Include="Models\Manager.cs" />
+    <Compile Include="Models\Medicine.cs" />
+    <Compile Include="Models\Patient.cs" />
+    <Compile Include="Models\PerscribedInvestigation.cs" />
+    <Compile Include="Models\Perscription.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\PrescribedService.cs" />
+    <Compile Include="Models\Problem.cs" />
+    <Compile Include="Models\Record.cs" />
+    <Compile Include="Models\Service.cs" />
+    <Compile Include="Models\Visit.cs" />
+    <Compile Include="Models\VisitDetails.cs" />
     <Compile Include="Navbar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -241,12 +257,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Models\Models.csproj">
-      <Project>{79b6e2ef-f9c1-46ae-81cd-a44a18008172}</Project>
-      <Name>Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

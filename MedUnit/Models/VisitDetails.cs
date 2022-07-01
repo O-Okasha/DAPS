@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models
+namespace MedUnit.Models
 {
     public class VisitDetails
     {
@@ -14,7 +14,7 @@ namespace Models
         public string ProblemDiscription { get; set; }
         public List<Investigation> investigations { get; set; }
         public List<Service> services { get; set; }
-        public Perscription? Perscription { get; set; }
+        public Perscription Perscription { get; set; }
         public Problem Problem { get; set; }
 
 

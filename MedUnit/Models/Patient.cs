@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models
+namespace MedUnit.Models
+
 {
     public class Patient: Person
     {

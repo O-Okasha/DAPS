@@ -32,7 +32,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.content = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -57,7 +57,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.flowLayoutPanel1);
-            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.content);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 147);
             this.panel2.Name = "panel2";
@@ -94,13 +94,13 @@
             this.button2.Text = "Medical";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // panel3
+            // content
             // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(260, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1161, 567);
-            this.panel3.TabIndex = 0;
+            this.content.Dock = System.Windows.Forms.DockStyle.Right;
+            this.content.Location = new System.Drawing.Point(260, 0);
+            this.content.Name = "content";
+            this.content.Size = new System.Drawing.Size(1161, 567);
+            this.content.TabIndex = 0;
             // 
             // flowLayoutPanel1
             // 
@@ -128,6 +128,7 @@
             this.button3.TabIndex = 0;
             this.button3.Text = "Add Preset Treatment";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -141,6 +142,7 @@
             this.button4.TabIndex = 0;
             this.button4.Text = "Add Service";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -167,6 +169,7 @@
             this.button6.TabIndex = 0;
             this.button6.Text = "Add Drug";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Settings
             // 
@@ -198,6 +201,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel content;
     }
 }

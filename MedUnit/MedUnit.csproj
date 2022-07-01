@@ -118,6 +118,7 @@
     <Compile Include="MedicalUnitMain.Designer.cs">
       <DependentUpon>MedicalUnitMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Manager.cs" />
     <Compile Include="Navbar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -240,6 +241,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{79b6e2ef-f9c1-46ae-81cd-a44a18008172}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

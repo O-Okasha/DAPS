@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <PackageReference Include="Leadtools.Jpeg2000" Version="22.0.0.4" />
-    <PackageReference Include="Leadtools.Medical.Viewer.WinForms" Version="22.0.0.4" />
   </ItemGroup>
 
 </Project>

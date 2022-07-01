@@ -38,5 +38,11 @@ namespace MedUnit
             AddTreatment addTreatment = new AddTreatment();
             addTreatment.ShowDialog();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Prescriptions prescriptions = new Prescriptions();
+            prescriptions.ShowDialog();
+        }
     }
 }

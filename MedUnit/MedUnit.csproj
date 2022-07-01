@@ -112,6 +112,12 @@
     <Compile Include="Navbar.Designer.cs">
       <DependentUpon>Navbar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Prescriptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prescriptions.Designer.cs">
+      <DependentUpon>Prescriptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProblemCarry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Navbar.resx">
       <DependentUpon>Navbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prescriptions.resx">
+      <DependentUpon>Prescriptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProblemCarry.resx">
       <DependentUpon>ProblemCarry.cs</DependentUpon>

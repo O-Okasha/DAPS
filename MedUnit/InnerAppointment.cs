@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace MedUnit
 {
-    public partial class AddTreatment : Form
+    public partial class InnerAppointment : UserControl
     {
-        public AddTreatment()
+        public InnerAppointment()
         {
             InitializeComponent();
         }
 
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void Save_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
         }
     }
 }

@@ -27,5 +27,16 @@ namespace MedUnit
             ProblemCarry problemCarry = new ProblemCarry();
             problemCarry.ShowDialog();
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AddTreatment addTreatment = new AddTreatment();
+            addTreatment.ShowDialog();
+        }
     }
 }

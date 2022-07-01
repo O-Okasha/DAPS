@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace MedUnit
 {
-    public partial class AddTreatment : Form
+    public partial class Xray : UserControl
     {
-        public AddTreatment()
+        public Xray()
         {
             InitializeComponent();
-        }
-
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
-        {
-
-        }
-
-        private void Save_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
         }
     }
 }

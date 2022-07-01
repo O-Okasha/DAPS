@@ -82,6 +82,18 @@
     <Compile Include="DataBar.Designer.cs">
       <DependentUpon>DataBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="InnerAppointment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InnerAppointment.Designer.cs">
+      <DependentUpon>InnerAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InnerAppointmentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InnerAppointmentControl.Designer.cs">
+      <DependentUpon>InnerAppointmentControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -114,6 +126,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Xray.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Xray.Designer.cs">
+      <DependentUpon>Xray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XrayControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XrayControl.Designer.cs">
+      <DependentUpon>XrayControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ActionNotes.resx">
       <DependentUpon>ActionNotes.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +155,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DataBar.resx">
       <DependentUpon>DataBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InnerAppointment.resx">
+      <DependentUpon>InnerAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InnerAppointmentControl.resx">
+      <DependentUpon>InnerAppointmentControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -156,6 +186,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Xray.resx">
+      <DependentUpon>Xray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XrayControl.resx">
+      <DependentUpon>XrayControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -30,5 +30,13 @@ namespace PHX
         {
 
         }
+
+        private void Submit_btn_Click(object sender, EventArgs e)
+        {
+            Category_item category_Item = new Category_item();
+            category_Item.Controls[2].Text = Name_txtbox.Text;
+            category_Item.Controls[1].Text = Description_txtbox.Text;
+            flowLayoutPanel1.Parent.Controls[0].Controls.Add(category_Item);
+        }
     }
 }

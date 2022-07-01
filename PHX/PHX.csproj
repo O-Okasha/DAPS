@@ -58,6 +58,12 @@
     <Compile Include="Add_Supplier.Designer.cs">
       <DependentUpon>Add_Supplier.cs</DependentUpon>
     </Compile>
+    <Compile Include="Category_item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Category_item.Designer.cs">
+      <DependentUpon>Category_item.cs</DependentUpon>
+    </Compile>
     <Compile Include="Category_Page.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -132,6 +138,12 @@
     <Compile Include="Sales_Page.Designer.cs">
       <DependentUpon>Sales_Page.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shelf_item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shelf_item.Designer.cs">
+      <DependentUpon>Shelf_item.cs</DependentUpon>
+    </Compile>
     <Compile Include="Shelf_Page.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -167,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Add_Supplier.resx">
       <DependentUpon>Add_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category_item.resx">
+      <DependentUpon>Category_item.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Category_Page.resx">
       <DependentUpon>Category_Page.cs</DependentUpon>
@@ -213,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sales_Page.resx">
       <DependentUpon>Sales_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shelf_item.resx">
+      <DependentUpon>Shelf_item.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Shelf_Page.resx">
       <DependentUpon>Shelf_Page.cs</DependentUpon>

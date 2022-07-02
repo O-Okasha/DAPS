@@ -110,7 +110,7 @@
             this.Deletebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Deletebtn.Location = new System.Drawing.Point(628, 8);
             this.Deletebtn.Name = "Deletebtn";
-            this.Deletebtn.Size = new System.Drawing.Size(28, 23);
+            this.Deletebtn.Size = new System.Drawing.Size(28, 30);
             this.Deletebtn.TabIndex = 14;
             this.Deletebtn.Text = "D";
             this.Deletebtn.UseVisualStyleBackColor = false;

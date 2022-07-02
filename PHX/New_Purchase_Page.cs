@@ -28,5 +28,12 @@ namespace PHX
             Puschase puschase = new Puschase();
             this.Parent.Controls[0].Controls.Add(puschase);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            List_item list_Item = new List_item();
+            flowLayoutPanel1.Parent.Controls[0].Controls.Add(list_Item);
+
+        }
     }
 }

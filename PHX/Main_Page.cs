@@ -56,5 +56,10 @@ namespace PHX
         {
 
         }
+
+        private void Side_Bar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

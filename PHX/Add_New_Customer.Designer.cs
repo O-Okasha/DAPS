@@ -31,6 +31,10 @@ namespace PHX
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.Submit_btn = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -42,10 +46,6 @@ namespace PHX
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,6 +83,47 @@ namespace PHX
             this.panel1.Size = new System.Drawing.Size(993, 567);
             this.panel1.TabIndex = 1;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.ForeColor = System.Drawing.Color.Black;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(523, 325);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(448, 24);
+            this.comboBox1.TabIndex = 18;
+            this.comboBox1.Text = "5";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Open Sans Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label10.Location = new System.Drawing.Point(508, 299);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(71, 23);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Gender";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.ForeColor = System.Drawing.Color.Black;
+            this.textBox6.Location = new System.Drawing.Point(39, 179);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(932, 25);
+            this.textBox6.TabIndex = 16;
+            this.textBox6.Text = "2";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.ForeColor = System.Drawing.Color.Black;
+            this.textBox5.Location = new System.Drawing.Point(39, 108);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(932, 25);
+            this.textBox5.TabIndex = 15;
+            this.textBox5.Text = "1";
+            // 
             // Submit_btn
             // 
             this.Submit_btn.AutoSize = true;
@@ -101,13 +142,13 @@ namespace PHX
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox4.ForeColor = System.Drawing.Color.Black;
             this.textBox4.Location = new System.Drawing.Point(39, 400);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(932, 112);
             this.textBox4.TabIndex = 13;
-            this.textBox4.Text = "   Enter Address";
+            this.textBox4.Text = "6";
             // 
             // label9
             // 
@@ -123,12 +164,12 @@ namespace PHX
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox2.ForeColor = System.Drawing.Color.Black;
             this.textBox2.Location = new System.Drawing.Point(39, 325);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(399, 25);
             this.textBox2.TabIndex = 9;
-            this.textBox2.Text = "   Enter Age";
+            this.textBox2.Text = "4";
             // 
             // label7
             // 
@@ -144,12 +185,12 @@ namespace PHX
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
             this.textBox1.Location = new System.Drawing.Point(39, 251);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(932, 25);
             this.textBox1.TabIndex = 7;
-            this.textBox1.Text = "   Enter Phone Number";
+            this.textBox1.Text = "3";
             // 
             // label6
             // 
@@ -207,47 +248,6 @@ namespace PHX
             this.label2.Size = new System.Drawing.Size(131, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "New Customer";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox5.Location = new System.Drawing.Point(39, 108);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(932, 25);
-            this.textBox5.TabIndex = 15;
-            this.textBox5.Text = "   Enter Name";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox6.Location = new System.Drawing.Point(39, 179);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(932, 25);
-            this.textBox6.TabIndex = 16;
-            this.textBox6.Text = "   Enter Email";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Open Sans Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(508, 299);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(71, 23);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "Gender";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(523, 325);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(448, 24);
-            this.comboBox1.TabIndex = 18;
-            this.comboBox1.Text = "   Select Gender";
             // 
             // Add_New_Customer
             // 

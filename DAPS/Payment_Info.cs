@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DAPS
 {
-    public partial class PaymentInfoDental : Form
+    public partial class Payment_Info : UserControl
     {
-        public PaymentInfoDental()
+        public Payment_Info()
         {
             InitializeComponent();
 
@@ -27,7 +27,7 @@ namespace DAPS
         private void flowpanelservices_Paint(object sender, PaintEventArgs e)
         {
             //PaymentUserControl paymentUserControl = new PaymentUserControl();
-          //  flowpanelservices.Controls.Add(paymentUserControl);
+            //  flowpanelservices.Controls.Add(paymentUserControl);
         }
 
         private void paneltotal_Paint(object sender, PaintEventArgs e)
@@ -38,11 +38,19 @@ namespace DAPS
 
         private void PaymentInfoDental_Load(object sender, EventArgs e)
         {
-            listviewUserControl listviewUserControl = new listviewUserControl();
-            panel1.Controls.Add(listviewUserControl);
+           // listviewUserControl listviewUserControl = new listviewUserControl();
+            //panel1.Controls.Add(listviewUserControl);
 
             PaymentUserControl paymentUserControl = new PaymentUserControl();
             flowpanelservices.Controls.Add(paymentUserControl);
+        }
+
+        private void Submitbtn_Click(object sender, EventArgs e)
+        {/*
+            PaymentUserControl paymentUserControl = new PaymentUserControl();
+            flowpanelservices.Parent.Controls[0].Controls.Add(paymentUserControl);
+            TotalUserControl totalUserControl = new TotalUserControl();
+            paneltotal.Parent.Controls[0].Controls.Add(totalUserControl);*/
         }
     }
 }

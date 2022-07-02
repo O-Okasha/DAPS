@@ -17,6 +17,7 @@ namespace PHX
             InitializeComponent();
             Side_bar_loading();
             AccBar();
+            
         }
 
         private void Login_Page_Load(object sender, EventArgs e)

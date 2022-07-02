@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    internal class Investigation
+    public class Investigation
     {
         public Investigation(Investigation investigation)
         {

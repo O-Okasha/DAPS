@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    internal class PerscribedInvestigation : Investigation
+    public class PerscribedInvestigation : Investigation
     {
         public PerscribedInvestigation(string report, string patientID, string doctorID, Investigation investigation) : base(investigation)
         {

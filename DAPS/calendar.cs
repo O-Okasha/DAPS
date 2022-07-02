@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace DAPS
 {
-    public partial class calendar : Form
+    public partial class calendar : UserControl
     {
         int month, year;
         public static int static_month, static_year;
@@ -23,8 +23,8 @@ namespace DAPS
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            listviewUserControl listview = new listviewUserControl();
-            panel1.Controls.Add(listview);
+            //listviewUserControl listview = new listviewUserControl();
+            //panel1.Controls.Add(listview);
 
         }
 

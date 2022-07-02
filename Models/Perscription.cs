@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    internal class Perscription
+    public class Perscription
     {
         List<Medicine> perscription;
 

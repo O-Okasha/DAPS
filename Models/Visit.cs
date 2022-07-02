@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    internal class Visit
+    public class Visit
     {
         public Visit(string id, Doctor doctor, Patient patient, DateTime dateTime)
         {

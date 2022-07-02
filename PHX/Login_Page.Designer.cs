@@ -64,6 +64,7 @@ namespace PHX
             this.Email_txtbox.Name = "Email_txtbox";
             this.Email_txtbox.Size = new System.Drawing.Size(270, 22);
             this.Email_txtbox.TabIndex = 1;
+            this.Email_txtbox.TextChanged += new System.EventHandler(this.Email_txtbox_TextChanged);
             // 
             // Pass_txtbox
             // 

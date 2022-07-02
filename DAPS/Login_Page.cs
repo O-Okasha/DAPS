@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DAPS
 {
-    public partial class Form1 : Form
+    public partial class Login_Page : Form
     {
-        public Form1()
+        public Login_Page()
         {
             InitializeComponent();
         }
@@ -34,8 +34,7 @@ namespace DAPS
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-            loginpage loginpage = new loginpage();
-            panel2.Controls.Add(loginpage);
+
         }
 
         private void calendarpanel_Paint(object sender, PaintEventArgs e)
@@ -46,6 +45,13 @@ namespace DAPS
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Main_page main_Page = new Main_page();
+            main_Page.Show();
         }
     }
 }

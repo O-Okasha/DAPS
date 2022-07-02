@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    internal class Action
+    public class Action
     {
         public Action(string date, string id, string description)
         {

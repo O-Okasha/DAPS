@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    internal class Problem
+    public class Problem
     {
         public Problem(string problemDiagnosis, string problemName, List<Action> actions)
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    internal class Doctor: Employee
+    public class Doctor: Employee
     {
         public Doctor(string fname, int id, string lname, int age, string ssn, Gender gender, Department department, string address, string ln) : base(fname, id, lname, age, ssn, gender, department, address)
         {

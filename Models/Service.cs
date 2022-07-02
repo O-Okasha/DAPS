@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    internal class Service
+    public class Service
     {
         public Service(int id, string name, string description, int price)
         {

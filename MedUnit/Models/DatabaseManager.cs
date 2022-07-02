@@ -11,7 +11,7 @@ namespace MedUnit.Models
     {
         public DatabaseManager() { }
 
-        private const string ConnectionString = "mongodb://127.0.0.1:27017";
+        private const string ConnectionString = "mongodb://localhost:27017";
         private const string database = "clinic";
         private const string PatientsCollection = "patients";
         private const string DrugsCollection = "drugs";
@@ -19,7 +19,7 @@ namespace MedUnit.Models
         private const string TreatmentplansCollection = "treatment_plans";
         private const string AppointmentsCollection = "appointments";
 
-        private IMongoCollection<T> ConnectToMongo<T>(string collection)
+        private IMongoCollection<T> ConnectToMongo<T>(in string collection)
         {
             var client = new MongoClient(ConnectionString);
             var db = client.GetDatabase(database);
@@ -68,5 +68,6 @@ namespace MedUnit.Models
             var appointmentsCollection = ConnectToMongo<Visit>(AppointmentsCollection);
             return appointmentsCollection.InsertOneAsync(visit);
         }
+
     }
 }

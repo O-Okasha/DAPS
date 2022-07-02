@@ -17,9 +17,7 @@ namespace MedUnit.Models
         public static List<TreatmentPlan> TreatmentPlans;
         public static DatabaseManager databaseManager = new DatabaseManager();
 
-    
-
-
+   
 
     }
 }

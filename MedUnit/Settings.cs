@@ -19,20 +19,30 @@ namespace MedUnit
 
         private void button3_Click(object sender, EventArgs e)
         {
+            content.Controls.Clear();
             AddPresetTreatment addPresetTreatment = new AddPresetTreatment();
             content.Controls.Add(addPresetTreatment);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            content.Controls.Clear();
             AddService addService = new AddService();
             content.Controls.Add(addService);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            content.Controls.Clear();
             AddDrug addDrug = new AddDrug();
             content.Controls.Add(addDrug);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MedicalUnitMain medicalUnitMain = new MedicalUnitMain();
+            medicalUnitMain.Show();
+            this.Close();
         }
     }
 }

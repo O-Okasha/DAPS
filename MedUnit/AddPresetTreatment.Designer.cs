@@ -46,6 +46,7 @@
             // 
             // flowGeneralList
             // 
+            this.flowGeneralList.AutoScroll = true;
             this.flowGeneralList.BackColor = System.Drawing.Color.White;
             this.flowGeneralList.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowGeneralList.Location = new System.Drawing.Point(14, 53);
@@ -74,6 +75,7 @@
             // 
             // flowMedicalList
             // 
+            this.flowMedicalList.AutoScroll = true;
             this.flowMedicalList.BackColor = System.Drawing.Color.White;
             this.flowMedicalList.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowMedicalList.Location = new System.Drawing.Point(14, 281);
@@ -102,6 +104,7 @@
             // 
             // flowImagingList
             // 
+            this.flowImagingList.AutoScroll = true;
             this.flowImagingList.BackColor = System.Drawing.Color.White;
             this.flowImagingList.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowImagingList.Location = new System.Drawing.Point(14, 515);
@@ -135,24 +138,25 @@
             this.Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Save.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Save.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Save.Location = new System.Drawing.Point(1032, 689);
+            this.Save.Location = new System.Drawing.Point(1015, 689);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(115, 35);
             this.Save.TabIndex = 18;
             this.Save.Text = "Save";
             this.Save.UseVisualStyleBackColor = false;
+            this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
             // flowProcedureList
             // 
             this.flowProcedureList.BackColor = System.Drawing.Color.White;
-            this.flowProcedureList.Location = new System.Drawing.Point(476, 123);
+            this.flowProcedureList.Location = new System.Drawing.Point(471, 123);
             this.flowProcedureList.Name = "flowProcedureList";
-            this.flowProcedureList.Size = new System.Drawing.Size(671, 560);
+            this.flowProcedureList.Size = new System.Drawing.Size(659, 560);
             this.flowProcedureList.TabIndex = 17;
             // 
             // textTreatmentName
             // 
-            this.textTreatmentName.Location = new System.Drawing.Point(476, 54);
+            this.textTreatmentName.Location = new System.Drawing.Point(473, 54);
             this.textTreatmentName.Name = "textTreatmentName";
             this.textTreatmentName.Size = new System.Drawing.Size(250, 22);
             this.textTreatmentName.TabIndex = 21;
@@ -160,7 +164,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(41)))), ((int)(((byte)(92)))));
-            this.panel6.Location = new System.Drawing.Point(476, 42);
+            this.panel6.Location = new System.Drawing.Point(473, 42);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(250, 5);
             this.panel6.TabIndex = 20;
@@ -170,7 +174,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(61)))), ((int)(((byte)(112)))));
-            this.label5.Location = new System.Drawing.Point(470, 10);
+            this.label5.Location = new System.Drawing.Point(467, 10);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 31);
             this.label5.TabIndex = 19;
@@ -180,6 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(234)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.textTreatmentName);
             this.Controls.Add(this.panel6);
@@ -196,7 +201,8 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label4);
             this.Name = "AddPresetTreatment";
-            this.Size = new System.Drawing.Size(1161, 752);
+            this.Size = new System.Drawing.Size(1137, 729);
+            this.Load += new System.EventHandler(this.AddPresetTreatment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

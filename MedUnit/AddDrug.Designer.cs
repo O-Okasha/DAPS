@@ -125,12 +125,13 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(477, 370);
+            this.button1.Location = new System.Drawing.Point(490, 369);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 35);
             this.button1.TabIndex = 9;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // AddDrug
             // 
@@ -149,6 +150,7 @@
             this.Controls.Add(this.label2);
             this.Name = "AddDrug";
             this.Size = new System.Drawing.Size(1161, 567);
+            this.Load += new System.EventHandler(this.AddDrug_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

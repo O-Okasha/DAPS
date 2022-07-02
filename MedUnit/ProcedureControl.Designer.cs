@@ -54,6 +54,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -72,11 +73,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.procedureName);
             this.Name = "ProcedureControl";
             this.Size = new System.Drawing.Size(439, 26);
+            this.Load += new System.EventHandler(this.ProcedureControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

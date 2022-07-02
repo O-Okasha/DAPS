@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace MedUnit.Models
 {
     public class TreatmentPlan
     {
+        [BsonId]
         public string TreatmentPlanId { get; set; } 
         public string TreatmentPlanName { get; set; }
         public List<Service> services { get; set; }
@@ -18,6 +20,9 @@ namespace MedUnit.Models
         {
             TreatmentPlanId = id;
             TreatmentPlanName = name;
+            services = new List<Service>();
+            CompletedServices = new List<Service>();    
+            WaitingServices = new List<Service>();
         }
         public void AddServices(List<Service> service)
         {
@@ -28,6 +33,11 @@ namespace MedUnit.Models
         {
             CompletedServices.Add(service);
             WaitingServices.Remove(service);
+        }
+        public void AddService(Service service)
+        {
+            WaitingServices.Add(service);
+            services.Add(service);
         }
     }
 }

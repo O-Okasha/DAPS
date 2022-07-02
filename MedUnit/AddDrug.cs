@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MedUnit.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,20 @@ namespace MedUnit
         public AddDrug()
         {
             InitializeComponent();
+        }
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            string id = Guid.NewGuid().ToString();
+            int price = int.Parse(textBox3.Text.Trim());
+            Medicine med = new Medicine(textBox1.Text.Trim(), price, id, textBox2.Text.Trim());
+            await Manager.databaseManager.AddMedicine(med);
+
+        }
+
+        private void AddDrug_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

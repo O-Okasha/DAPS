@@ -66,19 +66,20 @@
             // Delete
             // 
             this.Delete.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Delete.Location = new System.Drawing.Point(596, 0);
+            this.Delete.Location = new System.Drawing.Point(574, 0);
             this.Delete.Name = "Delete";
             this.Delete.Size = new System.Drawing.Size(75, 47);
             this.Delete.TabIndex = 1;
             this.Delete.Text = "Delete";
             this.Delete.UseVisualStyleBackColor = true;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Location = new System.Drawing.Point(471, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(3, 35);
+            this.panel1.Size = new System.Drawing.Size(1, 35);
             this.panel1.TabIndex = 2;
             // 
             // panel2
@@ -86,7 +87,7 @@
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Location = new System.Drawing.Point(158, 6);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(3, 35);
+            this.panel2.Size = new System.Drawing.Size(1, 35);
             this.panel2.TabIndex = 2;
             // 
             // AddedProcedureControl
@@ -100,7 +101,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AddedProcedureControl";
-            this.Size = new System.Drawing.Size(671, 47);
+            this.Size = new System.Drawing.Size(649, 47);
+            this.Load += new System.EventHandler(this.AddedProcedureControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

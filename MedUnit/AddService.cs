@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MedUnit.Models;
+using System;
 using System.Windows.Forms;
+using MongoDB.Driver;
 
 namespace MedUnit
 {
@@ -20,6 +15,15 @@ namespace MedUnit
         private void AddService_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private async void Save_Click(object sender, EventArgs e)
+        {
+            string ID = Guid.NewGuid().ToString().Trim().Replace('-','e');
+            int price = int.Parse(textPrice.Text.Trim());
+            Service service = new Service(ID, textName.Text.Trim(), textDiscription.Text.Trim(), price, comboBox1.Text.Trim());
+            DatabaseManager database = new DatabaseManager();
+            await database.AddService(service);
         }
     }
 }

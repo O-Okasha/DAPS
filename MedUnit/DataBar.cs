@@ -21,5 +21,12 @@ namespace MedUnit
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Settings settings = new Settings();
+            settings.Show();
+            this.Parent.Parent.Hide();
+        }
     }
 }

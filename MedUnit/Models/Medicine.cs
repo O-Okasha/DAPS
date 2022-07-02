@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace MedUnit.Models
 {
     public class Medicine
     {
-        public Medicine(string activeSubstance, float price, string id, string _class)
+        public Medicine(string activeSubstance, int price, string id, string _class)
         {
             ActiveSubstance = activeSubstance ?? throw new ArgumentNullException(nameof(activeSubstance));
             this.price = price;
@@ -17,7 +18,8 @@ namespace MedUnit.Models
         }
         public string Class { get; set; }
         public string ActiveSubstance { get; set; }
-        public float price { get; set; }
+        public int price { get; set; }
+        [BsonId]
         public string Id { get; set; }
 
     }

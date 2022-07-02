@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +10,13 @@ namespace MedUnit.Models
 {
     public class Service
     {
-        public Service(int id, string name, string description, int price)
+        public Service(string id, string name, string description, int price, string type)
         {
             Id = id;
             Name = name ?? throw new ArgumentNullException(nameof(name));
             Description = description ?? throw new ArgumentNullException(nameof(description));
             this.price = price;
+            Type = type;
         }
         public Service(Service service)
         {
@@ -25,9 +28,10 @@ namespace MedUnit.Models
             Name = service.Name;
             Description = service.Description;
         }
-
-        public int Id { get; set; }
+        [BsonId]
+        public string Id { get; set; }
         public string Name { get; set; }
+        public string Type { get; set; }
         public string Description { get; set; }
         public int price { get; set; }
     }

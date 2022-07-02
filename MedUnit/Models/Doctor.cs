@@ -8,7 +8,7 @@ namespace MedUnit.Models
 {
     public class Doctor : Employee
     {
-        public Doctor(string fname, int id, string lname, int age, string ssn, Gender gender, Department department, string address, string ln) : base(fname, id, lname, age, ssn, gender, department, address)
+        public Doctor(string fname, string id, string lname, int age, string ssn, Gender gender, Department department, string address, string ln) : base(fname, id, lname, age, ssn, gender, department, address)
         {
             LicenseNumber = ln;
         }

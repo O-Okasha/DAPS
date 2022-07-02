@@ -10,6 +10,9 @@ namespace MedUnit.Models
     {
 
         public int Id { get; set; }
+        public bool Allergies { get; set; }
+        public bool Cancer { get; set; }
+        public bool Bloodthinner { get; set; }  
         public List<Problem> Problems { get; set; }
         public List<Service> Services { get; set; }
         public List<PerscribedInvestigation> PerscribedInvestigations { get; set; }
@@ -23,6 +26,9 @@ namespace MedUnit.Models
             Services = new List<Service>();
             PerscribedInvestigations = new List<PerscribedInvestigation>();
             Visits = new List<Visit>();
+            Allergies = false;
+            Cancer = false;
+            Bloodthinner = false;
         }
         public void AddProblem(Problem problem)
         {

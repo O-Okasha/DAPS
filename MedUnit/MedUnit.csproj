@@ -173,6 +173,18 @@
     <Compile Include="AddTreatment.Designer.cs">
       <DependentUpon>AddTreatment.cs</DependentUpon>
     </Compile>
+    <Compile Include="AppointmentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppointmentControl.Designer.cs">
+      <DependentUpon>AppointmentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Appointments.Designer.cs">
+      <DependentUpon>Appointments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Background.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -298,6 +310,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddTreatment.resx">
       <DependentUpon>AddTreatment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppointmentControl.resx">
+      <DependentUpon>AppointmentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments.resx">
+      <DependentUpon>Appointments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Background.resx">
       <DependentUpon>Background.cs</DependentUpon>

@@ -69,5 +69,6 @@ namespace MedUnit.Models
             return appointmentsCollection.InsertOneAsync(visit);
         }
 
+
     }
 }

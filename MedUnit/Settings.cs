@@ -44,5 +44,12 @@ namespace MedUnit
             medicalUnitMain.Show();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            content.Controls.Clear();
+            Appointments appointments = new Appointments();
+            content.Controls.Add(appointments);
+        }
     }
 }

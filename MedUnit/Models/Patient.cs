@@ -9,9 +9,9 @@ namespace MedUnit.Models
 {
     public class Patient: Person
     {
-        public Patient(Record record, string fname, int id, string lname, int age, string ssn, Gender gender, string address) : base(fname, id, lname, age, ssn, gender, address)
+        public Patient(string fname, string id, string lname, int age, string ssn, Gender gender, string address) : base(fname, id, lname, age, ssn, gender, address)
         {
-            Record = record;
+            Record = new Record();
         }
 
         public Record Record { get; set; }

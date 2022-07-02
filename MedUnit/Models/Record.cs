@@ -14,18 +14,16 @@ namespace MedUnit.Models
         public bool Cancer { get; set; }
         public bool Bloodthinner { get; set; }  
         public List<Problem> Problems { get; set; }
-        public List<Service> Services { get; set; }
-        public List<PerscribedInvestigation> PerscribedInvestigations { get; set; }
-        public List<Visit> Visits { get; set; }
+        public List<VisitShort> Visits { get; set; }
+        public List<Perscription> Perscriptions { get; set; }
         public string FamilyHistory { get; set; }
         public string PersonalHistory { get; set; }
 
         public Record()
         {
             Problems = new List<Problem>();
-            Services = new List<Service>();
-            PerscribedInvestigations = new List<PerscribedInvestigation>();
-            Visits = new List<Visit>();
+            Perscriptions = new List<Perscription>();
+            Visits = new List<VisitShort>();
             Allergies = false;
             Cancer = false;
             Bloodthinner = false;
@@ -35,15 +33,7 @@ namespace MedUnit.Models
             Problems.Add(problem);
 
         }
-        public void AddService(Service service)
-        {
-            Services.Add(service);
-        }
-        public void AddInvestigation(PerscribedInvestigation perscribedInvestigation)
-        {
-            PerscribedInvestigations.Add(perscribedInvestigation);
-        }
-        public void AddVisits(Visit visit)
+        public void AddVisits(VisitShort visit)
         {
             Visits.Add(visit);
         }

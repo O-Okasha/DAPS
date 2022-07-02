@@ -246,6 +246,7 @@
     <Compile Include="Models\TreatmentPlan.cs" />
     <Compile Include="Models\Visit.cs" />
     <Compile Include="Models\VisitDetails.cs" />
+    <Compile Include="Models\VisitShort.cs" />
     <Compile Include="Navbar.cs">
       <SubType>UserControl</SubType>
     </Compile>

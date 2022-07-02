@@ -221,6 +221,12 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="MedControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MedControl.Designer.cs">
+      <DependentUpon>MedControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="MedicalUnitMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +245,7 @@
     <Compile Include="Models\PerscribedInvestigation.cs" />
     <Compile Include="Models\Perscription.cs" />
     <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\PrescribedMedicine.cs" />
     <Compile Include="Models\PrescribedService.cs" />
     <Compile Include="Models\Problem.cs" />
     <Compile Include="Models\Record.cs" />
@@ -252,6 +259,12 @@
     </Compile>
     <Compile Include="Navbar.Designer.cs">
       <DependentUpon>Navbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrescribedMedControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PrescribedMedControl.Designer.cs">
+      <DependentUpon>PrescribedMedControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Prescriptions.cs">
       <SubType>Form</SubType>
@@ -354,11 +367,17 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MedControl.resx">
+      <DependentUpon>MedControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MedicalUnitMain.resx">
       <DependentUpon>MedicalUnitMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Navbar.resx">
       <DependentUpon>Navbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrescribedMedControl.resx">
+      <DependentUpon>PrescribedMedControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prescriptions.resx">
       <DependentUpon>Prescriptions.cs</DependentUpon>

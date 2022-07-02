@@ -6,7 +6,8 @@ namespace MedUnit.Models
 {
     public static class Manager
     {
-        public static Doctor doctor;
+        public static Medicine Chosen;
+        public static List<PrescribedMedicine> PrescribedMedicines = new List<PrescribedMedicine>();
         public static Patient patient;
         public static List<Medicine> drugs;
         public static List<Service> services;

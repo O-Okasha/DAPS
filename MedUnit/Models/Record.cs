@@ -18,6 +18,7 @@ namespace MedUnit.Models
         public List<Perscription> Perscriptions { get; set; }
         public string FamilyHistory { get; set; }
         public string PersonalHistory { get; set; }
+        
 
         public Record()
         {
@@ -44,6 +45,10 @@ namespace MedUnit.Models
         public void AddHistory(string history)
         {
             PersonalHistory += '\n' + history;
+        }
+        public void AddPrescription(Perscription perscription)
+        {
+            Perscriptions.Add(perscription);
         }
     }
 }

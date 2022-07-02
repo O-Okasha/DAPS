@@ -9,18 +9,26 @@ namespace MedUnit.Models
 {
     public class Perscription
     {
-        List<Medicine> perscription;
+        public List<PrescribedMedicine> perscription { set; get; }
 
-        public Perscription(List<Medicine> perscription, Patient patient, Doctor doctor, string date)
+        public Perscription(string patient)
         {
-            this.perscription = perscription ?? throw new ArgumentNullException(nameof(perscription));
-            this.patient = patient ?? throw new ArgumentNullException(nameof(patient));
-            this.doctor = doctor ?? throw new ArgumentNullException(nameof(doctor));
-            this.date = date ?? throw new ArgumentNullException(nameof(date));
+
+            perscription = new List<PrescribedMedicine>();
+            patientID = patient;
+            Startdate = DateTime.Now.ToShortDateString();
         }
 
-        public Patient patient { get; set; }
-        public Doctor doctor { get; set; }
-        public string date { get; set; }
+        public string patientID { get; set; }
+        public string Startdate { get; set; }
+
+        public void AddMedicine(PrescribedMedicine med)
+        {
+            if (med == null) { throw new ArgumentNullException(nameof(med)); }
+            else
+            {
+                perscription.Add(med);
+            }
+        }
     }
 }

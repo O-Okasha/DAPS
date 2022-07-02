@@ -81,9 +81,10 @@ namespace MedUnit
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
             Manager.SaveAll();
+            await Manager.databaseManager.UpsertPatient(Manager.patient);
         }
     }
 }

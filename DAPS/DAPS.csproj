@@ -49,14 +49,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="addpatientcs.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Add_Patient.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="addpatientcs.Designer.cs">
-      <DependentUpon>addpatientcs.cs</DependentUpon>
+    <Compile Include="Add_Patient.Designer.cs">
+      <DependentUpon>Add_Patient.cs</DependentUpon>
     </Compile>
     <Compile Include="calendar.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="calendar.Designer.cs">
       <DependentUpon>calendar.cs</DependentUpon>
@@ -73,11 +73,11 @@
     <Compile Include="DaysUserControl.Designer.cs">
       <DependentUpon>DaysUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Login_Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Login_Page.Designer.cs">
+      <DependentUpon>Login_Page.cs</DependentUpon>
     </Compile>
     <Compile Include="listviewUserControl.cs">
       <SubType>UserControl</SubType>
@@ -85,23 +85,23 @@
     <Compile Include="listviewUserControl.Designer.cs">
       <DependentUpon>listviewUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="loginpage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="loginpage.Designer.cs">
-      <DependentUpon>loginpage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PaymentInfoDental.cs">
+    <Compile Include="Main_page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PaymentInfoDental.Designer.cs">
-      <DependentUpon>PaymentInfoDental.cs</DependentUpon>
+    <Compile Include="Main_page.Designer.cs">
+      <DependentUpon>Main_page.cs</DependentUpon>
     </Compile>
     <Compile Include="PaymentUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="PaymentUserControl.Designer.cs">
       <DependentUpon>PaymentUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_Info.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Payment_Info.Designer.cs">
+      <DependentUpon>Payment_Info.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -111,8 +111,8 @@
     <Compile Include="TotalUserControl.Designer.cs">
       <DependentUpon>TotalUserControl.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="addpatientcs.resx">
-      <DependentUpon>addpatientcs.cs</DependentUpon>
+    <EmbeddedResource Include="Add_Patient.resx">
+      <DependentUpon>Add_Patient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="calendar.resx">
       <DependentUpon>calendar.cs</DependentUpon>
@@ -123,20 +123,20 @@
     <EmbeddedResource Include="DaysUserControl.resx">
       <DependentUpon>DaysUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Login_Page.resx">
+      <DependentUpon>Login_Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="listviewUserControl.resx">
       <DependentUpon>listviewUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loginpage.resx">
-      <DependentUpon>loginpage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PaymentInfoDental.resx">
-      <DependentUpon>PaymentInfoDental.cs</DependentUpon>
+    <EmbeddedResource Include="Main_page.resx">
+      <DependentUpon>Main_page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaymentUserControl.resx">
       <DependentUpon>PaymentUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_Info.resx">
+      <DependentUpon>Payment_Info.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

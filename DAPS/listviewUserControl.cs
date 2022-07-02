@@ -17,11 +17,13 @@ namespace DAPS
             InitializeComponent();
         }
 
-        private void PaymentInfo_Click(object sender, EventArgs e)
+        public void PaymentInfo_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            PaymentInfoDental pay = new PaymentInfoDental();
-            pay.Show();
+            Main_page main_Page = new Main_page();
+            main_Page.Controls[1].Clear();
+
+           /* Payment_Info payment_Info = new Payment_Info();
+            main_Page.Controls[0].Controls.Add(payment_Info);*/
         }
 
         private void listviewUserControl_Load(object sender, EventArgs e)
@@ -31,16 +33,16 @@ namespace DAPS
 
         private void Calendar_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Parent.Controls[0].Controls.Clear();
             calendar cal = new calendar();
-            cal.Show();
+            this.Parent.Controls[1].Controls.Add(cal);
         }
 
         private void addpatient_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            addpatients addpatients = new addpatients();
-            addpatients.Show();
+            this.Parent.Parent.Controls[0].Controls.Clear();
+            Add_Patient add_Patient = new Add_Patient();
+            this.Parent.Parent.Controls[0].Controls.Add(add_Patient);
         }
     }
 }

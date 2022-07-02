@@ -48,6 +48,7 @@ namespace PHX
             this.Side_Bar.Name = "Side_Bar";
             this.Side_Bar.Size = new System.Drawing.Size(203, 695);
             this.Side_Bar.TabIndex = 1;
+            this.Side_Bar.Paint += new System.Windows.Forms.PaintEventHandler(this.Side_Bar_Paint);
             // 
             // MainContainer
             // 

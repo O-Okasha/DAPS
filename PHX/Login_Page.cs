@@ -67,5 +67,10 @@ namespace PHX
         {
 
         }
+
+        private void Email_txtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,22 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Setting = new System.Windows.Forms.Button();
             this.Calendar = new System.Windows.Forms.Button();
             this.PaymentInfo = new System.Windows.Forms.Button();
             this.DAPS = new System.Windows.Forms.Label();
             this.addpatient = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // Setting
-            // 
-            this.Setting.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Setting.Location = new System.Drawing.Point(3, 202);
-            this.Setting.Name = "Setting";
-            this.Setting.Size = new System.Drawing.Size(209, 52);
-            this.Setting.TabIndex = 19;
-            this.Setting.Text = "Setting";
-            this.Setting.UseVisualStyleBackColor = true;
             // 
             // Calendar
             // 
@@ -83,7 +72,7 @@
             // addpatient
             // 
             this.addpatient.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addpatient.Location = new System.Drawing.Point(3, 260);
+            this.addpatient.Location = new System.Drawing.Point(3, 203);
             this.addpatient.Name = "addpatient";
             this.addpatient.Size = new System.Drawing.Size(209, 52);
             this.addpatient.TabIndex = 21;
@@ -97,7 +86,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.addpatient);
             this.Controls.Add(this.DAPS);
-            this.Controls.Add(this.Setting);
             this.Controls.Add(this.Calendar);
             this.Controls.Add(this.PaymentInfo);
             this.Name = "listviewUserControl";
@@ -109,7 +97,6 @@
         }
 
         #endregion
-        protected System.Windows.Forms.Button Setting;
         protected System.Windows.Forms.Button Calendar;
         protected System.Windows.Forms.Button PaymentInfo;
         private System.Windows.Forms.Label DAPS;

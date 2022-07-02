@@ -42,7 +42,7 @@
             this.Namelbl.AutoSize = true;
             this.Namelbl.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Namelbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Namelbl.Location = new System.Drawing.Point(58, 8);
+            this.Namelbl.Location = new System.Drawing.Point(45, 8);
             this.Namelbl.Name = "Namelbl";
             this.Namelbl.Size = new System.Drawing.Size(58, 23);
             this.Namelbl.TabIndex = 12;
@@ -53,7 +53,7 @@
             this.Amtlbl.AutoSize = true;
             this.Amtlbl.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Amtlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Amtlbl.Location = new System.Drawing.Point(579, 8);
+            this.Amtlbl.Location = new System.Drawing.Point(566, 8);
             this.Amtlbl.Name = "Amtlbl";
             this.Amtlbl.Size = new System.Drawing.Size(43, 23);
             this.Amtlbl.TabIndex = 11;
@@ -64,7 +64,7 @@
             this.Qntlbl.AutoSize = true;
             this.Qntlbl.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Qntlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Qntlbl.Location = new System.Drawing.Point(486, 8);
+            this.Qntlbl.Location = new System.Drawing.Point(473, 8);
             this.Qntlbl.Name = "Qntlbl";
             this.Qntlbl.Size = new System.Drawing.Size(39, 23);
             this.Qntlbl.TabIndex = 10;
@@ -75,7 +75,7 @@
             this.Unitlbl.AutoSize = true;
             this.Unitlbl.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Unitlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Unitlbl.Location = new System.Drawing.Point(387, 8);
+            this.Unitlbl.Location = new System.Drawing.Point(374, 8);
             this.Unitlbl.Name = "Unitlbl";
             this.Unitlbl.Size = new System.Drawing.Size(42, 23);
             this.Unitlbl.TabIndex = 9;
@@ -86,7 +86,7 @@
             this.Nolbl.AutoSize = true;
             this.Nolbl.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nolbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Nolbl.Location = new System.Drawing.Point(12, 8);
+            this.Nolbl.Location = new System.Drawing.Point(-1, 8);
             this.Nolbl.Name = "Nolbl";
             this.Nolbl.Size = new System.Drawing.Size(21, 23);
             this.Nolbl.TabIndex = 8;
@@ -97,7 +97,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(12, 31);
+            this.label1.Location = new System.Drawing.Point(-1, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(650, 23);
             this.label1.TabIndex = 13;
@@ -108,7 +108,7 @@
             // 
             this.Deletebtn.BackColor = System.Drawing.Color.Red;
             this.Deletebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Deletebtn.Location = new System.Drawing.Point(641, 8);
+            this.Deletebtn.Location = new System.Drawing.Point(628, 8);
             this.Deletebtn.Name = "Deletebtn";
             this.Deletebtn.Size = new System.Drawing.Size(28, 23);
             this.Deletebtn.TabIndex = 14;

@@ -44,6 +44,7 @@ namespace PHX
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -67,7 +68,10 @@ namespace PHX
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -75,9 +79,14 @@ namespace PHX
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.AutoScrollMargin = new System.Drawing.Size(0, 50);
             this.panel1.AutoScrollMinSize = new System.Drawing.Size(0, 50);
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.Controls.Add(this.label25);
+            this.panel1.Controls.Add(this.label24);
+            this.panel1.Controls.Add(this.label23);
+            this.panel1.Controls.Add(this.label22);
             this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.listBox1);
             this.panel1.Controls.Add(this.comboBox5);
@@ -241,7 +250,7 @@ namespace PHX
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(74, 389);
+            this.button1.Location = new System.Drawing.Point(74, 423);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(95, 31);
             this.button1.TabIndex = 15;
@@ -266,6 +275,14 @@ namespace PHX
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(708, 254);
             this.panel2.TabIndex = 14;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(26, 147);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(664, 77);
+            this.flowLayoutPanel1.TabIndex = 8;
             // 
             // label16
             // 
@@ -416,7 +433,7 @@ namespace PHX
             this.label6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(63, 312);
+            this.label6.Location = new System.Drawing.Point(63, 356);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 18);
             this.label6.TabIndex = 9;
@@ -426,7 +443,7 @@ namespace PHX
             // 
             this.textBox1.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox1.Location = new System.Drawing.Point(74, 334);
+            this.textBox1.Location = new System.Drawing.Point(74, 378);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(211, 25);
             this.textBox1.TabIndex = 8;
@@ -436,6 +453,10 @@ namespace PHX
             // 
             this.comboBox3.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "1st_Medcine",
+            "2nd_Medcine",
+            "3rd_Medicine"});
             this.comboBox3.Location = new System.Drawing.Point(74, 252);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(211, 24);
@@ -458,6 +479,10 @@ namespace PHX
             // 
             this.comboBox2.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "1st_Category",
+            "2nd_Category",
+            "3rd_Category"});
             this.comboBox2.Location = new System.Drawing.Point(74, 182);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(211, 24);
@@ -480,6 +505,10 @@ namespace PHX
             // 
             this.comboBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1st_Supplier",
+            "2nd_Supplier",
+            "3rd_Supplier"});
             this.comboBox1.Location = new System.Drawing.Point(139, 108);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(146, 24);
@@ -518,12 +547,42 @@ namespace PHX
             this.label1.TabIndex = 0;
             this.label1.Text = "Purchase";
             // 
-            // flowLayoutPanel1
+            // label22
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(26, 147);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(664, 77);
-            this.flowLayoutPanel1.TabIndex = 8;
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(63, 280);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(85, 16);
+            this.label22.TabIndex = 27;
+            this.label22.Text = "Buying Price:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(154, 280);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(51, 16);
+            this.label23.TabIndex = 28;
+            this.label23.Text = "label23";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(63, 306);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(65, 16);
+            this.label24.TabIndex = 29;
+            this.label24.Text = "Batch No:";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(136, 306);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(51, 16);
+            this.label25.TabIndex = 30;
+            this.label25.Text = "label25";
+            this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // New_Purchase_Page
             // 
@@ -583,5 +642,9 @@ namespace PHX
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
     }
 }

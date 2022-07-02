@@ -35,5 +35,10 @@ namespace PHX
             flowLayoutPanel1.Parent.Controls[0].Controls.Add(list_Item);
 
         }
+
+        private void label25_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

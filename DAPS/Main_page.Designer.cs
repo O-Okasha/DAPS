@@ -28,23 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.MainPanel = new System.Windows.Forms.Panel();
+            this.MainPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // MainPanel
             // 
-            this.MainPanel.Location = new System.Drawing.Point(220, 2);
+            this.MainPanel.Location = new System.Drawing.Point(215, 2);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1357, 635);
-            this.MainPanel.TabIndex = 0;
-            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
+            this.MainPanel.Size = new System.Drawing.Size(1366, 645);
+            this.MainPanel.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(213, 636);
+            this.panel1.Size = new System.Drawing.Size(213, 646);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -53,8 +52,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1580, 641);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.MainPanel);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main_page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -65,8 +64,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel MainPanel;
+        private System.Windows.Forms.FlowLayoutPanel MainPanel;
         private System.Windows.Forms.Panel panel1;
     }
 }

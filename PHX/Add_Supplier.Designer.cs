@@ -54,7 +54,7 @@ namespace PHX
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(25, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 33);
+            this.label1.Size = new System.Drawing.Size(103, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Supplier";
             // 
@@ -82,22 +82,22 @@ namespace PHX
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox6.ForeColor = System.Drawing.Color.Black;
             this.textBox6.Location = new System.Drawing.Point(39, 179);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(932, 25);
             this.textBox6.TabIndex = 16;
-            this.textBox6.Text = "   Enter Email";
+            this.textBox6.Text = "2";
             // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox5.ForeColor = System.Drawing.Color.Black;
             this.textBox5.Location = new System.Drawing.Point(39, 108);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(932, 25);
             this.textBox5.TabIndex = 15;
-            this.textBox5.Text = "   Enter Name";
+            this.textBox5.Text = "1";
             // 
             // Submit_btn
             // 
@@ -117,13 +117,13 @@ namespace PHX
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox4.ForeColor = System.Drawing.Color.Black;
             this.textBox4.Location = new System.Drawing.Point(39, 465);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(932, 96);
             this.textBox4.TabIndex = 13;
-            this.textBox4.Text = "Notes";
+            this.textBox4.Text = "5";
             // 
             // label9
             // 
@@ -139,13 +139,13 @@ namespace PHX
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox2.ForeColor = System.Drawing.Color.Black;
             this.textBox2.Location = new System.Drawing.Point(39, 325);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(932, 98);
             this.textBox2.TabIndex = 9;
-            this.textBox2.Text = "Address";
+            this.textBox2.Text = "4";
             // 
             // label7
             // 
@@ -161,12 +161,12 @@ namespace PHX
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
             this.textBox1.Location = new System.Drawing.Point(39, 251);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(932, 25);
             this.textBox1.TabIndex = 7;
-            this.textBox1.Text = "   Enter Phone Number";
+            this.textBox1.Text = "3";
             // 
             // label6
             // 

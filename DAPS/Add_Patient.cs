@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DAPS
 {
-    public partial class addpatients : Form
+    public partial class Add_Patient : UserControl
     {
-        public addpatients()
+        public Add_Patient()
         {
             InitializeComponent();
         }
@@ -24,8 +24,8 @@ namespace DAPS
 
         private void addpatients_Load(object sender, EventArgs e)
         {
-            listviewUserControl listviewUserControl = new listviewUserControl();
-            slidebar.Controls.Add(listviewUserControl);
+           // listviewUserControl listviewUserControl = new listviewUserControl();
+            //lidebar.Controls.Add(listviewUserControl);
 
         }
     }

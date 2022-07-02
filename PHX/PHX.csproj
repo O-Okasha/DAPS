@@ -70,6 +70,12 @@
     <Compile Include="Category_Page.Designer.cs">
       <DependentUpon>Category_Page.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customer_item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer_item.Designer.cs">
+      <DependentUpon>Customer_item.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customer_Page.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -81,6 +87,12 @@
     </Compile>
     <Compile Include="Dashboard_Page.Designer.cs">
       <DependentUpon>Dashboard_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List_item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="List_item.Designer.cs">
+      <DependentUpon>List_item.cs</DependentUpon>
     </Compile>
     <Compile Include="Login_Page.cs">
       <SubType>Form</SubType>
@@ -99,6 +111,12 @@
     </Compile>
     <Compile Include="Main_Page.Designer.cs">
       <DependentUpon>Main_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="medicine_item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="medicine_item.Designer.cs">
+      <DependentUpon>medicine_item.cs</DependentUpon>
     </Compile>
     <Compile Include="Medicine_Page.cs">
       <SubType>UserControl</SubType>
@@ -168,6 +186,12 @@
     <Compile Include="Store_sett_page.Designer.cs">
       <DependentUpon>Store_sett_page.cs</DependentUpon>
     </Compile>
+    <Compile Include="Supplier_item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Supplier_item.Designer.cs">
+      <DependentUpon>Supplier_item.cs</DependentUpon>
+    </Compile>
     <Compile Include="Supplier_Page.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -186,11 +210,17 @@
     <EmbeddedResource Include="Category_Page.resx">
       <DependentUpon>Category_Page.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Customer_item.resx">
+      <DependentUpon>Customer_item.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Customer_Page.resx">
       <DependentUpon>Customer_Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard_Page.resx">
       <DependentUpon>Dashboard_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_item.resx">
+      <DependentUpon>List_item.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Page.resx">
       <DependentUpon>Login_Page.cs</DependentUpon>
@@ -200,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Page.resx">
       <DependentUpon>Main_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="medicine_item.resx">
+      <DependentUpon>medicine_item.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Medicine_Page.resx">
       <DependentUpon>Medicine_Page.cs</DependentUpon>

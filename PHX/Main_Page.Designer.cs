@@ -48,10 +48,10 @@ namespace PHX
             this.Side_Bar.Name = "Side_Bar";
             this.Side_Bar.Size = new System.Drawing.Size(203, 695);
             this.Side_Bar.TabIndex = 1;
+            this.Side_Bar.Paint += new System.Windows.Forms.PaintEventHandler(this.Side_Bar_Paint);
             // 
             // MainContainer
             // 
-            this.MainContainer.AutoScroll = true;
             this.MainContainer.AutoScrollMargin = new System.Drawing.Size(0, 300);
             this.MainContainer.AutoScrollMinSize = new System.Drawing.Size(0, 300);
             this.MainContainer.Location = new System.Drawing.Point(203, 67);

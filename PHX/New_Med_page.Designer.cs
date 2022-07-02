@@ -101,12 +101,12 @@ namespace PHX
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox4.ForeColor = System.Drawing.Color.Black;
             this.textBox4.Location = new System.Drawing.Point(39, 400);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(932, 25);
             this.textBox4.TabIndex = 13;
-            this.textBox4.Text = "   Enter Buying Price";
+            this.textBox4.Text = "3";
             // 
             // label9
             // 
@@ -122,12 +122,12 @@ namespace PHX
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox3.ForeColor = System.Drawing.Color.Black;
             this.textBox3.Location = new System.Drawing.Point(39, 478);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(932, 25);
             this.textBox3.TabIndex = 11;
-            this.textBox3.Text = "   Enter Selling Price";
+            this.textBox3.Text = "4";
             // 
             // label8
             // 
@@ -143,12 +143,12 @@ namespace PHX
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox2.ForeColor = System.Drawing.Color.Black;
             this.textBox2.Location = new System.Drawing.Point(39, 325);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(932, 25);
             this.textBox2.TabIndex = 9;
-            this.textBox2.Text = "   Enter Batch No.";
+            this.textBox2.Text = "2";
             // 
             // label7
             // 
@@ -164,12 +164,12 @@ namespace PHX
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
             this.textBox1.Location = new System.Drawing.Point(39, 251);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(932, 25);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.Text = "   Enter Name";
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "1";
             // 
             // label6
             // 
@@ -185,8 +185,12 @@ namespace PHX
             // comboBox2
             // 
             this.comboBox2.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.comboBox2.ForeColor = System.Drawing.Color.Black;
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "1st_shelf",
+            "2nd_shelf",
+            "3rd_shelf"});
             this.comboBox2.Location = new System.Drawing.Point(39, 179);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(932, 26);
@@ -218,8 +222,12 @@ namespace PHX
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.comboBox1.ForeColor = System.Drawing.Color.Black;
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1st_category",
+            "2nd_category",
+            "3rd_category"});
             this.comboBox1.Location = new System.Drawing.Point(39, 108);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(932, 26);

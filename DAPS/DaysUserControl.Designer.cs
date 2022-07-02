@@ -40,6 +40,7 @@
             this.lbdays.Size = new System.Drawing.Size(34, 25);
             this.lbdays.TabIndex = 0;
             this.lbdays.Text = "00";
+            this.lbdays.Click += new System.EventHandler(this.lbdays_Click);
             // 
             // DaysUserControl
             // 

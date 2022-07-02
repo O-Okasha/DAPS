@@ -116,7 +116,7 @@ namespace PHX
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(36, 75);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(1048, 17);
+            this.label22.Size = new System.Drawing.Size(839, 16);
             this.label22.TabIndex = 27;
             this.label22.Text = resources.GetString("label22.Text");
             // 
@@ -128,7 +128,7 @@ namespace PHX
             this.label21.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label21.Location = new System.Drawing.Point(942, 565);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(78, 19);
+            this.label21.Size = new System.Drawing.Size(70, 18);
             this.label21.TabIndex = 26;
             this.label21.Text = "Discount :";
             // 
@@ -159,7 +159,7 @@ namespace PHX
             this.label20.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label20.Location = new System.Drawing.Point(679, 738);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(61, 19);
+            this.label20.Size = new System.Drawing.Size(54, 18);
             this.label20.TabIndex = 23;
             this.label20.Text = "Status :";
             // 
@@ -181,7 +181,7 @@ namespace PHX
             this.label19.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label19.Location = new System.Drawing.Point(417, 738);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(136, 19);
+            this.label19.Size = new System.Drawing.Size(121, 18);
             this.label19.TabIndex = 21;
             this.label19.Text = "Payment Method :";
             // 
@@ -193,7 +193,7 @@ namespace PHX
             this.label18.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label18.Location = new System.Drawing.Point(942, 675);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(98, 19);
+            this.label18.Size = new System.Drawing.Size(89, 18);
             this.label18.TabIndex = 20;
             this.label18.Text = "Grand Total :";
             // 
@@ -215,7 +215,7 @@ namespace PHX
             this.label17.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label17.Location = new System.Drawing.Point(388, 540);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(58, 19);
+            this.label17.Size = new System.Drawing.Size(51, 18);
             this.label17.TabIndex = 18;
             this.label17.Text = "Notes :";
             // 
@@ -369,7 +369,7 @@ namespace PHX
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(30, 11);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(153, 33);
+            this.label9.Size = new System.Drawing.Size(145, 32);
             this.label9.TabIndex = 0;
             this.label9.Text = "Product List";
             // 
@@ -381,14 +381,14 @@ namespace PHX
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label8.Location = new System.Drawing.Point(388, 110);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 19);
+            this.label8.Size = new System.Drawing.Size(46, 18);
             this.label8.TabIndex = 13;
             this.label8.Text = "Code :";
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox3.ForeColor = System.Drawing.Color.Black;
             this.textBox3.Location = new System.Drawing.Point(446, 107);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(211, 25);
@@ -403,14 +403,14 @@ namespace PHX
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label7.Location = new System.Drawing.Point(771, 110);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 19);
+            this.label7.Size = new System.Drawing.Size(45, 18);
             this.label7.TabIndex = 11;
             this.label7.Text = "Date :";
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox2.ForeColor = System.Drawing.Color.Black;
             this.textBox2.Location = new System.Drawing.Point(826, 107);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(211, 25);
@@ -425,14 +425,14 @@ namespace PHX
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label6.Location = new System.Drawing.Point(63, 395);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 19);
+            this.label6.Size = new System.Drawing.Size(70, 18);
             this.label6.TabIndex = 9;
             this.label6.Text = "Quantity :";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
             this.textBox1.Location = new System.Drawing.Point(74, 417);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(211, 25);
@@ -441,8 +441,12 @@ namespace PHX
             // 
             // comboBox3
             // 
-            this.comboBox3.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.comboBox3.ForeColor = System.Drawing.Color.Black;
             this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "1st_medicine",
+            "2nd_medicine",
+            "3rd_medicine"});
             this.comboBox3.Location = new System.Drawing.Point(74, 326);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(211, 24);
@@ -457,14 +461,18 @@ namespace PHX
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label5.Location = new System.Drawing.Point(63, 304);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 19);
+            this.label5.Size = new System.Drawing.Size(71, 18);
             this.label5.TabIndex = 6;
             this.label5.Text = "Medicine :";
             // 
             // comboBox2
             // 
-            this.comboBox2.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.comboBox2.ForeColor = System.Drawing.Color.Black;
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "1st_category",
+            "2nd_category",
+            "3rd_category"});
             this.comboBox2.Location = new System.Drawing.Point(74, 221);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(211, 24);
@@ -479,14 +487,18 @@ namespace PHX
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(63, 200);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 19);
+            this.label4.Size = new System.Drawing.Size(71, 18);
             this.label4.TabIndex = 4;
             this.label4.Text = "Category :";
             // 
             // comboBox1
             // 
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.comboBox1.ForeColor = System.Drawing.Color.Black;
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1st_customer",
+            "2nd_customer",
+            "3rd_customer"});
             this.comboBox1.Location = new System.Drawing.Point(148, 108);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(146, 24);
@@ -501,7 +513,7 @@ namespace PHX
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(63, 110);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 19);
+            this.label3.Size = new System.Drawing.Size(75, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "Customer :";
             // 
@@ -510,7 +522,7 @@ namespace PHX
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(36, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 17);
+            this.label2.Size = new System.Drawing.Size(0, 16);
             this.label2.TabIndex = 1;
             // 
             // label1
@@ -520,7 +532,7 @@ namespace PHX
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(33, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 33);
+            this.label1.Size = new System.Drawing.Size(70, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sales";
             // 

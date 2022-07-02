@@ -14,7 +14,6 @@ namespace MedUnit.Models
         public string ProblemDiscription { get; set; }
         public List<Investigation> investigations { get; set; }
         public List<Service> services { get; set; }
-        public Perscription Perscription { get; set; }
         public Problem Problem { get; set; }
 
 
@@ -52,10 +51,7 @@ namespace MedUnit.Models
         {
             Problem = problem;
         }
-        public void AddPrescription(Perscription perscription)
-        {
-            Perscription = perscription;
-        }
+
 
 
 

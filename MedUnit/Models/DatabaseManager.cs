@@ -68,7 +68,12 @@ namespace MedUnit.Models
             var appointmentsCollection = ConnectToMongo<Visit>(AppointmentsCollection);
             return appointmentsCollection.InsertOneAsync(visit);
         }
-
+        public Task UpsertPatient(Patient patient)
+        {
+            var patientCollection = ConnectToMongo<Patient>(PatientsCollection);
+            var filter = Builders<Patient>.Filter.Eq("Id", patient.Id);
+            return patientCollection.ReplaceOneAsync(filter, patient, new ReplaceOptions { IsUpsert = true });
+        }
 
     }
 }

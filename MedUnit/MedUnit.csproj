@@ -264,6 +264,12 @@
     <Compile Include="ProblemCarry.Designer.cs">
       <DependentUpon>ProblemCarry.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProblemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProblemControl.Designer.cs">
+      <DependentUpon>ProblemControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProcedureControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -272,11 +278,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServiceControl.Designer.cs">
+      <DependentUpon>ServiceControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreatmentplanControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreatmentplanControl.Designer.cs">
+      <DependentUpon>TreatmentplanControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Xray.cs">
       <SubType>UserControl</SubType>
@@ -347,6 +365,9 @@
     <EmbeddedResource Include="ProblemCarry.resx">
       <DependentUpon>ProblemCarry.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProblemControl.resx">
+      <DependentUpon>ProblemControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProcedureControl.resx">
       <DependentUpon>ProcedureControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -359,8 +380,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ServiceControl.resx">
+      <DependentUpon>ServiceControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreatmentplanControl.resx">
+      <DependentUpon>TreatmentplanControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Xray.resx">
       <DependentUpon>Xray.cs</DependentUpon>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MedUnit.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace MedUnit
 {
     public partial class AddProblem : UserControl
     {
+        public List<TreatmentPlan> Plans;
         public AddProblem()
         {
             InitializeComponent();
@@ -29,7 +31,50 @@ namespace MedUnit
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (Manager.patient == null)
+            {
+                MessageBox.Show("No patient Chosen...");
+            }
+            else
+            {
+                Problem problem = new Problem(comboBox3.Text)
+                {
+                    ProblemNotes = richTextBox1.Text.Trim(),
+                    ProblemLocation = comboBox1.Text.Trim() + ' ' + comboBox2.Text.Trim(),
+                    
+                };
+                if (radioButton1.Checked)
+                {
+                    problem.priority = "Low";
+
+                }
+                else if (radioButton2.Checked)
+                {
+                    problem.priority = "Medium";
+                }
+                else
+                {
+                    problem.priority = "High";
+                }
+                var pln = Plans.Find(x => x.TreatmentPlanName == comboBox4.Text);
+                problem.TreatmentPlan = pln;
+                Manager.patient.Record.AddProblem(problem);
+                // await Manager.databaseManager.AddPatient(Manager.patient);
+            }
             this.Parent.Parent.Dispose();
+        }
+
+        private async void AddProblem_Load(object sender, EventArgs e)
+        {
+            var treatments = await Manager.databaseManager.GetAllTreatmentplans();
+            Plans = treatments;
+            foreach (TreatmentPlan treatment in treatments)
+            {
+
+                comboBox4.Items.Add(treatment.TreatmentPlanName);
+            }
+
+
         }
     }
 }

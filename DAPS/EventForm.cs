@@ -36,8 +36,8 @@ namespace DAPS
             var patient = await Manager.DatabaseManager.GetPatient(textSSN.Text.Trim());
             Console.WriteLine(patient[0].SSN);
             Appointment appiontment = new Appointment(Guid.NewGuid().ToString(), textSSN.Text.Trim(), dateTimePicker1.Value, dateTimePicker1.Value.Date.ToString().Split(' ')[0], patient[0]);
-            
             await Manager.DatabaseManager.CreateAppointment(appiontment);
+            FHIRManager.SendAppointment(appiontment);
 
         }
     }

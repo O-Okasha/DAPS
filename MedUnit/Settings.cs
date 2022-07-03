@@ -51,5 +51,12 @@ namespace MedUnit
             Appointments appointments = new Appointments();
             content.Controls.Add(appointments);
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            content.Controls.Clear();
+            AddDoctor addDoctor = new AddDoctor();
+            content.Controls.Add(addDoctor);
+        }
     }
 }

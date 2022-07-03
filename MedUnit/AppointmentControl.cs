@@ -33,6 +33,8 @@ namespace MedUnit
         private void button1_Click(object sender, EventArgs e)
         {
             Manager.patient = visit.Patient;
+            Manager.CurrentBill.patientSSN = visit.Patient.SSN;
+            Manager.CurrentBill.date = visit.dateTime.ToString();
             MedicalUnitMain medicalUnitMain = new MedicalUnitMain();
             medicalUnitMain.Show();
             this.Parent.Parent.Parent.Parent.Parent.Hide();

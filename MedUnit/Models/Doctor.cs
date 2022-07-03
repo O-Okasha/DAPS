@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,13 +7,18 @@ using System.Threading.Tasks;
 
 namespace MedUnit.Models
 {
-    public class Doctor : Employee
+    public class Doctor 
     {
-        public Doctor(string fname, string id, string lname, int age, string ssn, Gender gender, Department department, string address, string ln) : base(fname, id, lname, age, ssn, gender, department, address)
+        public Doctor() 
         {
-            LicenseNumber = ln;
-        }
+            
 
+        }
+        [BsonId]
+        public string email { get; set; }
+        public string password { get; set; }
+        public string fname { get; set; }
+        public string lname { get; set; }
         public string LicenseNumber { get; set; }
 
     }

@@ -18,6 +18,7 @@ namespace MedUnit.Models
         private const string ServicesCollection = "services";
         private const string TreatmentplansCollection = "treatment_plans";
         private const string AppointmentsCollection = "appointments";
+        private const string DoctorsCollection = "doctors";
 
         private IMongoCollection<T> ConnectToMongo<T>(in string collection)
         {
@@ -58,9 +59,9 @@ namespace MedUnit.Models
             var servicesCollection = ConnectToMongo<Service>(ServicesCollection);
             return servicesCollection.InsertOneAsync(service);
         }
-        public Task AddPatient(Patient patient)
+        public Task AddPatient(PatientModel patient)
         {
-            var patientsCollection = ConnectToMongo<Patient>(PatientsCollection);
+            var patientsCollection = ConnectToMongo<PatientModel>(PatientsCollection);
             return patientsCollection.InsertOneAsync(patient);
         }
         public Task AddAppointment(Visit visit)
@@ -68,11 +69,28 @@ namespace MedUnit.Models
             var appointmentsCollection = ConnectToMongo<Visit>(AppointmentsCollection);
             return appointmentsCollection.InsertOneAsync(visit);
         }
-        public Task UpsertPatient(Patient patient)
+        public Task UpsertPatient(PatientModel patient)
         {
-            var patientCollection = ConnectToMongo<Patient>(PatientsCollection);
-            var filter = Builders<Patient>.Filter.Eq("Id", patient.Id);
+            var patientCollection = ConnectToMongo<PatientModel>(PatientsCollection);
+            var filter = Builders<PatientModel>.Filter.Eq("Id", patient.Id);
             return patientCollection.ReplaceOneAsync(filter, patient, new ReplaceOptions { IsUpsert = true });
+        }
+        public async Task<List<Doctor>> GetDoctor(string email)
+        {
+            var drugsCollection = ConnectToMongo<Doctor>(DoctorsCollection);
+            var results = await drugsCollection.FindAsync(x => x.email == email);
+            return results.ToList();
+        }
+        public Task AddDoctor(Doctor patient)
+        {
+            var patientsCollection = ConnectToMongo<Doctor>(DoctorsCollection);
+            return patientsCollection.InsertOneAsync(patient);
+        }
+        public async Task<List<Doctor>> GetAllDoctors()
+        {
+            var drugsCollection = ConnectToMongo<Doctor>(DoctorsCollection);
+            var results = await drugsCollection.FindAsync(_ => true);
+            return results.ToList();
         }
 
     }

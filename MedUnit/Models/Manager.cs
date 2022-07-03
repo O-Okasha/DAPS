@@ -7,9 +7,11 @@ namespace MedUnit.Models
     public static class Manager
     {
         public static Medicine Chosen;
+        public static Doctor doctor;
+        public static Bill CurrentBill = new Bill();
         public static List<PrescribedMedicine> PrescribedMedicines = new List<PrescribedMedicine>();
         public static VisitDetails visitDetails = new VisitDetails();
-        public static Patient patient;
+        public static PatientModel patient;
         public static List<Medicine> drugs;
         public static List<Service> services;
         public static List<TreatmentPlan> TreatmentPlans;
@@ -18,7 +20,7 @@ namespace MedUnit.Models
         public static TreatmentPlan ActivePlan;
         public static List<Visit> visits = new List<Visit>();
         static string _id = Guid.NewGuid().ToString();
-        static Patient patient1 = new Patient("Omar", _id, "Khaled", 23, "asssfsfdsf", Gender.Male, "Degla");
+        static PatientModel patient1 = new PatientModel("Omar", _id, "Khaled", 23, "0101055485", Gender.Male, "Degla");
         public static Visit test = new Visit(_id, _id, DateTime.Now);
         
         public static void refresh()

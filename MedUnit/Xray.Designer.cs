@@ -37,6 +37,9 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.button5 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Viewer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -70,6 +73,7 @@
             // Viewer
             // 
             this.Viewer.BackColor = System.Drawing.Color.White;
+            this.Viewer.Controls.Add(this.pictureBox1);
             this.Viewer.Location = new System.Drawing.Point(717, 100);
             this.Viewer.Name = "Viewer";
             this.Viewer.Size = new System.Drawing.Size(657, 506);
@@ -115,6 +119,7 @@
             this.button5.TabIndex = 10;
             this.button5.Text = "Add";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button1
             // 
@@ -129,6 +134,14 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(657, 506);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // Xray
             // 
@@ -146,6 +159,8 @@
             this.Controls.Add(this.label2);
             this.Name = "Xray";
             this.Size = new System.Drawing.Size(1395, 690);
+            this.Viewer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,5 +177,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

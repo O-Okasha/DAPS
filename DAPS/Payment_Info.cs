@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAPS.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,17 +33,17 @@ namespace DAPS
 
         private void paneltotal_Paint(object sender, PaintEventArgs e)
         {
-            TotalUserControl totalUser = new TotalUserControl();
-            paneltotal.Controls.Add(totalUser);
+            
         }
 
         private void PaymentInfoDental_Load(object sender, EventArgs e)
         {
-           // listviewUserControl listviewUserControl = new listviewUserControl();
-            //panel1.Controls.Add(listviewUserControl);
-
-            PaymentUserControl paymentUserControl = new PaymentUserControl();
-            flowpanelservices.Controls.Add(paymentUserControl);
+           if (Manager.FocusPatient != null)
+            {
+                textBox1.Text = Manager.FocusPatient.SSN;
+                textBox2.Text = Manager.FocusPatient.FullName;
+                textBox3.Text = Manager.FocusPatient.Age.ToString();
+            }
         }
 
         private void Submitbtn_Click(object sender, EventArgs e)
@@ -51,6 +52,19 @@ namespace DAPS
             flowpanelservices.Parent.Controls[0].Controls.Add(paymentUserControl);
             TotalUserControl totalUserControl = new TotalUserControl();
             paneltotal.Parent.Controls[0].Controls.Add(totalUserControl);*/
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FHIRInvoice invoice = FHIRManager.GetInvoice();
+            Bill bill = new Bill();
+            bill.date = invoice.date;
+            bill.patientSSN = invoice.id;
+            bill.total = int.Parse(invoice.TotalNet["value"]);
+            bill.Id = Guid.NewGuid().ToString();
+            PaymentUserControl control = new PaymentUserControl(bill);
+            flowpanelservices.Controls.Add(control);
+
         }
     }
 }

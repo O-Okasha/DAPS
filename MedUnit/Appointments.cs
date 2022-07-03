@@ -20,6 +20,10 @@ namespace MedUnit
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Appointment x = FHIRManager.GetAppointment();
+            Visit visit = new Visit(x.Id, x.PatientId, x.dateTime);
+            visit.Patient = x.Patient;
+            Manager.visits.Add(visit);
             Manager.refresh();
             foreach (var item in Manager.visits)
             {

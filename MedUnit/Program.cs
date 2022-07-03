@@ -16,7 +16,7 @@ namespace MedUnit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MedicalUnitMain());
+            Application.Run(new LoginPage());
         }
     }
 }

@@ -38,8 +38,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Gender = new System.Windows.Forms.Label();
             this.addresss = new System.Windows.Forms.Label();
             this.address = new System.Windows.Forms.TextBox();
@@ -61,7 +59,7 @@
             // 
             // save
             // 
-            this.save.Location = new System.Drawing.Point(607, 480);
+            this.save.Location = new System.Drawing.Point(607, 416);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(162, 33);
             this.save.TabIndex = 38;
@@ -141,38 +139,11 @@
             this.textBox4.Size = new System.Drawing.Size(172, 22);
             this.textBox4.TabIndex = 31;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(498, 316);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 22);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Blood Type";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "AB+",
-            "AB-",
-            "A+",
-            "A-",
-            "B+",
-            "B-",
-            "O+",
-            "O-"});
-            this.comboBox1.Location = new System.Drawing.Point(710, 321);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(172, 24);
-            this.comboBox1.TabIndex = 33;
-            // 
             // Gender
             // 
             this.Gender.AutoSize = true;
             this.Gender.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Gender.Location = new System.Drawing.Point(498, 371);
+            this.Gender.Location = new System.Drawing.Point(498, 314);
             this.Gender.Name = "Gender";
             this.Gender.Size = new System.Drawing.Size(68, 22);
             this.Gender.TabIndex = 34;
@@ -182,7 +153,7 @@
             // 
             this.addresss.AutoSize = true;
             this.addresss.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addresss.Location = new System.Drawing.Point(498, 426);
+            this.addresss.Location = new System.Drawing.Point(498, 362);
             this.addresss.Name = "addresss";
             this.addresss.Size = new System.Drawing.Size(76, 22);
             this.addresss.TabIndex = 36;
@@ -191,7 +162,7 @@
             // address
             // 
             this.address.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.address.Location = new System.Drawing.Point(710, 431);
+            this.address.Location = new System.Drawing.Point(710, 367);
             this.address.Name = "address";
             this.address.Size = new System.Drawing.Size(172, 22);
             this.address.TabIndex = 37;
@@ -210,7 +181,7 @@
             this.gendr.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.gendr.Location = new System.Drawing.Point(710, 376);
+            this.gendr.Location = new System.Drawing.Point(710, 319);
             this.gendr.Name = "gendr";
             this.gendr.Size = new System.Drawing.Size(172, 24);
             this.gendr.TabIndex = 35;
@@ -244,8 +215,6 @@
             this.Controls.Add(this.addresss);
             this.Controls.Add(this.gendr);
             this.Controls.Add(this.Gender);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -276,8 +245,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label Gender;
         private System.Windows.Forms.Label addresss;
         private System.Windows.Forms.TextBox address;

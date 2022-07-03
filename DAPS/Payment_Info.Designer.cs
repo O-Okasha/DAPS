@@ -36,7 +36,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.flowpanelservices = new System.Windows.Forms.FlowLayoutPanel();
-            this.Submitbtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -113,17 +112,6 @@
             this.flowpanelservices.TabIndex = 3;
             this.flowpanelservices.Paint += new System.Windows.Forms.PaintEventHandler(this.flowpanelservices_Paint);
             // 
-            // Submitbtn
-            // 
-            this.Submitbtn.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Submitbtn.Location = new System.Drawing.Point(17, 232);
-            this.Submitbtn.Name = "Submitbtn";
-            this.Submitbtn.Size = new System.Drawing.Size(75, 23);
-            this.Submitbtn.TabIndex = 29;
-            this.Submitbtn.Text = "Submit";
-            this.Submitbtn.UseVisualStyleBackColor = true;
-            this.Submitbtn.Click += new System.EventHandler(this.Submitbtn_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkBlue;
@@ -150,7 +138,6 @@
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.Submitbtn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox3);
@@ -176,7 +163,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.FlowLayoutPanel flowpanelservices;
-        private System.Windows.Forms.Button Submitbtn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
     }

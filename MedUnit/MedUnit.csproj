@@ -175,6 +175,12 @@
     <Compile Include="ActionNotes.Designer.cs">
       <DependentUpon>ActionNotes.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddDoctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddDoctor.Designer.cs">
+      <DependentUpon>AddDoctor.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddDrug.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -369,6 +375,9 @@
     </Compile>
     <EmbeddedResource Include="ActionNotes.resx">
       <DependentUpon>ActionNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDoctor.resx">
+      <DependentUpon>AddDoctor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddDrug.resx">
       <DependentUpon>AddDrug.cs</DependentUpon>

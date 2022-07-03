@@ -18,6 +18,7 @@ namespace MedUnit.Models
         private const string ServicesCollection = "services";
         private const string TreatmentplansCollection = "treatment_plans";
         private const string AppointmentsCollection = "appointments";
+        private const string DoctorsCollection = "doctors";
 
         private IMongoCollection<T> ConnectToMongo<T>(in string collection)
         {
@@ -73,6 +74,23 @@ namespace MedUnit.Models
             var patientCollection = ConnectToMongo<PatientModel>(PatientsCollection);
             var filter = Builders<PatientModel>.Filter.Eq("Id", patient.Id);
             return patientCollection.ReplaceOneAsync(filter, patient, new ReplaceOptions { IsUpsert = true });
+        }
+        public async Task<List<Doctor>> GetDoctor(string email)
+        {
+            var drugsCollection = ConnectToMongo<Doctor>(DoctorsCollection);
+            var results = await drugsCollection.FindAsync(x => x.email == email);
+            return results.ToList();
+        }
+        public Task AddDoctor(Doctor patient)
+        {
+            var patientsCollection = ConnectToMongo<Doctor>(DoctorsCollection);
+            return patientsCollection.InsertOneAsync(patient);
+        }
+        public async Task<List<Doctor>> GetAllDoctors()
+        {
+            var drugsCollection = ConnectToMongo<Doctor>(DoctorsCollection);
+            var results = await drugsCollection.FindAsync(_ => true);
+            return results.ToList();
         }
 
     }

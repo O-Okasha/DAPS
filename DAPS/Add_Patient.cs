@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAPS.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,13 @@ namespace DAPS
            // listviewUserControl listviewUserControl = new listviewUserControl();
             //lidebar.Controls.Add(listviewUserControl);
 
+        }
+
+        private async void save_Click(object sender, EventArgs e)
+        {
+ 
+            Patient patient = new Patient(textBox2.Text.Trim(), Guid.NewGuid().ToString(), textBox5.Text.Trim(), int.Parse(textBox3.Text.Trim()), textBox1.Text.Trim(), (Gender)gendr.SelectedIndex, address.Text);
+            await Manager.DatabaseManager.CreatePatient(patient);
         }
     }
 }

@@ -29,33 +29,34 @@
         private void InitializeComponent()
         {
             this.textdate = new System.Windows.Forms.TextBox();
-            this.textevent = new System.Windows.Forms.TextBox();
+            this.textSSN = new System.Windows.Forms.TextBox();
             this.Date = new System.Windows.Forms.Label();
             this.Event = new System.Windows.Forms.Label();
             this.save = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // textdate
             // 
             this.textdate.Enabled = false;
             this.textdate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textdate.Location = new System.Drawing.Point(86, 60);
+            this.textdate.Location = new System.Drawing.Point(12, 30);
             this.textdate.Name = "textdate";
             this.textdate.Size = new System.Drawing.Size(272, 30);
             this.textdate.TabIndex = 0;
             // 
-            // textevent
+            // textSSN
             // 
-            this.textevent.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textevent.Location = new System.Drawing.Point(86, 148);
-            this.textevent.Name = "textevent";
-            this.textevent.Size = new System.Drawing.Size(272, 30);
-            this.textevent.TabIndex = 0;
+            this.textSSN.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textSSN.Location = new System.Drawing.Point(12, 100);
+            this.textSSN.Name = "textSSN";
+            this.textSSN.Size = new System.Drawing.Size(272, 30);
+            this.textSSN.TabIndex = 0;
             // 
             // Date
             // 
             this.Date.AutoSize = true;
-            this.Date.Location = new System.Drawing.Point(98, 41);
+            this.Date.Location = new System.Drawing.Point(24, 11);
             this.Date.Name = "Date";
             this.Date.Size = new System.Drawing.Size(36, 16);
             this.Date.TabIndex = 1;
@@ -64,11 +65,11 @@
             // Event
             // 
             this.Event.AutoSize = true;
-            this.Event.Location = new System.Drawing.Point(98, 129);
+            this.Event.Location = new System.Drawing.Point(24, 81);
             this.Event.Name = "Event";
-            this.Event.Size = new System.Drawing.Size(41, 16);
+            this.Event.Size = new System.Drawing.Size(35, 16);
             this.Event.TabIndex = 1;
-            this.Event.Text = "Event";
+            this.Event.Text = "SSN";
             // 
             // save
             // 
@@ -80,15 +81,23 @@
             this.save.UseVisualStyleBackColor = true;
             this.save.Click += new System.EventHandler(this.save_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 152);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(272, 22);
+            this.dateTimePicker1.TabIndex = 3;
+            // 
             // EventForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(466, 268);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.save);
             this.Controls.Add(this.Event);
             this.Controls.Add(this.Date);
-            this.Controls.Add(this.textevent);
+            this.Controls.Add(this.textSSN);
             this.Controls.Add(this.textdate);
             this.Name = "EventForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -102,9 +111,10 @@
         #endregion
 
         private System.Windows.Forms.TextBox textdate;
-        private System.Windows.Forms.TextBox textevent;
+        private System.Windows.Forms.TextBox textSSN;
         private System.Windows.Forms.Label Date;
         private System.Windows.Forms.Label Event;
         private System.Windows.Forms.Button save;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

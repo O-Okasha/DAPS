@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAPS.Models;
 using MySql.Data.MySqlClient;
 
 namespace DAPS
 {
     public partial class EventForm : Form
     {
-        string connstring = "server=localhost;user id=root;database=db_calendar;";
         public EventForm()
         {
             InitializeComponent();
@@ -21,23 +21,23 @@ namespace DAPS
 
         private void EventForm_Load(object sender, EventArgs e)
         {
-            textdate.Text = calendar.static_month+ "/" + DaysUserControl.static_day + "/" + calendar.static_year;
+            var time = DaysUserControl.static_day + "/"  + calendar.static_month + "/" + calendar.static_year;
+            textdate.Text = time;
+            dateTimePicker1.Format = DateTimePickerFormat.Time;
+            dateTimePicker1.ShowUpDown = true;
+            dateTimePicker1.MinDate = DateTime.Parse(time + ' ' + "10:00:00 AM");
+            dateTimePicker1.MaxDate = DateTime.Parse(time + ' ' + "10:00:00 PM");
+
+
         }
-        private void save_Click(object sender, EventArgs e)
+        private async void save_Click(object sender, EventArgs e)
         {
-            MySqlConnection conn = new MySqlConnection(connstring);
-            conn.Open();
-            String sql = "INSERT INTO tbl_calendar(date,event)values(?,?)";
-            MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = sql;
-            cmd.Parameters.AddWithValue("date", textdate.Text);
-            cmd.Parameters.AddWithValue("event", textevent.Text);
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Saved");
-            cmd.Dispose();
-            conn.Close();
-
-
+            Console.WriteLine(dateTimePicker1.Value.Date.ToString().Split(' ')[0]);
+            var patient = await Manager.DatabaseManager.GetPatient(textSSN.Text.Trim());
+            Console.WriteLine(patient[0].SSN);
+            Appointment appiontment = new Appointment(Guid.NewGuid().ToString(), textSSN.Text.Trim(), dateTimePicker1.Value, dateTimePicker1.Value.Date.ToString().Split(' ')[0], patient[0]);
+            
+            await Manager.DatabaseManager.CreateAppointment(appiontment);
 
         }
     }

@@ -82,70 +82,89 @@ namespace DAPS
 
         private void Pervious_Click(object sender, EventArgs e)
         {
-            flowLayoutPanel1.Controls.Clear();
+            
 
             month--;
-
-            static_month = month;
-            static_year = year;
-
-            String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
-            lbdate.Text = monthname + " " + year;
-
-
-            DateTime startofthemonth = new DateTime(year, month, 1);
-            int days = DateTime.DaysInMonth(year, month);
-
-
-            int dayoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
-            for (int i = 1; i < dayoftheweek; i++)
+            if (month > 0)
             {
-                calendarUserControl ucblank = new calendarUserControl();
-                flowLayoutPanel1.Controls.Add(ucblank);
+                flowLayoutPanel1.Controls.Clear();
+                static_month = month;
+                static_year = year;
+
+                String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
+                lbdate.Text = monthname + " " + year;
+
+
+                DateTime startofthemonth = new DateTime(year, month, 1);
+                int days = DateTime.DaysInMonth(year, month);
+
+
+                int dayoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
+                for (int i = 1; i < dayoftheweek; i++)
+                {
+                    calendarUserControl ucblank = new calendarUserControl();
+                    flowLayoutPanel1.Controls.Add(ucblank);
+                }
+                for (int i = 1; i <= days; i++)
+                {
+                    DaysUserControl ucdays = new DaysUserControl();
+                    ucdays.days(i);
+                    flowLayoutPanel1.Controls.Add(ucdays);
+
+
+                }
             }
-            for (int i = 1; i <= days; i++)
+            else
             {
-                DaysUserControl ucdays = new DaysUserControl();
-                ucdays.days(i);
-                flowLayoutPanel1.Controls.Add(ucdays);
-
-
+                month++;
             }
+
         }
 
         private void Next_Click(object sender, EventArgs e)
         {
 
-            flowLayoutPanel1.Controls.Clear();
+            
 
             month++;
 
-            static_month = month;
-            static_year = year;
 
-            String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
-            lbdate.Text = monthname + " " + year;
-
-            DateTime startofthemonth = new DateTime(year, month, 1);
-            int days = DateTime.DaysInMonth(year, month);
-
-
-
-
-            int dayoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
-            for (int i = 1; i < dayoftheweek; i++)
+            if (month < 13)
             {
-                calendarUserControl ucblank = new calendarUserControl();
-                flowLayoutPanel1.Controls.Add(ucblank);
+                flowLayoutPanel1.Controls.Clear();
+                static_month = month;
+                static_year = year;
+
+                String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
+                lbdate.Text = monthname + " " + year;
+
+                DateTime startofthemonth = new DateTime(year, month, 1);
+                int days = DateTime.DaysInMonth(year, month);
+                int dayoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
+                for (int i = 1; i < dayoftheweek; i++)
+                {
+                    calendarUserControl ucblank = new calendarUserControl();
+                    flowLayoutPanel1.Controls.Add(ucblank);
+                }
+                for (int i = 1; i <= days; i++)
+                {
+                    DaysUserControl ucdays = new DaysUserControl();
+                    ucdays.days(i);
+                    flowLayoutPanel1.Controls.Add(ucdays);
+
+
+                }
             }
-            for (int i = 1; i <= days; i++)
+            else
             {
-                DaysUserControl ucdays = new DaysUserControl();
-                ucdays.days(i);
-                flowLayoutPanel1.Controls.Add(ucdays);
-
-
+                month--;
             }
+            
+
+
+
+
+
         }
     }
 }

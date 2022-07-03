@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using DAPS.Models;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +15,7 @@ namespace DAPS
     public partial class DaysUserControl : UserControl
     {
         public static string static_day;
-        private string connstring;
+        public List<Appointment> appions;
 
         public DaysUserControl()
         {
@@ -36,28 +37,47 @@ namespace DAPS
 
         }
 
-        private void displayEvent()
+        private async void displayEvent()
         {
-            MySqlConnection conn = new MySqlConnection(connstring);
-            conn.Open();
-            String sql = "SELECT * FROM tbl_calendar where date = ?";
-            MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = sql;
-            cmd.Parameters.AddWithValue("date", calendar.static_year+"_"+ calendar.static_month + "_" +lbdays.Text);
-            MySqlDataReader reader = cmd.ExecuteReader();
-            if (reader.Read())
-            {
-                lbevent.Text = reader["event"].ToString();
-            }
-            reader.Dispose();
-            cmd.Dispose();
-            conn.Close();
+
+            /*            MySqlConnection conn = new MySqlConnection(connstring);
+                        conn.Open();
+                        String sql = "SELECT * FROM tbl_calendar where date = ?";
+                        MySqlCommand cmd = conn.CreateCommand();
+                        cmd.CommandText = sql;
+                        cmd.Parameters.AddWithValue("date", calendar.static_year+"_"+ calendar.static_month + "_" +lbdays.Text);
+                        MySqlDataReader reader = cmd.ExecuteReader();
+                        if (reader.Read())
+                        {
+                            lbevent.Text = reader["event"].ToString();
+                        }
+                        reader.Dispose();
+                        cmd.Dispose();
+                        conn.Close();*/
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             displayEvent();
 
+        }
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            string x = calendar.static_month.ToString();
+            if (x.Count() == 1) {
+                x = '0' + x;
+            }
+            string y = DaysUserControl.static_day;
+            if (y.Count() == 1)
+            {
+                y = '0' + y;
+            }
+            var events = await Manager.DatabaseManager.GetEvents(y + "/" + x + "/" + calendar.static_year);
+            appions = events;
+            ViewAppointments viewAppointments = new ViewAppointments(appions);
+            viewAppointments.ShowDialog();
         }
     }
 }

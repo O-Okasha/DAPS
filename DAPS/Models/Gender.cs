@@ -1,6 +1,8 @@
-﻿namespace MedUnit.Models
+﻿namespace DAPS.Models
 {
-    public class Gender
+public enum Gender
     {
+        Male,
+        Female
     }
 }

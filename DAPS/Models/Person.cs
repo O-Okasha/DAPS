@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MedUnit.Models
+namespace DAPS.Models
 
 {
     public class Person
@@ -19,6 +19,7 @@ namespace MedUnit.Models
             SSN = ssn ?? throw new ArgumentNullException(nameof(ssn));
             Gender = gender;
             Address = address;
+            FullName = $"{Fname} {Lname}";
         }
 
         public string Fname { get; set; }
@@ -29,6 +30,6 @@ namespace MedUnit.Models
         public Gender Gender { get; set; }
         public string SSN { get; set; }
         public string Address { get; set; }
-        public string FullName => $"{Fname} {Lname}";
+        public string FullName { get; set; }
     }
 }

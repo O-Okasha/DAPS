@@ -30,6 +30,7 @@ namespace PHX
         private void InitializeComponent()
         {
             this.newShelf_panel = new System.Windows.Forms.Panel();
+            this.check_lbl = new System.Windows.Forms.Label();
             this.Numeic_no_txtbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Submit_btn = new System.Windows.Forms.Button();
@@ -39,14 +40,13 @@ namespace PHX
             this.label2 = new System.Windows.Forms.Label();
             this.Shelf_Label = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.check_lbl = new System.Windows.Forms.Label();
             this.newShelf_panel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -62,10 +62,20 @@ namespace PHX
             this.newShelf_panel.Controls.Add(this.Numeric_no_lbl);
             this.newShelf_panel.Controls.Add(this.Name_label);
             this.newShelf_panel.Controls.Add(this.label2);
-            this.newShelf_panel.Location = new System.Drawing.Point(36, 89);
+            this.newShelf_panel.Location = new System.Drawing.Point(16, 89);
             this.newShelf_panel.Name = "newShelf_panel";
             this.newShelf_panel.Size = new System.Drawing.Size(480, 310);
             this.newShelf_panel.TabIndex = 0;
+            // 
+            // check_lbl
+            // 
+            this.check_lbl.AutoSize = true;
+            this.check_lbl.Location = new System.Drawing.Point(245, 257);
+            this.check_lbl.Name = "check_lbl";
+            this.check_lbl.Size = new System.Drawing.Size(10, 16);
+            this.check_lbl.TabIndex = 7;
+            this.check_lbl.Text = " ";
+            this.check_lbl.Click += new System.EventHandler(this.label9_Click);
             // 
             // Numeic_no_txtbox
             // 
@@ -75,6 +85,10 @@ namespace PHX
             this.Numeic_no_txtbox.Name = "Numeic_no_txtbox";
             this.Numeic_no_txtbox.Size = new System.Drawing.Size(409, 22);
             this.Numeic_no_txtbox.TabIndex = 6;
+            this.Numeic_no_txtbox.Text = "Enter Number";
+            this.Numeic_no_txtbox.TextChanged += new System.EventHandler(this.Numeic_no_txtbox_TextChanged);
+            this.Numeic_no_txtbox.Enter += new System.EventHandler(this.Numeric_No_txtBox_Enter);
+            this.Numeic_no_txtbox.Leave += new System.EventHandler(this.NUmeric_No_textBox_Leave);
             // 
             // label1
             // 
@@ -111,6 +125,11 @@ namespace PHX
             this.Name_txtbox.Name = "Name_txtbox";
             this.Name_txtbox.Size = new System.Drawing.Size(409, 22);
             this.Name_txtbox.TabIndex = 3;
+            this.Name_txtbox.Text = "Enter Name";
+            this.Name_txtbox.ForeColorChanged += new System.EventHandler(this.Name_txtbox_TextChanged);
+            this.Name_txtbox.TextChanged += new System.EventHandler(this.Name_txtbox_TextChanged_1);
+            this.Name_txtbox.Enter += new System.EventHandler(this.Name_txtBox_Enter);
+            this.Name_txtbox.Leave += new System.EventHandler(this.Name_textBox_Leave);
             // 
             // Numeric_no_lbl
             // 
@@ -150,7 +169,7 @@ namespace PHX
             this.Shelf_Label.AutoSize = true;
             this.Shelf_Label.Font = new System.Drawing.Font("Open Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Shelf_Label.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Shelf_Label.Location = new System.Drawing.Point(33, 22);
+            this.Shelf_Label.Location = new System.Drawing.Point(13, 22);
             this.Shelf_Label.Name = "Shelf_Label";
             this.Shelf_Label.Size = new System.Drawing.Size(68, 32);
             this.Shelf_Label.TabIndex = 2;
@@ -166,11 +185,20 @@ namespace PHX
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(558, 89);
+            this.panel2.Location = new System.Drawing.Point(538, 89);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(634, 260);
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(39, 160);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(592, 85);
+            this.flowLayoutPanel1.TabIndex = 9;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // label8
             // 
@@ -240,25 +268,6 @@ namespace PHX
             this.label6.Text = "---------------------------------------------------------------------------------" +
     "-------------\r\n\r\n\r\n\r\n\r\n";
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(40, 160);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(569, 85);
-            this.flowLayoutPanel1.TabIndex = 9;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
-            // 
-            // check_lbl
-            // 
-            this.check_lbl.AutoSize = true;
-            this.check_lbl.Location = new System.Drawing.Point(245, 257);
-            this.check_lbl.Name = "check_lbl";
-            this.check_lbl.Size = new System.Drawing.Size(10, 16);
-            this.check_lbl.TabIndex = 7;
-            this.check_lbl.Text = " ";
-            this.check_lbl.Click += new System.EventHandler(this.label9_Click);
-            // 
             // Shelf_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -268,7 +277,7 @@ namespace PHX
             this.Controls.Add(this.Shelf_Label);
             this.Controls.Add(this.newShelf_panel);
             this.Name = "Shelf_Page";
-            this.Size = new System.Drawing.Size(1238, 695);
+            this.Size = new System.Drawing.Size(1202, 489);
             this.Load += new System.EventHandler(this.Shelf_Page_Load);
             this.newShelf_panel.ResumeLayout(false);
             this.newShelf_panel.PerformLayout();

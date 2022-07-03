@@ -106,6 +106,12 @@
     <Compile Include="Logo_Acc.Designer.cs">
       <DependentUpon>Logo_Acc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Low_Stock_Medicine_Itemcs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Low_Stock_Medicine_Itemcs.Designer.cs">
+      <DependentUpon>Low_Stock_Medicine_Itemcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main_Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,7 @@
     <Compile Include="Medicine_Page.Designer.cs">
       <DependentUpon>Medicine_Page.cs</DependentUpon>
     </Compile>
+    <Compile Include="models\Shelf.cs" />
     <Compile Include="New_Med_page.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -239,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Logo_Acc.resx">
       <DependentUpon>Logo_Acc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Low_Stock_Medicine_Itemcs.resx">
+      <DependentUpon>Low_Stock_Medicine_Itemcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Page.resx">
       <DependentUpon>Main_Page.cs</DependentUpon>

@@ -13,15 +13,13 @@ namespace PHX
 {
     public partial class Shelf_Page : UserControl
     {
-        private Shelf_item shelf;
+        int counter = 0;
+        int Total;
         public Shelf_Page()
         {
             InitializeComponent();
         }
-        public void item(Shelf_item test)
-        {
-            shelf = test;
-        }
+        
 
         private bool Validation()
         {
@@ -40,33 +38,45 @@ namespace PHX
             }
             return true;
         }
-            private void label1_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            
+
 
         }
 
-        private void Submit_btn_Click(object sender, EventArgs e)
+        public void Submit_btn_Click(object sender, EventArgs e)
         {
             bool validation = Validation();
             if (validation)
             {
-
+               // Dashboard_Page dashboard_Page = new Dashboard_Page();
                 Shelf_item shelf_Item = new Shelf_item();
                 shelf_Item.Controls[2].Text = Name_txtbox.Text;
                 shelf_Item.Controls[1].Text = Numeic_no_txtbox.Text;
                 flowLayoutPanel1.Parent.Controls[0].Controls.Add(shelf_Item);
-            }
+                counter++;
+                Total = counter;
+                /*if (counter != 0)
+                {
+                    Dashboard_Page dashboard_Page1 = new Dashboard_Page();
+                    dashboard_Page1.Controls[11].Text = "aloo";
+                }*/
+                
+
+            }/*
+            Dashboard_Page dashboard_Page = new Dashboard_Page();
+            dashboard_Page.Controls[0].Controls[0].Text = "aloo";*/
+
         }
 
         private void Shelf_Page_Load(object sender, EventArgs e)
@@ -78,5 +88,55 @@ namespace PHX
         {
 
         }
+
+        private void Name_txtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void Name_txtBox_Enter(object sender, EventArgs e)
+        {
+            if (Name_txtbox.Text == "Enter Name")
+            {
+                Name_txtbox.Text = "";
+                ForeColor = Color.Black;
+            }
+        }
+
+        private void Name_textBox_Leave(object sender, EventArgs e)
+        {
+            if (Name_txtbox.Text == "")
+            {
+                Name_txtbox.Text = "Enter Name";
+                ForeColor= Color.Gray;
+            }
+        }
+
+        private void Name_txtbox_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+        private void Numeric_No_txtBox_Enter(object sender, EventArgs e)
+        {
+            if (Numeic_no_txtbox.Text == "Enter Number")
+            {
+                Numeic_no_txtbox.Text = "";
+                ForeColor = Color.Black;
+            }
+        }
+
+        private void NUmeric_No_textBox_Leave(object sender, EventArgs e)
+        {
+            if (Numeic_no_txtbox.Text == "")
+            {
+                Numeic_no_txtbox.Text = "Enter Number";
+                ForeColor = Color.Gray;
+            }
+        }
+
+        private void Numeic_no_txtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
+                
 }

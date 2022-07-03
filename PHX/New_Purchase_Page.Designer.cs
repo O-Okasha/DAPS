@@ -30,251 +30,349 @@ namespace PHX
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(New_Purchase_Page));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.PurchasePanel = new System.Windows.Forms.Panel();
+            this.CustomercomboBox = new System.Windows.Forms.ComboBox();
+            this.Customerlbl = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.BNVlbl = new System.Windows.Forms.Label();
+            this.BatchNolbl = new System.Windows.Forms.Label();
+            this.BPVlbl = new System.Windows.Forms.Label();
+            this.BuyingPricelbl = new System.Windows.Forms.Label();
+            this.Discountlbl = new System.Windows.Forms.Label();
+            this.DiscountTextBox = new System.Windows.Forms.TextBox();
+            this.StatuscomboBox = new System.Windows.Forms.ComboBox();
+            this.Statuslbl = new System.Windows.Forms.Label();
+            this.PaymentMethodcomboBox = new System.Windows.Forms.ComboBox();
+            this.PaymentMethodlbl = new System.Windows.Forms.Label();
+            this.GrantTotallbl = new System.Windows.Forms.Label();
+            this.GrandTotaltextBox = new System.Windows.Forms.TextBox();
+            this.Noteslbl = new System.Windows.Forms.Label();
+            this.NotestextBox = new System.Windows.Forms.TextBox();
+            this.SavePurchasebtn = new System.Windows.Forms.Button();
+            this.AddToListbtn = new System.Windows.Forms.Button();
+            this.prudctlistpanel = new System.Windows.Forms.Panel();
+            this.TotalNolbl = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label16 = new System.Windows.Forms.Label();
+            this.namelbl = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.amtlbl = new System.Windows.Forms.Label();
+            this.qntlbl = new System.Windows.Forms.Label();
+            this.unitlbl = new System.Windows.Forms.Label();
+            this.totallbl = new System.Windows.Forms.Label();
+            this.nolbl = new System.Windows.Forms.Label();
+            this.productlistlabelpanel = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Codelbl = new System.Windows.Forms.Label();
+            this.Codetxtbox = new System.Windows.Forms.TextBox();
+            this.Datelbl = new System.Windows.Forms.Label();
+            this.Quantitylbl = new System.Windows.Forms.Label();
+            this.quantitytextBox = new System.Windows.Forms.TextBox();
+            this.MedicineComboBox = new System.Windows.Forms.ComboBox();
+            this.Medicinelbl = new System.Windows.Forms.Label();
+            this.CategoryComboBox = new System.Windows.Forms.ComboBox();
+            this.Categorylbl = new System.Windows.Forms.Label();
+            this.SuppliersComboBox = new System.Windows.Forms.ComboBox();
+            this.Supplierlbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.Purchaselbl = new System.Windows.Forms.Label();
+            this.PurchasePanel.SuspendLayout();
+            this.prudctlistpanel.SuspendLayout();
+            this.productlistlabelpanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // PurchasePanel
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.AutoScrollMargin = new System.Drawing.Size(0, 50);
-            this.panel1.AutoScrollMinSize = new System.Drawing.Size(0, 50);
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel1.Controls.Add(this.label25);
-            this.panel1.Controls.Add(this.label24);
-            this.panel1.Controls.Add(this.label23);
-            this.panel1.Controls.Add(this.label22);
-            this.panel1.Controls.Add(this.label21);
-            this.panel1.Controls.Add(this.listBox1);
-            this.panel1.Controls.Add(this.comboBox5);
-            this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.comboBox4);
-            this.panel1.Controls.Add(this.label19);
-            this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.comboBox3);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(70, 42);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1116, 671);
-            this.panel1.TabIndex = 0;
+            this.PurchasePanel.AutoScroll = true;
+            this.PurchasePanel.AutoScrollMargin = new System.Drawing.Size(0, 50);
+            this.PurchasePanel.AutoScrollMinSize = new System.Drawing.Size(0, 50);
+            this.PurchasePanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.PurchasePanel.Controls.Add(this.CustomercomboBox);
+            this.PurchasePanel.Controls.Add(this.Customerlbl);
+            this.PurchasePanel.Controls.Add(this.dateTimePicker1);
+            this.PurchasePanel.Controls.Add(this.BNVlbl);
+            this.PurchasePanel.Controls.Add(this.BatchNolbl);
+            this.PurchasePanel.Controls.Add(this.BPVlbl);
+            this.PurchasePanel.Controls.Add(this.BuyingPricelbl);
+            this.PurchasePanel.Controls.Add(this.Discountlbl);
+            this.PurchasePanel.Controls.Add(this.DiscountTextBox);
+            this.PurchasePanel.Controls.Add(this.StatuscomboBox);
+            this.PurchasePanel.Controls.Add(this.Statuslbl);
+            this.PurchasePanel.Controls.Add(this.PaymentMethodcomboBox);
+            this.PurchasePanel.Controls.Add(this.PaymentMethodlbl);
+            this.PurchasePanel.Controls.Add(this.GrantTotallbl);
+            this.PurchasePanel.Controls.Add(this.GrandTotaltextBox);
+            this.PurchasePanel.Controls.Add(this.Noteslbl);
+            this.PurchasePanel.Controls.Add(this.NotestextBox);
+            this.PurchasePanel.Controls.Add(this.SavePurchasebtn);
+            this.PurchasePanel.Controls.Add(this.AddToListbtn);
+            this.PurchasePanel.Controls.Add(this.prudctlistpanel);
+            this.PurchasePanel.Controls.Add(this.Codelbl);
+            this.PurchasePanel.Controls.Add(this.Codetxtbox);
+            this.PurchasePanel.Controls.Add(this.Datelbl);
+            this.PurchasePanel.Controls.Add(this.Quantitylbl);
+            this.PurchasePanel.Controls.Add(this.quantitytextBox);
+            this.PurchasePanel.Controls.Add(this.MedicineComboBox);
+            this.PurchasePanel.Controls.Add(this.Medicinelbl);
+            this.PurchasePanel.Controls.Add(this.CategoryComboBox);
+            this.PurchasePanel.Controls.Add(this.Categorylbl);
+            this.PurchasePanel.Controls.Add(this.SuppliersComboBox);
+            this.PurchasePanel.Controls.Add(this.Supplierlbl);
+            this.PurchasePanel.Controls.Add(this.label2);
+            this.PurchasePanel.Controls.Add(this.Purchaselbl);
+            this.PurchasePanel.Location = new System.Drawing.Point(70, 42);
+            this.PurchasePanel.Name = "PurchasePanel";
+            this.PurchasePanel.Size = new System.Drawing.Size(1116, 671);
+            this.PurchasePanel.TabIndex = 0;
             // 
-            // label21
+            // CustomercomboBox
             // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label21.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label21.Location = new System.Drawing.Point(942, 430);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(70, 18);
-            this.label21.TabIndex = 26;
-            this.label21.Text = "Discount :";
+            this.CustomercomboBox.ForeColor = System.Drawing.Color.Black;
+            this.CustomercomboBox.FormattingEnabled = true;
+            this.CustomercomboBox.Items.AddRange(new object[] {
+            "1st_customer",
+            "2nd_customer",
+            "3rd_customer"});
+            this.CustomercomboBox.Location = new System.Drawing.Point(149, 111);
+            this.CustomercomboBox.Name = "CustomercomboBox";
+            this.CustomercomboBox.Size = new System.Drawing.Size(146, 24);
+            this.CustomercomboBox.TabIndex = 33;
+            this.CustomercomboBox.Text = "   Select Customer";
             // 
-            // listBox1
+            // Customerlbl
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(946, 474);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(138, 36);
-            this.listBox1.TabIndex = 25;
+            this.Customerlbl.AutoSize = true;
+            this.Customerlbl.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Customerlbl.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Customerlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Customerlbl.Location = new System.Drawing.Point(64, 113);
+            this.Customerlbl.Name = "Customerlbl";
+            this.Customerlbl.Size = new System.Drawing.Size(75, 18);
+            this.Customerlbl.TabIndex = 32;
+            this.Customerlbl.Text = "Customer :";
             // 
-            // comboBox5
+            // dateTimePicker1
             // 
-            this.comboBox5.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(690, 621);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(211, 24);
-            this.comboBox5.TabIndex = 24;
-            this.comboBox5.Text = "   Select Status";
+            this.dateTimePicker1.CustomFormat = "dd/ MMMM/yyyy, dddd";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(831, 110);
+            this.dateTimePicker1.MinDate = new System.DateTime(2022, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.ShowUpDown = true;
+            this.dateTimePicker1.Size = new System.Drawing.Size(223, 22);
+            this.dateTimePicker1.TabIndex = 31;
             // 
-            // label20
+            // BNVlbl
             // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label20.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label20.Location = new System.Drawing.Point(679, 599);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(54, 18);
-            this.label20.TabIndex = 23;
-            this.label20.Text = "Status :";
+            this.BNVlbl.AutoSize = true;
+            this.BNVlbl.Location = new System.Drawing.Point(136, 306);
+            this.BNVlbl.Name = "BNVlbl";
+            this.BNVlbl.Size = new System.Drawing.Size(17, 16);
+            this.BNVlbl.TabIndex = 30;
+            this.BNVlbl.Text = " 2";
+            this.BNVlbl.Click += new System.EventHandler(this.label25_Click);
             // 
-            // comboBox4
+            // BatchNolbl
             // 
-            this.comboBox4.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(428, 621);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(211, 24);
-            this.comboBox4.TabIndex = 22;
-            this.comboBox4.Text = "   Select Payment";
+            this.BatchNolbl.AutoSize = true;
+            this.BatchNolbl.Location = new System.Drawing.Point(63, 306);
+            this.BatchNolbl.Name = "BatchNolbl";
+            this.BatchNolbl.Size = new System.Drawing.Size(65, 16);
+            this.BatchNolbl.TabIndex = 29;
+            this.BatchNolbl.Text = "Batch No:";
             // 
-            // label19
+            // BPVlbl
             // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label19.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label19.Location = new System.Drawing.Point(417, 599);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(121, 18);
-            this.label19.TabIndex = 21;
-            this.label19.Text = "Payment Method :";
+            this.BPVlbl.AutoSize = true;
+            this.BPVlbl.Location = new System.Drawing.Point(154, 280);
+            this.BPVlbl.Name = "BPVlbl";
+            this.BPVlbl.Size = new System.Drawing.Size(17, 16);
+            this.BPVlbl.TabIndex = 28;
+            this.BPVlbl.Text = " 5";
+            this.BPVlbl.Click += new System.EventHandler(this.label23_Click);
             // 
-            // label18
+            // BuyingPricelbl
             // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label18.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label18.Location = new System.Drawing.Point(942, 540);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(89, 18);
-            this.label18.TabIndex = 20;
-            this.label18.Text = "Grand Total :";
+            this.BuyingPricelbl.AutoSize = true;
+            this.BuyingPricelbl.Location = new System.Drawing.Point(63, 280);
+            this.BuyingPricelbl.Name = "BuyingPricelbl";
+            this.BuyingPricelbl.Size = new System.Drawing.Size(85, 16);
+            this.BuyingPricelbl.TabIndex = 27;
+            this.BuyingPricelbl.Text = "Buying Price:";
             // 
-            // textBox5
+            // Discountlbl
             // 
-            this.textBox5.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox5.Location = new System.Drawing.Point(946, 572);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(138, 25);
-            this.textBox5.TabIndex = 19;
-            this.textBox5.Text = "   Value";
+            this.Discountlbl.AutoSize = true;
+            this.Discountlbl.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Discountlbl.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Discountlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Discountlbl.Location = new System.Drawing.Point(942, 430);
+            this.Discountlbl.Name = "Discountlbl";
+            this.Discountlbl.Size = new System.Drawing.Size(70, 18);
+            this.Discountlbl.TabIndex = 26;
+            this.Discountlbl.Text = "Discount :";
             // 
-            // label17
+            // DiscountTextBox
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label17.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label17.Location = new System.Drawing.Point(388, 415);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(51, 18);
-            this.label17.TabIndex = 18;
-            this.label17.Text = "Notes :";
+            this.DiscountTextBox.Location = new System.Drawing.Point(946, 451);
+            this.DiscountTextBox.Name = "DiscountTextBox";
+            this.DiscountTextBox.Size = new System.Drawing.Size(138, 22);
+            this.DiscountTextBox.TabIndex = 25;
+            this.DiscountTextBox.Text = "DTest";
             // 
-            // textBox4
+            // StatuscomboBox
             // 
-            this.textBox4.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox4.Location = new System.Drawing.Point(399, 437);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(452, 143);
-            this.textBox4.TabIndex = 17;
-            this.textBox4.Text = "   Enter Notes";
+            this.StatuscomboBox.ForeColor = System.Drawing.Color.Black;
+            this.StatuscomboBox.FormattingEnabled = true;
+            this.StatuscomboBox.Items.AddRange(new object[] {
+            "Due",
+            "Paid"});
+            this.StatuscomboBox.Location = new System.Drawing.Point(690, 621);
+            this.StatuscomboBox.Name = "StatuscomboBox";
+            this.StatuscomboBox.Size = new System.Drawing.Size(211, 24);
+            this.StatuscomboBox.TabIndex = 24;
+            this.StatuscomboBox.Text = "ssss";
             // 
-            // button2
+            // Statuslbl
             // 
-            this.button2.BackColor = System.Drawing.Color.SeaGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(946, 621);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(138, 35);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Save Purchase";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Statuslbl.AutoSize = true;
+            this.Statuslbl.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Statuslbl.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Statuslbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Statuslbl.Location = new System.Drawing.Point(679, 599);
+            this.Statuslbl.Name = "Statuslbl";
+            this.Statuslbl.Size = new System.Drawing.Size(54, 18);
+            this.Statuslbl.TabIndex = 23;
+            this.Statuslbl.Text = "Status :";
             // 
-            // button1
+            // PaymentMethodcomboBox
             // 
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(74, 423);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 31);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Add To List";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.PaymentMethodcomboBox.ForeColor = System.Drawing.Color.Black;
+            this.PaymentMethodcomboBox.FormattingEnabled = true;
+            this.PaymentMethodcomboBox.Items.AddRange(new object[] {
+            "Cash",
+            "Check"});
+            this.PaymentMethodcomboBox.Location = new System.Drawing.Point(428, 621);
+            this.PaymentMethodcomboBox.Name = "PaymentMethodcomboBox";
+            this.PaymentMethodcomboBox.Size = new System.Drawing.Size(211, 24);
+            this.PaymentMethodcomboBox.TabIndex = 22;
+            this.PaymentMethodcomboBox.Text = "pppp";
             // 
-            // panel2
+            // PaymentMethodlbl
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.flowLayoutPanel1);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(392, 158);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(708, 254);
-            this.panel2.TabIndex = 14;
+            this.PaymentMethodlbl.AutoSize = true;
+            this.PaymentMethodlbl.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.PaymentMethodlbl.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PaymentMethodlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.PaymentMethodlbl.Location = new System.Drawing.Point(417, 599);
+            this.PaymentMethodlbl.Name = "PaymentMethodlbl";
+            this.PaymentMethodlbl.Size = new System.Drawing.Size(121, 18);
+            this.PaymentMethodlbl.TabIndex = 21;
+            this.PaymentMethodlbl.Text = "Payment Method :";
+            // 
+            // GrantTotallbl
+            // 
+            this.GrantTotallbl.AutoSize = true;
+            this.GrantTotallbl.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.GrantTotallbl.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrantTotallbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.GrantTotallbl.Location = new System.Drawing.Point(942, 540);
+            this.GrantTotallbl.Name = "GrantTotallbl";
+            this.GrantTotallbl.Size = new System.Drawing.Size(89, 18);
+            this.GrantTotallbl.TabIndex = 20;
+            this.GrantTotallbl.Text = "Grand Total :";
+            // 
+            // GrandTotaltextBox
+            // 
+            this.GrandTotaltextBox.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrandTotaltextBox.ForeColor = System.Drawing.Color.Black;
+            this.GrandTotaltextBox.Location = new System.Drawing.Point(946, 572);
+            this.GrandTotaltextBox.Name = "GrandTotaltextBox";
+            this.GrandTotaltextBox.Size = new System.Drawing.Size(138, 25);
+            this.GrandTotaltextBox.TabIndex = 19;
+            this.GrandTotaltextBox.Text = "ggggg";
+            // 
+            // Noteslbl
+            // 
+            this.Noteslbl.AutoSize = true;
+            this.Noteslbl.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Noteslbl.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Noteslbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Noteslbl.Location = new System.Drawing.Point(388, 415);
+            this.Noteslbl.Name = "Noteslbl";
+            this.Noteslbl.Size = new System.Drawing.Size(51, 18);
+            this.Noteslbl.TabIndex = 18;
+            this.Noteslbl.Text = "Notes :";
+            // 
+            // NotestextBox
+            // 
+            this.NotestextBox.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NotestextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.NotestextBox.Location = new System.Drawing.Point(399, 437);
+            this.NotestextBox.Multiline = true;
+            this.NotestextBox.Name = "NotestextBox";
+            this.NotestextBox.Size = new System.Drawing.Size(452, 143);
+            this.NotestextBox.TabIndex = 17;
+            this.NotestextBox.Text = "   Enter Notes";
+            // 
+            // SavePurchasebtn
+            // 
+            this.SavePurchasebtn.BackColor = System.Drawing.Color.SeaGreen;
+            this.SavePurchasebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SavePurchasebtn.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SavePurchasebtn.ForeColor = System.Drawing.Color.White;
+            this.SavePurchasebtn.Location = new System.Drawing.Point(946, 621);
+            this.SavePurchasebtn.Name = "SavePurchasebtn";
+            this.SavePurchasebtn.Size = new System.Drawing.Size(138, 35);
+            this.SavePurchasebtn.TabIndex = 16;
+            this.SavePurchasebtn.Text = "Save Purchase";
+            this.SavePurchasebtn.UseVisualStyleBackColor = false;
+            this.SavePurchasebtn.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // AddToListbtn
+            // 
+            this.AddToListbtn.AutoSize = true;
+            this.AddToListbtn.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.AddToListbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddToListbtn.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddToListbtn.ForeColor = System.Drawing.Color.White;
+            this.AddToListbtn.Location = new System.Drawing.Point(74, 423);
+            this.AddToListbtn.Name = "AddToListbtn";
+            this.AddToListbtn.Size = new System.Drawing.Size(95, 31);
+            this.AddToListbtn.TabIndex = 15;
+            this.AddToListbtn.Text = "Add To List";
+            this.AddToListbtn.UseVisualStyleBackColor = false;
+            this.AddToListbtn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // prudctlistpanel
+            // 
+            this.prudctlistpanel.BackColor = System.Drawing.Color.White;
+            this.prudctlistpanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.prudctlistpanel.Controls.Add(this.TotalNolbl);
+            this.prudctlistpanel.Controls.Add(this.flowLayoutPanel1);
+            this.prudctlistpanel.Controls.Add(this.namelbl);
+            this.prudctlistpanel.Controls.Add(this.label15);
+            this.prudctlistpanel.Controls.Add(this.amtlbl);
+            this.prudctlistpanel.Controls.Add(this.qntlbl);
+            this.prudctlistpanel.Controls.Add(this.unitlbl);
+            this.prudctlistpanel.Controls.Add(this.totallbl);
+            this.prudctlistpanel.Controls.Add(this.nolbl);
+            this.prudctlistpanel.Controls.Add(this.productlistlabelpanel);
+            this.prudctlistpanel.Location = new System.Drawing.Point(380, 158);
+            this.prudctlistpanel.Name = "prudctlistpanel";
+            this.prudctlistpanel.Size = new System.Drawing.Size(708, 254);
+            this.prudctlistpanel.TabIndex = 14;
+            // 
+            // TotalNolbl
+            // 
+            this.TotalNolbl.AutoSize = true;
+            this.TotalNolbl.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalNolbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.TotalNolbl.Location = new System.Drawing.Point(596, 227);
+            this.TotalNolbl.Name = "TotalNolbl";
+            this.TotalNolbl.Size = new System.Drawing.Size(44, 23);
+            this.TotalNolbl.TabIndex = 9;
+            this.TotalNolbl.Text = " test";
+            this.TotalNolbl.Click += new System.EventHandler(this.TotalNolbl_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -284,16 +382,16 @@ namespace PHX
             this.flowLayoutPanel1.Size = new System.Drawing.Size(664, 77);
             this.flowLayoutPanel1.TabIndex = 8;
             // 
-            // label16
+            // namelbl
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label16.Location = new System.Drawing.Point(76, 101);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(58, 23);
-            this.label16.TabIndex = 7;
-            this.label16.Text = "Name";
+            this.namelbl.AutoSize = true;
+            this.namelbl.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.namelbl.Location = new System.Drawing.Point(76, 101);
+            this.namelbl.Name = "namelbl";
+            this.namelbl.Size = new System.Drawing.Size(58, 23);
+            this.namelbl.TabIndex = 7;
+            this.namelbl.Text = "Name";
             // 
             // label15
             // 
@@ -307,69 +405,69 @@ namespace PHX
             this.label15.Text = "---------------------------------------------------------------------------------" +
     "-------------------------------------------";
             // 
-            // label14
+            // amtlbl
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label14.Location = new System.Drawing.Point(597, 101);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(43, 23);
-            this.label14.TabIndex = 5;
-            this.label14.Text = "Amt";
+            this.amtlbl.AutoSize = true;
+            this.amtlbl.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amtlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.amtlbl.Location = new System.Drawing.Point(597, 101);
+            this.amtlbl.Name = "amtlbl";
+            this.amtlbl.Size = new System.Drawing.Size(43, 23);
+            this.amtlbl.TabIndex = 5;
+            this.amtlbl.Text = "Amt";
             // 
-            // label13
+            // qntlbl
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label13.Location = new System.Drawing.Point(504, 101);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(39, 23);
-            this.label13.TabIndex = 4;
-            this.label13.Text = "Qnt";
+            this.qntlbl.AutoSize = true;
+            this.qntlbl.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qntlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.qntlbl.Location = new System.Drawing.Point(504, 101);
+            this.qntlbl.Name = "qntlbl";
+            this.qntlbl.Size = new System.Drawing.Size(39, 23);
+            this.qntlbl.TabIndex = 4;
+            this.qntlbl.Text = "Qnt";
             // 
-            // label12
+            // unitlbl
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label12.Location = new System.Drawing.Point(405, 101);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(42, 23);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "Unit";
+            this.unitlbl.AutoSize = true;
+            this.unitlbl.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.unitlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.unitlbl.Location = new System.Drawing.Point(405, 101);
+            this.unitlbl.Name = "unitlbl";
+            this.unitlbl.Size = new System.Drawing.Size(42, 23);
+            this.unitlbl.TabIndex = 3;
+            this.unitlbl.Text = "Unit";
             // 
-            // label11
+            // totallbl
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label11.Location = new System.Drawing.Point(537, 227);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 23);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Total:";
+            this.totallbl.AutoSize = true;
+            this.totallbl.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totallbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.totallbl.Location = new System.Drawing.Point(537, 227);
+            this.totallbl.Name = "totallbl";
+            this.totallbl.Size = new System.Drawing.Size(53, 23);
+            this.totallbl.TabIndex = 2;
+            this.totallbl.Text = "Total:";
             // 
-            // label10
+            // nolbl
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(30, 101);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(21, 23);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "#";
+            this.nolbl.AutoSize = true;
+            this.nolbl.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nolbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.nolbl.Location = new System.Drawing.Point(30, 101);
+            this.nolbl.Name = "nolbl";
+            this.nolbl.Size = new System.Drawing.Size(21, 23);
+            this.nolbl.TabIndex = 1;
+            this.nolbl.Text = "#";
             // 
-            // panel3
+            // productlistlabelpanel
             // 
-            this.panel3.BackColor = System.Drawing.Color.Navy;
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Location = new System.Drawing.Point(-2, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(703, 59);
-            this.panel3.TabIndex = 0;
+            this.productlistlabelpanel.BackColor = System.Drawing.Color.Navy;
+            this.productlistlabelpanel.Controls.Add(this.label9);
+            this.productlistlabelpanel.Location = new System.Drawing.Point(-2, 0);
+            this.productlistlabelpanel.Name = "productlistlabelpanel";
+            this.productlistlabelpanel.Size = new System.Drawing.Size(709, 59);
+            this.productlistlabelpanel.TabIndex = 0;
             // 
             // label9
             // 
@@ -382,150 +480,140 @@ namespace PHX
             this.label9.TabIndex = 0;
             this.label9.Text = "Product List";
             // 
-            // label8
+            // Codelbl
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(388, 110);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 18);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Code :";
+            this.Codelbl.AutoSize = true;
+            this.Codelbl.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Codelbl.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Codelbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Codelbl.Location = new System.Drawing.Point(388, 110);
+            this.Codelbl.Name = "Codelbl";
+            this.Codelbl.Size = new System.Drawing.Size(46, 18);
+            this.Codelbl.TabIndex = 13;
+            this.Codelbl.Text = "Code :";
             // 
-            // textBox3
+            // Codetxtbox
             // 
-            this.textBox3.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox3.Location = new System.Drawing.Point(446, 107);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(211, 25);
-            this.textBox3.TabIndex = 12;
-            this.textBox3.Text = "   Enter Purchase No";
+            this.Codetxtbox.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Codetxtbox.ForeColor = System.Drawing.Color.Black;
+            this.Codetxtbox.Location = new System.Drawing.Point(446, 107);
+            this.Codetxtbox.Name = "Codetxtbox";
+            this.Codetxtbox.Size = new System.Drawing.Size(211, 25);
+            this.Codetxtbox.TabIndex = 12;
+            this.Codetxtbox.Text = "cccc";
             // 
-            // label7
+            // Datelbl
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(771, 110);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 18);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Date :";
+            this.Datelbl.AutoSize = true;
+            this.Datelbl.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Datelbl.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Datelbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Datelbl.Location = new System.Drawing.Point(771, 110);
+            this.Datelbl.Name = "Datelbl";
+            this.Datelbl.Size = new System.Drawing.Size(45, 18);
+            this.Datelbl.TabIndex = 11;
+            this.Datelbl.Text = "Date :";
             // 
-            // textBox2
+            // Quantitylbl
             // 
-            this.textBox2.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox2.Location = new System.Drawing.Point(826, 107);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(211, 25);
-            this.textBox2.TabIndex = 10;
-            this.textBox2.Text = "   Enter Purcashe Date";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.Quantitylbl.AutoSize = true;
+            this.Quantitylbl.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Quantitylbl.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quantitylbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Quantitylbl.Location = new System.Drawing.Point(63, 356);
+            this.Quantitylbl.Name = "Quantitylbl";
+            this.Quantitylbl.Size = new System.Drawing.Size(70, 18);
+            this.Quantitylbl.TabIndex = 9;
+            this.Quantitylbl.Text = "Quantity :";
             // 
-            // label6
+            // quantitytextBox
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(63, 356);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 18);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Quantity :";
+            this.quantitytextBox.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantitytextBox.ForeColor = System.Drawing.Color.Black;
+            this.quantitytextBox.Location = new System.Drawing.Point(74, 378);
+            this.quantitytextBox.Name = "quantitytextBox";
+            this.quantitytextBox.Size = new System.Drawing.Size(211, 25);
+            this.quantitytextBox.TabIndex = 8;
+            this.quantitytextBox.Text = "3";
             // 
-            // textBox1
+            // MedicineComboBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox1.Location = new System.Drawing.Point(74, 378);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(211, 25);
-            this.textBox1.TabIndex = 8;
-            this.textBox1.Text = "   Enter Quantity";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.MedicineComboBox.ForeColor = System.Drawing.Color.Black;
+            this.MedicineComboBox.FormattingEnabled = true;
+            this.MedicineComboBox.Items.AddRange(new object[] {
             "1st_Medcine",
             "2nd_Medcine",
             "3rd_Medicine"});
-            this.comboBox3.Location = new System.Drawing.Point(74, 252);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(211, 24);
-            this.comboBox3.TabIndex = 7;
-            this.comboBox3.Text = "   Select Medicine";
+            this.MedicineComboBox.Location = new System.Drawing.Point(74, 252);
+            this.MedicineComboBox.Name = "MedicineComboBox";
+            this.MedicineComboBox.Size = new System.Drawing.Size(211, 24);
+            this.MedicineComboBox.TabIndex = 7;
+            this.MedicineComboBox.Text = "1";
+            this.MedicineComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
-            // label5
+            // Medicinelbl
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(63, 230);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 18);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Medicine :";
+            this.Medicinelbl.AutoSize = true;
+            this.Medicinelbl.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Medicinelbl.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Medicinelbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Medicinelbl.Location = new System.Drawing.Point(63, 230);
+            this.Medicinelbl.Name = "Medicinelbl";
+            this.Medicinelbl.Size = new System.Drawing.Size(71, 18);
+            this.Medicinelbl.TabIndex = 6;
+            this.Medicinelbl.Text = "Medicine :";
             // 
-            // comboBox2
+            // CategoryComboBox
             // 
-            this.comboBox2.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.CategoryComboBox.ForeColor = System.Drawing.Color.Black;
+            this.CategoryComboBox.FormattingEnabled = true;
+            this.CategoryComboBox.Items.AddRange(new object[] {
             "1st_Category",
             "2nd_Category",
             "3rd_Category"});
-            this.comboBox2.Location = new System.Drawing.Point(74, 182);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(211, 24);
-            this.comboBox2.TabIndex = 5;
-            this.comboBox2.Text = "   Select Category";
+            this.CategoryComboBox.Location = new System.Drawing.Point(74, 182);
+            this.CategoryComboBox.Name = "CategoryComboBox";
+            this.CategoryComboBox.Size = new System.Drawing.Size(211, 24);
+            this.CategoryComboBox.TabIndex = 5;
+            this.CategoryComboBox.Text = "   Select Category";
             // 
-            // label4
+            // Categorylbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(63, 161);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 18);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Category :";
+            this.Categorylbl.AutoSize = true;
+            this.Categorylbl.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Categorylbl.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Categorylbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Categorylbl.Location = new System.Drawing.Point(63, 161);
+            this.Categorylbl.Name = "Categorylbl";
+            this.Categorylbl.Size = new System.Drawing.Size(71, 18);
+            this.Categorylbl.TabIndex = 4;
+            this.Categorylbl.Text = "Category :";
             // 
-            // comboBox1
+            // SuppliersComboBox
             // 
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.SuppliersComboBox.ForeColor = System.Drawing.Color.Black;
+            this.SuppliersComboBox.FormattingEnabled = true;
+            this.SuppliersComboBox.Items.AddRange(new object[] {
             "1st_Supplier",
             "2nd_Supplier",
             "3rd_Supplier"});
-            this.comboBox1.Location = new System.Drawing.Point(139, 108);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(146, 24);
-            this.comboBox1.TabIndex = 3;
-            this.comboBox1.Text = "   Select Supplier";
+            this.SuppliersComboBox.Location = new System.Drawing.Point(139, 110);
+            this.SuppliersComboBox.Name = "SuppliersComboBox";
+            this.SuppliersComboBox.Size = new System.Drawing.Size(146, 24);
+            this.SuppliersComboBox.TabIndex = 3;
+            this.SuppliersComboBox.Text = "   Select Supplier";
             // 
-            // label3
+            // Supplierlbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(63, 110);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 18);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Supplier :";
+            this.Supplierlbl.AutoSize = true;
+            this.Supplierlbl.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Supplierlbl.Font = new System.Drawing.Font("Open Sans Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Supplierlbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Supplierlbl.Location = new System.Drawing.Point(63, 112);
+            this.Supplierlbl.Name = "Supplierlbl";
+            this.Supplierlbl.Size = new System.Drawing.Size(67, 18);
+            this.Supplierlbl.TabIndex = 2;
+            this.Supplierlbl.Text = "Supplier :";
             // 
             // label2
             // 
@@ -536,115 +624,81 @@ namespace PHX
             this.label2.TabIndex = 1;
             this.label2.Text = resources.GetString("label2.Text");
             // 
-            // label1
+            // Purchaselbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(33, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Purchase";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(63, 280);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(85, 16);
-            this.label22.TabIndex = 27;
-            this.label22.Text = "Buying Price:";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(154, 280);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(51, 16);
-            this.label23.TabIndex = 28;
-            this.label23.Text = "label23";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(63, 306);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(65, 16);
-            this.label24.TabIndex = 29;
-            this.label24.Text = "Batch No:";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(136, 306);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(51, 16);
-            this.label25.TabIndex = 30;
-            this.label25.Text = "label25";
-            this.label25.Click += new System.EventHandler(this.label25_Click);
+            this.Purchaselbl.AutoSize = true;
+            this.Purchaselbl.Font = new System.Drawing.Font("Open Sans", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Purchaselbl.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Purchaselbl.Location = new System.Drawing.Point(33, 29);
+            this.Purchaselbl.Name = "Purchaselbl";
+            this.Purchaselbl.Size = new System.Drawing.Size(113, 32);
+            this.Purchaselbl.TabIndex = 0;
+            this.Purchaselbl.Text = "Purchase";
             // 
             // New_Purchase_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PurchasePanel);
             this.Name = "New_Purchase_Page";
             this.Size = new System.Drawing.Size(1208, 727);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.PurchasePanel.ResumeLayout(false);
+            this.PurchasePanel.PerformLayout();
+            this.prudctlistpanel.ResumeLayout(false);
+            this.prudctlistpanel.PerformLayout();
+            this.productlistlabelpanel.ResumeLayout(false);
+            this.productlistlabelpanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel PurchasePanel;
+        private System.Windows.Forms.Label Codelbl;
+        private System.Windows.Forms.TextBox Codetxtbox;
+        private System.Windows.Forms.Label Datelbl;
+        private System.Windows.Forms.ComboBox MedicineComboBox;
+        private System.Windows.Forms.Label Medicinelbl;
+        private System.Windows.Forms.ComboBox CategoryComboBox;
+        private System.Windows.Forms.Label Categorylbl;
+        private System.Windows.Forms.ComboBox SuppliersComboBox;
+        private System.Windows.Forms.Label Supplierlbl;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label Purchaselbl;
+        private System.Windows.Forms.Label Discountlbl;
+        private System.Windows.Forms.ComboBox StatuscomboBox;
+        private System.Windows.Forms.Label Statuslbl;
+        private System.Windows.Forms.ComboBox PaymentMethodcomboBox;
+        private System.Windows.Forms.Label PaymentMethodlbl;
+        private System.Windows.Forms.Label GrantTotallbl;
+        private System.Windows.Forms.TextBox GrandTotaltextBox;
+        private System.Windows.Forms.Label Noteslbl;
+        private System.Windows.Forms.TextBox NotestextBox;
+        private System.Windows.Forms.Button SavePurchasebtn;
+        private System.Windows.Forms.Button AddToListbtn;
+        private System.Windows.Forms.Panel prudctlistpanel;
+        private System.Windows.Forms.Label namelbl;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label amtlbl;
+        private System.Windows.Forms.Label qntlbl;
+        private System.Windows.Forms.Label unitlbl;
+        private System.Windows.Forms.Label totallbl;
+        private System.Windows.Forms.Label nolbl;
+        private System.Windows.Forms.Panel productlistlabelpanel;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label Quantitylbl;
+        private System.Windows.Forms.TextBox quantitytextBox;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label BNVlbl;
+        private System.Windows.Forms.Label BatchNolbl;
+        private System.Windows.Forms.Label BPVlbl;
+        private System.Windows.Forms.Label BuyingPricelbl;
+        private System.Windows.Forms.Label TotalNolbl;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox CustomercomboBox;
+        private System.Windows.Forms.Label Customerlbl;
+        private System.Windows.Forms.TextBox DiscountTextBox;
     }
 }

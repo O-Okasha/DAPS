@@ -136,19 +136,25 @@
     <Compile Include="New_Purchase_Page.Designer.cs">
       <DependentUpon>New_Purchase_Page.cs</DependentUpon>
     </Compile>
-    <Compile Include="New_Sales_Page.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="New_Sales_Page.Designer.cs">
-      <DependentUpon>New_Sales_Page.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase_item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase_item.Designer.cs">
+      <DependentUpon>Purchase_item.cs</DependentUpon>
+    </Compile>
     <Compile Include="Puschase.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Puschase.Designer.cs">
       <DependentUpon>Puschase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales_item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sales_item.Designer.cs">
+      <DependentUpon>Sales_item.cs</DependentUpon>
     </Compile>
     <Compile Include="Sales_Page.cs">
       <SubType>UserControl</SubType>
@@ -173,6 +179,12 @@
     </Compile>
     <Compile Include="SideBar.Designer.cs">
       <DependentUpon>SideBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockList_item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockList_item.Designer.cs">
+      <DependentUpon>StockList_item.cs</DependentUpon>
     </Compile>
     <Compile Include="Stock_List_Page.cs">
       <SubType>UserControl</SubType>
@@ -243,9 +255,6 @@
     <EmbeddedResource Include="New_Purchase_Page.resx">
       <DependentUpon>New_Purchase_Page.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="New_Sales_Page.resx">
-      <DependentUpon>New_Sales_Page.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -256,8 +265,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Purchase_item.resx">
+      <DependentUpon>Purchase_item.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Puschase.resx">
       <DependentUpon>Puschase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales_item.resx">
+      <DependentUpon>Sales_item.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sales_Page.resx">
       <DependentUpon>Sales_Page.cs</DependentUpon>
@@ -270,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SideBar.resx">
       <DependentUpon>SideBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockList_item.resx">
+      <DependentUpon>StockList_item.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Stock_List_Page.resx">
       <DependentUpon>Stock_List_Page.cs</DependentUpon>

@@ -33,6 +33,13 @@ namespace MedUnit.Models
         {
             CompletedServices.Add(service);
             WaitingServices.Remove(service);
+            for (int i = 0; i < WaitingServices.Count; i++)
+            {
+                if (WaitingServices[i].Id == service.Id)
+                {
+                    WaitingServices.RemoveAt(i);
+                }
+            }
         }
         public void AddService(Service service)
         {

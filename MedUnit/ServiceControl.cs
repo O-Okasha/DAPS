@@ -25,6 +25,7 @@ namespace MedUnit
             if (checkBox1.Checked)
             {
                 Manager.ActivePlan.CompleteService(Service);
+                Manager.CurrentBill.total += Service.price;
             }
         }
 

@@ -58,9 +58,9 @@ namespace MedUnit.Models
             var servicesCollection = ConnectToMongo<Service>(ServicesCollection);
             return servicesCollection.InsertOneAsync(service);
         }
-        public Task AddPatient(Patient patient)
+        public Task AddPatient(PatientModel patient)
         {
-            var patientsCollection = ConnectToMongo<Patient>(PatientsCollection);
+            var patientsCollection = ConnectToMongo<PatientModel>(PatientsCollection);
             return patientsCollection.InsertOneAsync(patient);
         }
         public Task AddAppointment(Visit visit)
@@ -68,10 +68,10 @@ namespace MedUnit.Models
             var appointmentsCollection = ConnectToMongo<Visit>(AppointmentsCollection);
             return appointmentsCollection.InsertOneAsync(visit);
         }
-        public Task UpsertPatient(Patient patient)
+        public Task UpsertPatient(PatientModel patient)
         {
-            var patientCollection = ConnectToMongo<Patient>(PatientsCollection);
-            var filter = Builders<Patient>.Filter.Eq("Id", patient.Id);
+            var patientCollection = ConnectToMongo<PatientModel>(PatientsCollection);
+            var filter = Builders<PatientModel>.Filter.Eq("Id", patient.Id);
             return patientCollection.ReplaceOneAsync(filter, patient, new ReplaceOptions { IsUpsert = true });
         }
 

@@ -35,34 +35,34 @@ namespace DAPS.Models
             var results = await billCollection.FindAsync(_ => true);
             return results.ToList();
         }
-        public async Task<List<Patient>> GetAllPatients()
+        public async Task<List<PatientModel>> GetAllPatients()
         {
-            var billCollection = ConnectToMongo<Patient>(PatientsCollection);
+            var billCollection = ConnectToMongo<PatientModel>(PatientsCollection);
             var results = await billCollection.FindAsync(_ => true);
             return results.ToList();
         }
-        public async Task<List<Patient>> GetPatient(string SSN)
+        public async Task<List<PatientModel>> GetPatient(string SSN)
         {
-            var patientCollection = ConnectToMongo<Patient>(PatientsCollection);
+            var patientCollection = ConnectToMongo<PatientModel>(PatientsCollection);
             var patientResult = await patientCollection.FindAsync(x => x.SSN == SSN);
             return patientResult.ToList();
         }
         public async Task<List<Bill>> GetBill(Bill bill)
         {
             var patientCollection = ConnectToMongo<Bill>(BillsCollection);
-            var patientResult = await patientCollection.FindAsync(x => x.PatientSSD == bill.PatientSSD);
+            var patientResult = await patientCollection.FindAsync(x => x.patientSSN == bill.patientSSN);
             return patientResult.ToList();
         }
-        public Task UpsertPatient(Patient patient)
+        public Task UpsertPatient(PatientModel patient)
         {
-            var patientCollection = ConnectToMongo<Patient>(PatientsCollection);
-            var filter = Builders<Patient>.Filter.Eq("Id", patient.Id);
+            var patientCollection = ConnectToMongo<PatientModel>(PatientsCollection);
+            var filter = Builders<PatientModel>.Filter.Eq("Id", patient.Id);
             return patientCollection.ReplaceOneAsync(filter, patient, new ReplaceOptions { IsUpsert = true });
         }
         public Task UpsertBill(Bill bill)
         {
             var patientCollection = ConnectToMongo<Bill>(BillsCollection);
-            var filter = Builders<Bill>.Filter.Eq("PatientSSD", bill.PatientSSD);
+            var filter = Builders<Bill>.Filter.Eq("PatientSSD", bill.patientSSN);
             return patientCollection.ReplaceOneAsync(filter, bill, new ReplaceOptions { IsUpsert = true });
         }
         public Task CreateBill(Bill bill)
@@ -70,9 +70,9 @@ namespace DAPS.Models
             var billCollection = ConnectToMongo<Bill>(BillsCollection);
             return billCollection.InsertOneAsync(bill);
         }
-        public Task CreatePatient(Patient patient)
+        public Task CreatePatient(PatientModel patient)
         {
-            var billCollection = ConnectToMongo<Patient>(PatientsCollection);
+            var billCollection = ConnectToMongo<PatientModel>(PatientsCollection);
             return billCollection.InsertOneAsync(patient);
         }
         public Task CreateAppointment(Appointment appiontment)
@@ -86,5 +86,6 @@ namespace DAPS.Models
             var patientResults = await appointmentCollection.FindAsync(x => x.textID == date);
             return patientResults.ToList();
         }
+
     }
 }

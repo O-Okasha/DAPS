@@ -87,8 +87,9 @@ namespace MedUnit
             Visit visit = Manager.test;
             visit.VisitDetails = Manager.visitDetails;
             VisitShort visitShort = visit.Shorten();
-            Patient patient = Manager.patient;
+            PatientModel patient = Manager.patient;
             patient.Record.Visits.Add(visitShort);
+            FHIRManager.SendInvoice(Manager.CurrentBill);
             await Manager.databaseManager.UpsertPatient(patient);
         }
     }

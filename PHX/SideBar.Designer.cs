@@ -40,6 +40,7 @@ namespace PHX
             this.Salesbtn = new System.Windows.Forms.Button();
             this.Settingsbtn = new System.Windows.Forms.Button();
             this.btnDashbourd = new System.Windows.Forms.Button();
+            this.Prescriptionbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Shelfbtn
@@ -48,9 +49,9 @@ namespace PHX
             this.Shelfbtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.Shelfbtn.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Shelfbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Shelfbtn.Location = new System.Drawing.Point(0, 69);
+            this.Shelfbtn.Location = new System.Drawing.Point(0, 62);
             this.Shelfbtn.Name = "Shelfbtn";
-            this.Shelfbtn.Size = new System.Drawing.Size(200, 69);
+            this.Shelfbtn.Size = new System.Drawing.Size(200, 62);
             this.Shelfbtn.TabIndex = 1;
             this.Shelfbtn.Text = "Shelf";
             this.Shelfbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -63,9 +64,9 @@ namespace PHX
             this.Purchasebtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.Purchasebtn.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Purchasebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Purchasebtn.Location = new System.Drawing.Point(0, 409);
+            this.Purchasebtn.Location = new System.Drawing.Point(0, 367);
             this.Purchasebtn.Name = "Purchasebtn";
-            this.Purchasebtn.Size = new System.Drawing.Size(200, 69);
+            this.Purchasebtn.Size = new System.Drawing.Size(200, 62);
             this.Purchasebtn.TabIndex = 2;
             this.Purchasebtn.Text = "Purchase";
             this.Purchasebtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -78,9 +79,9 @@ namespace PHX
             this.suppbtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.suppbtn.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.suppbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.suppbtn.Location = new System.Drawing.Point(0, 341);
+            this.suppbtn.Location = new System.Drawing.Point(0, 306);
             this.suppbtn.Name = "suppbtn";
-            this.suppbtn.Size = new System.Drawing.Size(200, 69);
+            this.suppbtn.Size = new System.Drawing.Size(200, 62);
             this.suppbtn.TabIndex = 3;
             this.suppbtn.Text = "Suppliers";
             this.suppbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -93,9 +94,9 @@ namespace PHX
             this.Customersbtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.Customersbtn.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Customersbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Customersbtn.Location = new System.Drawing.Point(0, 273);
+            this.Customersbtn.Location = new System.Drawing.Point(0, 245);
             this.Customersbtn.Name = "Customersbtn";
-            this.Customersbtn.Size = new System.Drawing.Size(200, 69);
+            this.Customersbtn.Size = new System.Drawing.Size(200, 62);
             this.Customersbtn.TabIndex = 4;
             this.Customersbtn.Text = "Customer";
             this.Customersbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -108,9 +109,9 @@ namespace PHX
             this.Medbtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.Medbtn.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Medbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Medbtn.Location = new System.Drawing.Point(0, 205);
+            this.Medbtn.Location = new System.Drawing.Point(0, 184);
             this.Medbtn.Name = "Medbtn";
-            this.Medbtn.Size = new System.Drawing.Size(200, 69);
+            this.Medbtn.Size = new System.Drawing.Size(200, 62);
             this.Medbtn.TabIndex = 5;
             this.Medbtn.Text = "Medicine";
             this.Medbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -122,9 +123,9 @@ namespace PHX
             this.Categorybtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Categorybtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.Categorybtn.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Categorybtn.Location = new System.Drawing.Point(0, 137);
+            this.Categorybtn.Location = new System.Drawing.Point(0, 123);
             this.Categorybtn.Name = "Categorybtn";
-            this.Categorybtn.Size = new System.Drawing.Size(200, 69);
+            this.Categorybtn.Size = new System.Drawing.Size(200, 62);
             this.Categorybtn.TabIndex = 6;
             this.Categorybtn.Text = "Category";
             this.Categorybtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -137,9 +138,9 @@ namespace PHX
             this.stockListbtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.stockListbtn.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stockListbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.stockListbtn.Location = new System.Drawing.Point(0, 477);
+            this.stockListbtn.Location = new System.Drawing.Point(0, 428);
             this.stockListbtn.Name = "stockListbtn";
-            this.stockListbtn.Size = new System.Drawing.Size(200, 69);
+            this.stockListbtn.Size = new System.Drawing.Size(200, 62);
             this.stockListbtn.TabIndex = 7;
             this.stockListbtn.Text = "Stock List";
             this.stockListbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -152,9 +153,9 @@ namespace PHX
             this.Salesbtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.Salesbtn.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Salesbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Salesbtn.Location = new System.Drawing.Point(0, 545);
+            this.Salesbtn.Location = new System.Drawing.Point(0, 489);
             this.Salesbtn.Name = "Salesbtn";
-            this.Salesbtn.Size = new System.Drawing.Size(200, 69);
+            this.Salesbtn.Size = new System.Drawing.Size(200, 62);
             this.Salesbtn.TabIndex = 8;
             this.Salesbtn.Text = "Sales";
             this.Salesbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -167,9 +168,9 @@ namespace PHX
             this.Settingsbtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.Settingsbtn.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Settingsbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Settingsbtn.Location = new System.Drawing.Point(0, 613);
+            this.Settingsbtn.Location = new System.Drawing.Point(0, 611);
             this.Settingsbtn.Name = "Settingsbtn";
-            this.Settingsbtn.Size = new System.Drawing.Size(200, 69);
+            this.Settingsbtn.Size = new System.Drawing.Size(200, 62);
             this.Settingsbtn.TabIndex = 9;
             this.Settingsbtn.Text = "Store Settings";
             this.Settingsbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -185,17 +186,33 @@ namespace PHX
             this.btnDashbourd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashbourd.Location = new System.Drawing.Point(0, 1);
             this.btnDashbourd.Name = "btnDashbourd";
-            this.btnDashbourd.Size = new System.Drawing.Size(200, 69);
+            this.btnDashbourd.Size = new System.Drawing.Size(200, 62);
             this.btnDashbourd.TabIndex = 0;
             this.btnDashbourd.Text = "Dashboard";
             this.btnDashbourd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDashbourd.UseVisualStyleBackColor = true;
             this.btnDashbourd.Click += new System.EventHandler(this.btnDashbourd_Click);
             // 
+            // Prescriptionbtn
+            // 
+            this.Prescriptionbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Prescriptionbtn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Prescriptionbtn.Font = new System.Drawing.Font("Georgia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Prescriptionbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Prescriptionbtn.Location = new System.Drawing.Point(0, 550);
+            this.Prescriptionbtn.Name = "Prescriptionbtn";
+            this.Prescriptionbtn.Size = new System.Drawing.Size(200, 62);
+            this.Prescriptionbtn.TabIndex = 10;
+            this.Prescriptionbtn.Text = "Prescription";
+            this.Prescriptionbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Prescriptionbtn.UseVisualStyleBackColor = true;
+            this.Prescriptionbtn.Click += new System.EventHandler(this.Prescriptionbtn_Click);
+            // 
             // SideBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Prescriptionbtn);
             this.Controls.Add(this.Settingsbtn);
             this.Controls.Add(this.Salesbtn);
             this.Controls.Add(this.stockListbtn);
@@ -224,5 +241,6 @@ namespace PHX
         private System.Windows.Forms.Button stockListbtn;
         private System.Windows.Forms.Button Salesbtn;
         private System.Windows.Forms.Button Settingsbtn;
+        private System.Windows.Forms.Button Prescriptionbtn;
     }
 }

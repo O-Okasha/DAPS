@@ -92,5 +92,13 @@ namespace PHX
             Store_sett_page store_Sett_Page = new Store_sett_page();
             this.Parent.Parent.Controls[0].Controls.Add(store_Sett_Page);
         }
+
+        private void Prescriptionbtn_Click(object sender, EventArgs e)
+        {
+            this.Parent.Parent.Controls[0].Controls.Clear();
+            Prescription prescription = new Prescription();
+            this.Parent.Parent.Controls[0].Controls.Add(prescription);
+
+        }
     }
 }

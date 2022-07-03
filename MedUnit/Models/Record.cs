@@ -18,7 +18,7 @@ namespace MedUnit.Models
         public List<Perscription> Perscriptions { get; set; }
         public string FamilyHistory { get; set; }
         public string PersonalHistory { get; set; }
-        
+        public string AllergyDetails { get; set; }
 
         public Record()
         {

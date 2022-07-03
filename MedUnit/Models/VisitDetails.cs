@@ -12,16 +12,13 @@ namespace MedUnit.Models
         public string notes { get; set; }
         public string Diagnosis { get; set; }
         public string ProblemDiscription { get; set; }
-        public List<Investigation> investigations { get; set; }
-        public List<Service> services { get; set; }
         public Problem Problem { get; set; }
 
 
 
         public VisitDetails()
         {
-            investigations = new List<Investigation>();
-            services = new List<Service>();
+           
         }
         public void AddComplaint(string complaint)
         {
@@ -38,14 +35,6 @@ namespace MedUnit.Models
         public void AddProblemDisc(string problemdisc)
         {
             ProblemDiscription = problemdisc.Trim();
-        }
-        public void AddInvestigation(Investigation investigation)
-        {
-            investigations.Add(investigation);
-        }
-        public void AddService(Service service)
-        {
-            services.Add(service);  
         }
         public void AddProblem(Problem problem)
         {

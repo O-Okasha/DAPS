@@ -35,6 +35,7 @@ namespace PHX
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -50,7 +51,7 @@ namespace PHX
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.medListlbl = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,6 +106,7 @@ namespace PHX
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label13);
@@ -127,6 +129,19 @@ namespace PHX
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1175, 413);
             this.panel1.TabIndex = 4;
+            // 
+            // button5
+            // 
+            this.button5.AutoSize = true;
+            this.button5.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Location = new System.Drawing.Point(991, 369);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(76, 31);
+            this.button5.TabIndex = 18;
+            this.button5.Text = "Show";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label14
             // 
@@ -157,7 +172,7 @@ namespace PHX
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(28, 255);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(899, 16);
+            this.label12.Size = new System.Drawing.Size(1127, 16);
             this.label12.TabIndex = 15;
             this.label12.Text = resources.GetString("label12.Text");
             // 
@@ -166,7 +181,7 @@ namespace PHX
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(28, 44);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(899, 16);
+            this.label6.Size = new System.Drawing.Size(1123, 16);
             this.label6.TabIndex = 14;
             this.label6.Text = resources.GetString("label6.Text");
             // 
@@ -283,17 +298,13 @@ namespace PHX
             this.medListlbl.TabIndex = 0;
             this.medListlbl.Text = "Purchase List";
             // 
-            // button5
+            // flowLayoutPanel1
             // 
-            this.button5.AutoSize = true;
-            this.button5.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(991, 369);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(76, 31);
-            this.button5.TabIndex = 18;
-            this.button5.Text = "Show";
-            this.button5.UseVisualStyleBackColor = true;
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(34, 264);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1117, 100);
+            this.flowLayoutPanel1.TabIndex = 19;
             // 
             // Puschase
             // 
@@ -335,5 +346,6 @@ namespace PHX
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

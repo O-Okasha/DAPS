@@ -318,6 +318,7 @@
             this.Controls.Add(this.label1);
             this.Name = "DataBar";
             this.Size = new System.Drawing.Size(1421, 147);
+            this.Load += new System.EventHandler(this.DataBar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

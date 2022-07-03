@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richhist = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.richfhist = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -42,24 +42,21 @@
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.richcomp = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
+            this.richaller = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // richhist
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Location = new System.Drawing.Point(19, 83);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(710, 134);
-            this.richTextBox1.TabIndex = 6;
-            this.richTextBox1.Text = "";
+            this.richhist.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richhist.Location = new System.Drawing.Point(19, 83);
+            this.richhist.Name = "richhist";
+            this.richhist.Size = new System.Drawing.Size(710, 134);
+            this.richhist.TabIndex = 6;
+            this.richhist.Text = "";
             // 
             // panel2
             // 
@@ -99,14 +96,14 @@
             this.panel1.Size = new System.Drawing.Size(290, 5);
             this.panel1.TabIndex = 5;
             // 
-            // richTextBox2
+            // richfhist
             // 
-            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Location = new System.Drawing.Point(19, 291);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(710, 134);
-            this.richTextBox2.TabIndex = 6;
-            this.richTextBox2.Text = "";
+            this.richfhist.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richfhist.Location = new System.Drawing.Point(19, 291);
+            this.richfhist.Name = "richfhist";
+            this.richfhist.Size = new System.Drawing.Size(710, 134);
+            this.richfhist.TabIndex = 6;
+            this.richfhist.Text = "";
             // 
             // label3
             // 
@@ -186,14 +183,14 @@
             this.panel4.Size = new System.Drawing.Size(290, 5);
             this.panel4.TabIndex = 5;
             // 
-            // richTextBox3
+            // richcomp
             // 
-            this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox3.Location = new System.Drawing.Point(19, 500);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(710, 134);
-            this.richTextBox3.TabIndex = 6;
-            this.richTextBox3.Text = "";
+            this.richcomp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richcomp.Location = new System.Drawing.Point(19, 500);
+            this.richcomp.Name = "richcomp";
+            this.richcomp.Size = new System.Drawing.Size(710, 134);
+            this.richcomp.TabIndex = 6;
+            this.richcomp.Text = "";
             // 
             // label5
             // 
@@ -214,42 +211,14 @@
             this.panel5.Size = new System.Drawing.Size(290, 5);
             this.panel5.TabIndex = 5;
             // 
-            // richTextBox4
+            // richaller
             // 
-            this.richTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox4.Location = new System.Drawing.Point(766, 291);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(585, 134);
-            this.richTextBox4.TabIndex = 6;
-            this.richTextBox4.Text = "";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Nirmala UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(61)))), ((int)(((byte)(112)))));
-            this.label6.Location = new System.Drawing.Point(760, 444);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(186, 31);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Past Complaints";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(41)))), ((int)(((byte)(92)))));
-            this.panel6.Location = new System.Drawing.Point(766, 476);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(290, 5);
-            this.panel6.TabIndex = 5;
-            // 
-            // richTextBox5
-            // 
-            this.richTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox5.Location = new System.Drawing.Point(766, 500);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(585, 134);
-            this.richTextBox5.TabIndex = 6;
-            this.richTextBox5.Text = "";
+            this.richaller.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richaller.Location = new System.Drawing.Point(766, 291);
+            this.richaller.Name = "richaller";
+            this.richaller.Size = new System.Drawing.Size(585, 134);
+            this.richaller.TabIndex = 6;
+            this.richaller.Text = "";
             // 
             // button1
             // 
@@ -258,12 +227,13 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(1236, 658);
+            this.button1.Location = new System.Drawing.Point(1236, 599);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 35);
             this.button1.TabIndex = 8;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Background
             // 
@@ -275,25 +245,23 @@
             this.Controls.Add(this.checkBox5);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.richTextBox4);
+            this.Controls.Add(this.richaller);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.richTextBox5);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.richTextBox3);
+            this.Controls.Add(this.richcomp);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.richfhist);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.richhist);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label2);
             this.Name = "Background";
-            this.Size = new System.Drawing.Size(1395, 711);
+            this.Size = new System.Drawing.Size(1395, 660);
+            this.Load += new System.EventHandler(this.Background_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,12 +269,12 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richhist;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox richfhist;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.CheckBox checkBox1;
@@ -315,13 +283,10 @@
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.RichTextBox richcomp;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.RichTextBox richTextBox5;
+        private System.Windows.Forms.RichTextBox richaller;
         private System.Windows.Forms.Button button1;
     }
 }

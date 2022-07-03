@@ -8,16 +8,15 @@ namespace MedUnit.Models
 {
     public class Problem
     {
-        public Problem(string problemDiagnosis, string problemName)
+        public Problem(string problemDiagnosis)
         {
             ProblemDiagnosis = problemDiagnosis ?? throw new ArgumentNullException(nameof(problemDiagnosis));
-            ProblemName = problemName ?? throw new ArgumentNullException(nameof(problemName));
-            
         }
-
+        public string Id = Guid.NewGuid().ToString();
+        public string priority { get; set; }
         public string ProblemDiagnosis { get; set; }
-        public string ProblemName { get; set; }
-        public List<Action> Actions { get; set; }
+        public string ProblemNotes { get; set; }
+        public string ProblemLocation { get; set; }
         public TreatmentPlan TreatmentPlan { get; set; }
 
 

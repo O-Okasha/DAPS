@@ -52,8 +52,7 @@ namespace PHX
             // 
             // MainContainer
             // 
-            this.MainContainer.AutoScrollMargin = new System.Drawing.Size(0, 300);
-            this.MainContainer.AutoScrollMinSize = new System.Drawing.Size(0, 300);
+            this.MainContainer.AutoScroll = true;
             this.MainContainer.Location = new System.Drawing.Point(203, 67);
             this.MainContainer.Name = "MainContainer";
             this.MainContainer.Size = new System.Drawing.Size(1238, 695);

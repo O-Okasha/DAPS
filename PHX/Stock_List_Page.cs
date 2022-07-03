@@ -30,13 +30,13 @@ namespace PHX
             New_Purchase_Page new_Purchase_Page = new New_Purchase_Page();
             StockList_item stockList_Item = new StockList_item();
 
-            stockList_Item.Controls[4].Text = new_Purchase_Page.Controls[0].Controls[23].Text;
-            stockList_Item.Controls[2].Text = new_Purchase_Page.Controls[0].Controls[1].Text;
-            stockList_Item.Controls[1].Text = new_Purchase_Page.Controls[0].Controls[22].Text;
+            stockList_Item.Controls[4].Text = new_Purchase_Page.Controls[0].Controls[25].Text;
+            stockList_Item.Controls[2].Text = new_Purchase_Page.Controls[0].Controls[3].Text;
+            stockList_Item.Controls[1].Text = new_Purchase_Page.Controls[0].Controls[24].Text;
 
             stockList_Item.Controls[3].Text = new_Med_Page.Controls[0].Controls[3].Text;
 
-            stockList_Item.Controls[0].Text = new_Purchase_Page.Controls[0].Controls[3].Text;
+            stockList_Item.Controls[0].Text = new_Purchase_Page.Controls[0].Controls[5].Text;
 
             flowLayoutPanel1.Parent.Controls[0].Controls.Add(stockList_Item);
         }

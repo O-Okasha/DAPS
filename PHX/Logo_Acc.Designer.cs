@@ -40,20 +40,20 @@ namespace PHX
             this.Logo.ForeColor = System.Drawing.Color.White;
             this.Logo.Location = new System.Drawing.Point(8, 15);
             this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(175, 32);
+            this.Logo.Size = new System.Drawing.Size(174, 32);
             this.Logo.TabIndex = 0;
             this.Logo.Text = "Pharmplus";
             // 
             // Acc
             // 
             this.Acc.AutoSize = true;
-            this.Acc.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Acc.Font = new System.Drawing.Font("Georgia", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Acc.ForeColor = System.Drawing.Color.White;
-            this.Acc.Location = new System.Drawing.Point(1233, 15);
+            this.Acc.Location = new System.Drawing.Point(1253, 15);
             this.Acc.Name = "Acc";
-            this.Acc.Size = new System.Drawing.Size(174, 29);
+            this.Acc.Size = new System.Drawing.Size(155, 39);
             this.Acc.TabIndex = 1;
-            this.Acc.Text = "Welcome, User";
+            this.Acc.Text = "Welcome";
             // 
             // Logo_Acc
             // 

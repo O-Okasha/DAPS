@@ -34,11 +34,11 @@ namespace PHX
             // 7 = status,                 , 9 = payment 
             Purchase_item Purchase_Item = new Purchase_item();
             New_Purchase_Page new_Purchase_Page = new New_Purchase_Page();
-            Purchase_Item.Controls[2].Text = new_Purchase_Page.Controls[0].Controls[7].Text;
-            Purchase_Item.Controls[5].Text = new_Purchase_Page.Controls[0].Controls[12].Text;
-            Purchase_Item.Controls[3].Text = new_Purchase_Page.Controls[0].Controls[9].Text;
-            Purchase_Item.Controls[4].Text = new_Purchase_Page.Controls[0].Controls[23].Text;
-            Purchase_Item.Controls[6].Text = new_Purchase_Page.Controls[0].Controls[19].Text;
+            Purchase_Item.Controls[2].Text = new_Purchase_Page.Controls[0].Controls[9].Text;
+            Purchase_Item.Controls[5].Text = new_Purchase_Page.Controls[0].Controls[14].Text;
+            Purchase_Item.Controls[3].Text = new_Purchase_Page.Controls[0].Controls[11].Text;
+            Purchase_Item.Controls[4].Text = new_Purchase_Page.Controls[0].Controls[25].Text;
+            Purchase_Item.Controls[6].Text = new_Purchase_Page.Controls[0].Controls[21].Text;
             flowLayoutPanel1.Parent.Controls[0].Controls.Add(Purchase_Item);
         }
     }

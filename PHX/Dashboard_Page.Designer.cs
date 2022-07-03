@@ -31,16 +31,16 @@ namespace PHX
         {
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label9 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -70,8 +70,6 @@ namespace PHX
             this.panel9 = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -107,11 +105,9 @@ namespace PHX
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
@@ -120,6 +116,28 @@ namespace PHX
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1175, 275);
             this.panel1.TabIndex = 4;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(45, 131);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1106, 83);
+            this.flowLayoutPanel1.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label9.Location = new System.Drawing.Point(24, 114);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(850, 23);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "---------------------------------------------------------------------------------" +
+    "--------------------------------------------------------------------------------" +
+    "-------";
             // 
             // label14
             // 
@@ -177,16 +195,6 @@ namespace PHX
             this.label10.Size = new System.Drawing.Size(0, 16);
             this.label10.TabIndex = 11;
             // 
-            // textBox1
-            // 
-            this.textBox1.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox1.Location = new System.Drawing.Point(948, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 22);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.Text = "search anything";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -210,18 +218,6 @@ namespace PHX
             this.label7.Size = new System.Drawing.Size(103, 23);
             this.label7.TabIndex = 7;
             this.label7.Text = "Selling Price";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(870, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 23);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Search:";
             // 
             // label3
             // 
@@ -500,28 +496,6 @@ namespace PHX
             this.label32.TabIndex = 10;
             this.label32.Text = "Total Sales Amount";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(24, 114);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(850, 23);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "---------------------------------------------------------------------------------" +
-    "--------------------------------------------------------------------------------" +
-    "-------";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(45, 131);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1106, 83);
-            this.flowLayoutPanel1.TabIndex = 19;
-            // 
             // Dashboard_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -539,6 +513,7 @@ namespace PHX
             this.Controls.Add(this.panel1);
             this.Name = "Dashboard_Page";
             this.Size = new System.Drawing.Size(1202, 660);
+            this.Load += new System.EventHandler(this.Dashboard_Page_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -567,10 +542,8 @@ namespace PHX
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label medListlbl;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;

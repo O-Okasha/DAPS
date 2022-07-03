@@ -33,7 +33,6 @@
             this.GrandTlbl = new System.Windows.Forms.Label();
             this.Namelbl = new System.Windows.Forms.Label();
             this.PaymentMlbl = new System.Windows.Forms.Label();
-            this.Editbtn = new System.Windows.Forms.Button();
             this.Deletebtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -98,17 +97,6 @@
             this.PaymentMlbl.TabIndex = 22;
             this.PaymentMlbl.Text = "Payment Method";
             // 
-            // Editbtn
-            // 
-            this.Editbtn.BackColor = System.Drawing.Color.Gold;
-            this.Editbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Editbtn.Location = new System.Drawing.Point(949, 13);
-            this.Editbtn.Name = "Editbtn";
-            this.Editbtn.Size = new System.Drawing.Size(75, 29);
-            this.Editbtn.TabIndex = 24;
-            this.Editbtn.Text = "Edit";
-            this.Editbtn.UseVisualStyleBackColor = false;
-            // 
             // Deletebtn
             // 
             this.Deletebtn.BackColor = System.Drawing.Color.Red;
@@ -128,7 +116,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.Deletebtn);
-            this.Controls.Add(this.Editbtn);
             this.Controls.Add(this.Statuslbl);
             this.Controls.Add(this.PaymentMlbl);
             this.Controls.Add(this.Namelbl);
@@ -148,7 +135,6 @@
         private System.Windows.Forms.Label GrandTlbl;
         private System.Windows.Forms.Label Namelbl;
         private System.Windows.Forms.Label PaymentMlbl;
-        private System.Windows.Forms.Button Editbtn;
         private System.Windows.Forms.Button Deletebtn;
     }
 }

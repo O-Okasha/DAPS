@@ -12,15 +12,23 @@ namespace PHX
 {
     public partial class Dashboard_Page : UserControl
     {
+
+        //int a;
         public Dashboard_Page()
         {
             InitializeComponent();
             
         }
 
-        private void label18_load(object sender, EventArgs e)
+        private  void label18_load(object sender, EventArgs e)
         {
             //label18.Text == Total;
+            //Shelf_Page shelf_Page = new Shelf_Page();
+            
+            //Shelf shelf = new models.Shelf.
+            //this.Parent.Controls.
+
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -49,6 +57,14 @@ namespace PHX
                 }
                  
             */
+        }
+
+        private async void Dashboard_Page_Load(object sender, EventArgs e)
+        {
+            var x = await models.Manager.databaseManager.TotalShelfs();
+            int z = x.Count();
+            //Convert.ToString(a);
+            label18.Text = z.ToString();
         }
     }
 }

@@ -218,6 +218,7 @@
     <Compile Include="models\Category.cs" />
     <Compile Include="models\Customer.cs" />
     <Compile Include="models\DatabaseManager.cs" />
+    <Compile Include="models\Manager.cs" />
     <Compile Include="models\Medicine.cs" />
     <Compile Include="models\Purchase.cs" />
     <Compile Include="models\Sale.cs" />
@@ -416,6 +417,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Store_sett_page.resx">
       <DependentUpon>Store_sett_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier_item.resx">
+      <DependentUpon>Supplier_item.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Supplier_Page.resx">
       <DependentUpon>Supplier_Page.cs</DependentUpon>

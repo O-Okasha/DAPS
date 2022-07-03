@@ -33,7 +33,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -97,17 +96,6 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Customer";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Gold;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(923, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 30);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Edit";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Red;
@@ -127,7 +115,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label8);
@@ -147,7 +134,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }
 }

@@ -547,7 +547,7 @@ namespace PHX
             this.MedicineComboBox.Name = "MedicineComboBox";
             this.MedicineComboBox.Size = new System.Drawing.Size(211, 24);
             this.MedicineComboBox.TabIndex = 7;
-            this.MedicineComboBox.Text = "1";
+            this.MedicineComboBox.Text = "11";
             this.MedicineComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // Medicinelbl

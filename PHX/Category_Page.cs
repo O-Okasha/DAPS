@@ -37,6 +37,47 @@ namespace PHX
             category_Item.Controls[2].Text = Name_txtbox.Text;
             category_Item.Controls[1].Text = Description_txtbox.Text;
             flowLayoutPanel1.Parent.Controls[0].Controls.Add(category_Item);
+           // Shelf shelf = new Shelf(Name_txtbox.Text.Trim(), Guid.NewGuid().ToString(), Numeic_no_txtbox.Text.Trim());
+            //await Manager.databaseManager.AddShelf(shelf);
+        }
+
+        private void Name_txtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void Nametxtbox_Enter(object sender, EventArgs e)
+        {
+            if (Name_txtbox.Text == "Enter Name")
+            {
+                Name_txtbox.Text = "";
+                ForeColor = Color.Black;
+            }
+        }
+
+        private void nametxtbox_Leave(object sender, EventArgs e)
+        {
+            if (Name_txtbox.Text == "")
+            {
+                Name_txtbox.Text = "Enter Name";
+                ForeColor = Color.Gray;
+            }
+        }
+        private void descriptiontxxtbox_Enter(object sender, EventArgs e)
+        {
+            if (Description_txtbox.Text == "Enter Description")
+            {
+                Description_txtbox.Text = "";
+                ForeColor = Color.Black;
+            }
+        }
+
+        private void descriptiontxtbox_Leave(object sender, EventArgs e)
+        {
+            if (Description_txtbox.Text == "")
+            {
+                Description_txtbox.Text = "Enter Description";
+                ForeColor = Color.Gray;
+            }
         }
     }
 }

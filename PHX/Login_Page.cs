@@ -72,5 +72,31 @@ namespace PHX
         {
 
         }
+        private void emailtextbox_Enter(object sender, EventArgs e)
+        {
+            if (Email_txtbox.Text == "Enter Email")
+            {
+                Email_txtbox.Text = "";
+                ForeColor = Color.Black;
+            }
+        }
+
+        private void emailtextbox_Leave(object sender, EventArgs e)
+        {
+            if (Email_txtbox.Text == "")
+            {
+                Email_txtbox.Text = "Enter Name";
+                ForeColor = Color.Gray;
+            }
+        }
+        private void passwordtxtbox_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void passwordtxtbox_Leave(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -149,6 +149,60 @@ namespace PHX.models
             var storesettingcollection = ConnectToMongo<Store_Settings>(StoreCollection);
             return storesettingcollection.InsertOneAsync(store_settings);
         }
+        public Task UpsertStoreList(Store_Settings store_Settings)
+        {
+            var Sscollection = ConnectToMongo<Store_Settings>(StoreCollection);
+            var filter = Builders<Store_Settings>.Filter.Eq("store name", store_Settings.Name);
+            return Sscollection.ReplaceOneAsync(filter, store_Settings, new ReplaceOptions { IsUpsert = true });
+        }
+
+        /*public Task CreateShelf(Shelf shelf) 
+        {
+            var shelfcollection = ConnectToMongo<Shelf>(ShelfsCollection);
+            return shelfcollection.InsertOneAsync(shelf);
+        }
+        public Task Createcategory(Category category)
+        {
+            var categorycollection = ConnectToMongo<Category>(CategoryCollection);
+            return categorycollection.InsertOneAsync(category);
+        }
+        public Task CreateMedicine(Medicine medicine)
+        {
+            var medcollection = ConnectToMongo<Medicine>(MedicineCollection);
+            return medcollection.InsertOneAsync(medicine);
+        }
+        public Task CreateCustomer(Customer customer)
+        {
+            var cuscollection = ConnectToMongo<Customer>(CustomerCollection);
+            return cuscollection.InsertOneAsync(customer);
+        }
+        public Task CreateSupplier(Supplier supplier)
+        {
+            var supcollection = ConnectToMongo<Supplier>(SupplierCollection);
+            return supcollection.InsertOneAsync(supplier);
+
+        }
+        public Task CreatePurchase(Purchase purchase)
+        {
+            var purcollection = ConnectToMongo<Purchase>(PurchaseCollection);
+            return purcollection.InsertOneAsync(purchase);
+        }
+        public Task CreateStockList(StockList stockList)
+        {
+            var slcollection = ConnectToMongo<StockList>(StockListCollection);
+            return slcollection.InsertOneAsync(stockList);
+        }
+        public Task CreateSales(Sale sale)
+        {
+            var salecollection = ConnectToMongo<Sale>(SalesCollection);
+            return salecollection.InsertOneAsync(sale);
+        }
+        public Task CreateStoresettings(Store_Settings store_Settings)
+        {
+            var ssecollection = ConnectToMongo<Store_Settings>(StoreCollection);
+            return ssecollection.InsertOneAsync(store_Settings);
+        }*/
+
     }
 
 

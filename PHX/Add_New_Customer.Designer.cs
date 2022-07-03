@@ -87,11 +87,17 @@ namespace PHX
             // 
             this.comboBox1.ForeColor = System.Drawing.Color.Black;
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
             this.comboBox1.Location = new System.Drawing.Point(523, 325);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(448, 24);
             this.comboBox1.TabIndex = 18;
-            this.comboBox1.Text = "5";
+            this.comboBox1.Text = "Select Gender";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.Enter += new System.EventHandler(this.comboBox1_Enter);
+            this.comboBox1.Leave += new System.EventHandler(this.comboBox1_Leave);
             // 
             // label10
             // 
@@ -112,7 +118,10 @@ namespace PHX
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(932, 25);
             this.textBox6.TabIndex = 16;
-            this.textBox6.Text = "2";
+            this.textBox6.Text = "Enter Email";
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.textBox6.Enter += new System.EventHandler(this.txtBox6_Enter);
+            this.textBox6.Leave += new System.EventHandler(this.txtBox6_Leave);
             // 
             // textBox5
             // 
@@ -122,7 +131,10 @@ namespace PHX
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(932, 25);
             this.textBox5.TabIndex = 15;
-            this.textBox5.Text = "1";
+            this.textBox5.Text = "Enter Name";
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.textBox5.Enter += new System.EventHandler(this.txtBox5_Enter);
+            this.textBox5.Leave += new System.EventHandler(this.txtBox5_Leave);
             // 
             // Submit_btn
             // 
@@ -148,7 +160,10 @@ namespace PHX
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(932, 112);
             this.textBox4.TabIndex = 13;
-            this.textBox4.Text = "6";
+            this.textBox4.Text = "Enter Address";
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.textBox4.Enter += new System.EventHandler(this.txtBox4_Enter);
+            this.textBox4.Leave += new System.EventHandler(this.txtbox4_Leave);
             // 
             // label9
             // 
@@ -169,7 +184,10 @@ namespace PHX
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(399, 25);
             this.textBox2.TabIndex = 9;
-            this.textBox2.Text = "4";
+            this.textBox2.Text = "Enter Age";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.Enter += new System.EventHandler(this.txtBox2_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.txtBox2_Leave);
             // 
             // label7
             // 
@@ -190,7 +208,10 @@ namespace PHX
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(932, 25);
             this.textBox1.TabIndex = 7;
-            this.textBox1.Text = "3";
+            this.textBox1.Text = "Enter Phone";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Enter += new System.EventHandler(this.txtBox1_Enter);
+            this.textBox1.Leave += new System.EventHandler(this.txtBox1_Leave);
             // 
             // label6
             // 

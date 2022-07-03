@@ -31,23 +31,19 @@ namespace PHX
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer_Page));
             this.button1 = new System.Windows.Forms.Button();
-            this.nextbtn = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.Showbtn = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.medListlbl = new System.Windows.Forms.Label();
-            this.prebtn = new System.Windows.Forms.Button();
-            this.Showbtn = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,18 +62,6 @@ namespace PHX
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // nextbtn
-            // 
-            this.nextbtn.AutoSize = true;
-            this.nextbtn.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nextbtn.ForeColor = System.Drawing.Color.Black;
-            this.nextbtn.Location = new System.Drawing.Point(1076, 368);
-            this.nextbtn.Name = "nextbtn";
-            this.nextbtn.Size = new System.Drawing.Size(75, 31);
-            this.nextbtn.TabIndex = 2;
-            this.nextbtn.Text = "Next";
-            this.nextbtn.UseVisualStyleBackColor = true;
-            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(582, 336);
@@ -94,13 +78,9 @@ namespace PHX
             this.panel1.Controls.Add(this.Showbtn);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.nextbtn);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.prebtn);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
@@ -109,6 +89,27 @@ namespace PHX
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1175, 413);
             this.panel1.TabIndex = 4;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(31, 271);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1079, 91);
+            this.flowLayoutPanel1.TabIndex = 14;
+            // 
+            // Showbtn
+            // 
+            this.Showbtn.AutoSize = true;
+            this.Showbtn.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Showbtn.ForeColor = System.Drawing.Color.Black;
+            this.Showbtn.Location = new System.Drawing.Point(994, 368);
+            this.Showbtn.Name = "Showbtn";
+            this.Showbtn.Size = new System.Drawing.Size(76, 31);
+            this.Showbtn.TabIndex = 13;
+            this.Showbtn.Text = "Show";
+            this.Showbtn.UseVisualStyleBackColor = true;
+            this.Showbtn.Click += new System.EventHandler(this.Showbtn_Click);
             // 
             // label11
             // 
@@ -127,15 +128,6 @@ namespace PHX
             this.label10.Size = new System.Drawing.Size(899, 16);
             this.label10.TabIndex = 11;
             this.label10.Text = resources.GetString("label10.Text");
-            // 
-            // textBox1
-            // 
-            this.textBox1.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox1.Location = new System.Drawing.Point(948, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 22);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.Text = "search anything";
             // 
             // label8
             // 
@@ -172,18 +164,6 @@ namespace PHX
             this.label5.Size = new System.Drawing.Size(57, 23);
             this.label5.TabIndex = 5;
             this.label5.Text = "action";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Open Sans", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(870, 110);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 23);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Search:";
             // 
             // label3
             // 
@@ -225,39 +205,6 @@ namespace PHX
             this.medListlbl.TabIndex = 0;
             this.medListlbl.Text = "Customer List";
             // 
-            // prebtn
-            // 
-            this.prebtn.AutoSize = true;
-            this.prebtn.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prebtn.ForeColor = System.Drawing.Color.Black;
-            this.prebtn.Location = new System.Drawing.Point(908, 368);
-            this.prebtn.Name = "prebtn";
-            this.prebtn.Size = new System.Drawing.Size(76, 31);
-            this.prebtn.TabIndex = 1;
-            this.prebtn.Text = "Previous";
-            this.prebtn.UseVisualStyleBackColor = true;
-            // 
-            // Showbtn
-            // 
-            this.Showbtn.AutoSize = true;
-            this.Showbtn.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Showbtn.ForeColor = System.Drawing.Color.Black;
-            this.Showbtn.Location = new System.Drawing.Point(994, 368);
-            this.Showbtn.Name = "Showbtn";
-            this.Showbtn.Size = new System.Drawing.Size(76, 31);
-            this.Showbtn.TabIndex = 13;
-            this.Showbtn.Text = "Show";
-            this.Showbtn.UseVisualStyleBackColor = true;
-            this.Showbtn.Click += new System.EventHandler(this.Showbtn_Click);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(31, 271);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1079, 91);
-            this.flowLayoutPanel1.TabIndex = 14;
-            // 
             // Customer_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -278,22 +225,18 @@ namespace PHX
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button nextbtn;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label medListlbl;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button Showbtn;
-        private System.Windows.Forms.Button prebtn;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

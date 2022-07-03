@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,10 @@ namespace PHX.models
             name = Name ?? throw new ArgumentNullException(nameof(Name));
             numericno = NumericNo ?? throw new ArgumentNullException(nameof(NumericNo));
             Total = total ?? throw new ArgumentNullException(nameof(total));
+            id = Guid.NewGuid().ToString();
         }
+        [BsonId]
+        public string id { get; }
         public string name { get; set; }
         public string numericno { get; set; }
         public string Total { get; set; }

@@ -8,6 +8,7 @@ using System.Text.RegularExpressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PHX.models;
 
 namespace PHX
 {
@@ -54,12 +55,12 @@ namespace PHX
 
         }
 
-        public void Submit_btn_Click(object sender, EventArgs e)
+        public async void Submit_btn_Click(object sender, EventArgs e)
         {
             bool validation = Validation();
             if (validation)
             {
-               // Dashboard_Page dashboard_Page = new Dashboard_Page();
+                // Dashboard_Page dashboard_Page = new Dashboard_Page();
                 Shelf_item shelf_Item = new Shelf_item();
                 shelf_Item.Controls[2].Text = Name_txtbox.Text;
                 shelf_Item.Controls[1].Text = Numeic_no_txtbox.Text;
@@ -71,11 +72,15 @@ namespace PHX
                     Dashboard_Page dashboard_Page1 = new Dashboard_Page();
                     dashboard_Page1.Controls[11].Text = "aloo";
                 }*/
-                
+
 
             }/*
             Dashboard_Page dashboard_Page = new Dashboard_Page();
             dashboard_Page.Controls[0].Controls[0].Text = "aloo";*/
+            Shelf shelf = new Shelf(Name_txtbox.Text.Trim(), Guid.NewGuid().ToString(), Numeic_no_txtbox.Text.Trim());
+            await Manager.databaseManager.AddShelf(shelf);
+
+        
 
         }
 

@@ -74,6 +74,9 @@ namespace PHX
             this.Description_txtbox.Name = "Description_txtbox";
             this.Description_txtbox.Size = new System.Drawing.Size(409, 120);
             this.Description_txtbox.TabIndex = 6;
+            this.Description_txtbox.Text = "Enter Description";
+            this.Description_txtbox.Enter += new System.EventHandler(this.descriptiontxxtbox_Enter);
+            this.Description_txtbox.Leave += new System.EventHandler(this.descriptiontxtbox_Leave);
             // 
             // New_category_label
             // 
@@ -109,6 +112,10 @@ namespace PHX
             this.Name_txtbox.Name = "Name_txtbox";
             this.Name_txtbox.Size = new System.Drawing.Size(409, 22);
             this.Name_txtbox.TabIndex = 3;
+            this.Name_txtbox.Text = "Enter Name";
+            this.Name_txtbox.TextChanged += new System.EventHandler(this.Name_txtbox_TextChanged);
+            this.Name_txtbox.Enter += new System.EventHandler(this.Nametxtbox_Enter);
+            this.Name_txtbox.Leave += new System.EventHandler(this.nametxtbox_Leave);
             // 
             // Description_lbl
             // 

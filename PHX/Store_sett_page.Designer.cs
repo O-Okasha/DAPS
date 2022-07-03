@@ -56,7 +56,7 @@ namespace PHX
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(25, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 33);
+            this.label1.Size = new System.Drawing.Size(163, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Store Settings";
             // 
@@ -91,7 +91,7 @@ namespace PHX
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(932, 25);
             this.textBox6.TabIndex = 16;
-            this.textBox6.Text = "   Enter Currency";
+            this.textBox6.Text = "Enter Currency";
             // 
             // textBox5
             // 
@@ -101,7 +101,7 @@ namespace PHX
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(932, 25);
             this.textBox5.TabIndex = 15;
-            this.textBox5.Text = "   Enter Store Name";
+            this.textBox5.Text = "Enter Store Name";
             // 
             // Submit_btn
             // 
@@ -126,7 +126,7 @@ namespace PHX
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(932, 25);
             this.textBox4.TabIndex = 13;
-            this.textBox4.Text = "   Enter Phone Number";
+            this.textBox4.Text = "Enter Phone Number";
             // 
             // label9
             // 
@@ -148,7 +148,7 @@ namespace PHX
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(932, 116);
             this.textBox3.TabIndex = 11;
-            this.textBox3.Text = "   Enter Address";
+            this.textBox3.Text = "Enter Address";
             // 
             // label8
             // 
@@ -169,7 +169,7 @@ namespace PHX
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(932, 25);
             this.textBox2.TabIndex = 9;
-            this.textBox2.Text = "   Enter E-mail Address";
+            this.textBox2.Text = "Enter E-mail Address";
             // 
             // label7
             // 
@@ -190,7 +190,7 @@ namespace PHX
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(932, 25);
             this.textBox1.TabIndex = 7;
-            this.textBox1.Text = "   Enter Email";
+            this.textBox1.Text = "Enter Email";
             // 
             // label6
             // 

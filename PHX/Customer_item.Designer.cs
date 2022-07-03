@@ -32,7 +32,6 @@
             this.ItemPhonelbl = new System.Windows.Forms.Label();
             this.ItemNamelbl = new System.Windows.Forms.Label();
             this.DeleteBtn = new System.Windows.Forms.Button();
-            this.EditBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Itememaillbl
@@ -85,25 +84,11 @@
             this.DeleteBtn.UseVisualStyleBackColor = false;
             this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
-            // EditBtn
-            // 
-            this.EditBtn.AutoSize = true;
-            this.EditBtn.BackColor = System.Drawing.Color.Gold;
-            this.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditBtn.ForeColor = System.Drawing.Color.Black;
-            this.EditBtn.Location = new System.Drawing.Point(898, 10);
-            this.EditBtn.Name = "EditBtn";
-            this.EditBtn.Size = new System.Drawing.Size(75, 28);
-            this.EditBtn.TabIndex = 15;
-            this.EditBtn.Text = "Edit";
-            this.EditBtn.UseVisualStyleBackColor = false;
-            // 
             // Customer_item
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.Itememaillbl);
             this.Controls.Add(this.ItemPhonelbl);
@@ -121,6 +106,5 @@
         private System.Windows.Forms.Label ItemPhonelbl;
         private System.Windows.Forms.Label ItemNamelbl;
         private System.Windows.Forms.Button DeleteBtn;
-        private System.Windows.Forms.Button EditBtn;
     }
 }

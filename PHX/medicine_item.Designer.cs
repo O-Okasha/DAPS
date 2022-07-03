@@ -33,7 +33,6 @@
             this.ItemShelf = new System.Windows.Forms.Label();
             this.ItemSellingPricelbl = new System.Windows.Forms.Label();
             this.ItemBuyingPricelbl = new System.Windows.Forms.Label();
-            this.EditBtn = new System.Windows.Forms.Button();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -82,19 +81,6 @@
             this.ItemBuyingPricelbl.TabIndex = 4;
             this.ItemBuyingPricelbl.Text = "Buying Price";
             // 
-            // EditBtn
-            // 
-            this.EditBtn.AutoSize = true;
-            this.EditBtn.BackColor = System.Drawing.Color.Gold;
-            this.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditBtn.ForeColor = System.Drawing.Color.Black;
-            this.EditBtn.Location = new System.Drawing.Point(882, 11);
-            this.EditBtn.Name = "EditBtn";
-            this.EditBtn.Size = new System.Drawing.Size(75, 28);
-            this.EditBtn.TabIndex = 5;
-            this.EditBtn.Text = "Edit";
-            this.EditBtn.UseVisualStyleBackColor = false;
-            // 
             // DeleteBtn
             // 
             this.DeleteBtn.AutoSize = true;
@@ -114,7 +100,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.DeleteBtn);
-            this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.ItemBuyingPricelbl);
             this.Controls.Add(this.ItemSellingPricelbl);
             this.Controls.Add(this.ItemShelf);
@@ -134,7 +119,6 @@
         private System.Windows.Forms.Label ItemShelf;
         private System.Windows.Forms.Label ItemSellingPricelbl;
         private System.Windows.Forms.Label ItemBuyingPricelbl;
-        private System.Windows.Forms.Button EditBtn;
         private System.Windows.Forms.Button DeleteBtn;
     }
 }

@@ -33,8 +33,7 @@ namespace DAPS
 
         private void paneltotal_Paint(object sender, PaintEventArgs e)
         {
-            TotalUserControl totalUser = new TotalUserControl();
-            paneltotal.Controls.Add(totalUser);
+            
         }
 
         private void PaymentInfoDental_Load(object sender, EventArgs e)

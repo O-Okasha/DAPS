@@ -48,11 +48,12 @@
             this.paneltotal = new System.Windows.Forms.Panel();
             this.flowpanelservices = new System.Windows.Forms.FlowLayoutPanel();
             this.Submitbtn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // Payment
             // 
-            this.Payment.Font = new System.Drawing.Font("Microsoft YaHei", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Payment.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Payment.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Payment.Location = new System.Drawing.Point(6, 2);
             this.Payment.Name = "Payment";
@@ -63,70 +64,70 @@
             // PatientID
             // 
             this.PatientID.AutoSize = true;
-            this.PatientID.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PatientID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PatientID.Location = new System.Drawing.Point(13, 100);
             this.PatientID.Name = "PatientID";
-            this.PatientID.Size = new System.Drawing.Size(103, 27);
+            this.PatientID.Size = new System.Drawing.Size(89, 22);
             this.PatientID.TabIndex = 5;
             this.PatientID.Text = "Patient ID";
             // 
             // PatientName
             // 
             this.PatientName.AutoSize = true;
-            this.PatientName.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PatientName.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PatientName.Location = new System.Drawing.Point(13, 137);
             this.PatientName.Name = "PatientName";
-            this.PatientName.Size = new System.Drawing.Size(138, 27);
+            this.PatientName.Size = new System.Drawing.Size(115, 22);
             this.PatientName.TabIndex = 6;
             this.PatientName.Text = "Patient Name";
             // 
             // Age
             // 
             this.Age.AutoSize = true;
-            this.Age.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Age.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Age.Location = new System.Drawing.Point(13, 178);
             this.Age.Name = "Age";
-            this.Age.Size = new System.Drawing.Size(47, 27);
+            this.Age.Size = new System.Drawing.Size(42, 22);
             this.Age.TabIndex = 7;
             this.Age.Text = "Age";
             // 
             // Item
             // 
             this.Item.AutoSize = true;
-            this.Item.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Item.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Item.Location = new System.Drawing.Point(13, 267);
             this.Item.Name = "Item";
-            this.Item.Size = new System.Drawing.Size(55, 27);
+            this.Item.Size = new System.Drawing.Size(44, 22);
             this.Item.TabIndex = 11;
             this.Item.Text = "Item";
             // 
             // Jaw
             // 
             this.Jaw.AutoSize = true;
-            this.Jaw.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Jaw.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Jaw.Location = new System.Drawing.Point(13, 310);
             this.Jaw.Name = "Jaw";
-            this.Jaw.Size = new System.Drawing.Size(44, 27);
+            this.Jaw.Size = new System.Drawing.Size(42, 22);
             this.Jaw.TabIndex = 13;
             this.Jaw.Text = "Jaw";
             // 
             // toothNumber
             // 
             this.toothNumber.AutoSize = true;
-            this.toothNumber.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toothNumber.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toothNumber.Location = new System.Drawing.Point(11, 358);
             this.toothNumber.Name = "toothNumber";
-            this.toothNumber.Size = new System.Drawing.Size(144, 27);
+            this.toothNumber.Size = new System.Drawing.Size(117, 22);
             this.toothNumber.TabIndex = 15;
             this.toothNumber.Text = "tooth Number";
             // 
             // Unit
             // 
             this.Unit.AutoSize = true;
-            this.Unit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Unit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Unit.Location = new System.Drawing.Point(325, 309);
             this.Unit.Name = "Unit";
-            this.Unit.Size = new System.Drawing.Size(46, 25);
+            this.Unit.Size = new System.Drawing.Size(43, 22);
             this.Unit.TabIndex = 17;
             this.Unit.Text = "Unit";
             // 
@@ -193,10 +194,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(11, 388);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 27);
+            this.label1.Size = new System.Drawing.Size(107, 22);
             this.label1.TabIndex = 24;
             this.label1.Text = "Spical Requ";
             // 
@@ -237,6 +238,7 @@
             // 
             // Submitbtn
             // 
+            this.Submitbtn.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Submitbtn.Location = new System.Drawing.Point(80, 487);
             this.Submitbtn.Name = "Submitbtn";
             this.Submitbtn.Size = new System.Drawing.Size(75, 23);
@@ -245,11 +247,20 @@
             this.Submitbtn.UseVisualStyleBackColor = true;
             this.Submitbtn.Click += new System.EventHandler(this.Submitbtn_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel1.Location = new System.Drawing.Point(16, 59);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(281, 10);
+            this.panel1.TabIndex = 30;
+            // 
             // Payment_Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Submitbtn);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.paneltotal);
@@ -299,5 +310,6 @@
         private System.Windows.Forms.Panel paneltotal;
         private System.Windows.Forms.FlowLayoutPanel flowpanelservices;
         private System.Windows.Forms.Button Submitbtn;
+        private System.Windows.Forms.Panel panel1;
     }
 }

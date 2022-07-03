@@ -41,6 +41,11 @@ namespace DAPS
             String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lbdate.Text =monthname + " " + year;
 
+
+
+            static_month = month;
+            static_year = year;
+
             DateTime startofthemonth = new DateTime(year, month, 1);
             int days = DateTime.DaysInMonth(year, month);
 
@@ -81,6 +86,9 @@ namespace DAPS
 
             month--;
 
+            static_month = month;
+            static_year = year;
+
             String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lbdate.Text = monthname + " " + year;
 
@@ -111,6 +119,9 @@ namespace DAPS
             flowLayoutPanel1.Controls.Clear();
 
             month++;
+
+            static_month = month;
+            static_year = year;
 
             String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lbdate.Text = monthname + " " + year;

@@ -39,6 +39,7 @@
             this.Next = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lbdate = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // Friday
@@ -150,11 +151,20 @@
             this.lbdate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lbdate.Click += new System.EventHandler(this.lbdate_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel1.Location = new System.Drawing.Point(527, 31);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(183, 10);
+            this.panel1.TabIndex = 34;
+            // 
             // calendar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbdate);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.Friday);
@@ -186,5 +196,6 @@
         private System.Windows.Forms.Button Next;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label lbdate;
+        private System.Windows.Forms.Panel panel1;
     }
 }

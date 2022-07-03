@@ -42,5 +42,10 @@ namespace DAPS
             Add_Patient add_Patient = new Add_Patient();
             this.Parent.Parent.Controls[0].Controls.Add(add_Patient);
         }
+
+        private void DAPS_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

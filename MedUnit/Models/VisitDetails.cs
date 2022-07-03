@@ -9,10 +9,9 @@ namespace MedUnit.Models
     public class VisitDetails
     {
         public string complaints { get; set; }
-        public string notes { get; set; }
         public string Diagnosis { get; set; }
         public string ProblemDiscription { get; set; }
-        public Problem Problem { get; set; }
+        public string ProblemID { get; set; }
 
 
 
@@ -24,10 +23,7 @@ namespace MedUnit.Models
         {
             complaints = complaint.Trim();
         }
-        public void AddNotes(string note)
-        {
-            notes = note.Trim();
-        }
+
         public void AddDiagnosis(string diganosis)
         {
             Diagnosis = diganosis.Trim();
@@ -36,9 +32,9 @@ namespace MedUnit.Models
         {
             ProblemDiscription = problemdisc.Trim();
         }
-        public void AddProblem(Problem problem)
+        public void AddProblem(string problem)
         {
-            Problem = problem;
+            ProblemID = problem;
         }
 
 

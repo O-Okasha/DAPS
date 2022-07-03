@@ -58,6 +58,8 @@ namespace MedUnit
                 }
                 var pln = Plans.Find(x => x.TreatmentPlanName == comboBox4.Text);
                 problem.TreatmentPlan = pln;
+                Manager.visitDetails.AddProblem(problem.Id);
+                Manager.visitDetails.AddDiagnosis(problem.ProblemDiagnosis);
                 Manager.patient.Record.AddProblem(problem);
                 // await Manager.databaseManager.AddPatient(Manager.patient);
             }

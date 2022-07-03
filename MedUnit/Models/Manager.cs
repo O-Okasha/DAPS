@@ -19,10 +19,11 @@ namespace MedUnit.Models
         public static List<Visit> visits = new List<Visit>();
         static string _id = Guid.NewGuid().ToString();
         static Patient patient1 = new Patient("Omar", _id, "Khaled", 23, "asssfsfdsf", Gender.Male, "Degla");
-        static Visit test = new Visit(_id, _id, DateTime.Now);
+        public static Visit test = new Visit(_id, _id, DateTime.Now);
         
         public static void refresh()
         {
+
             test.Patient = patient1;
             visits.Add(test);
         }

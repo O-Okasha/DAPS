@@ -84,7 +84,12 @@ namespace MedUnit
         private async void button1_Click(object sender, EventArgs e)
         {
             Manager.SaveAll();
-            await Manager.databaseManager.UpsertPatient(Manager.patient);
+            Visit visit = Manager.test;
+            visit.VisitDetails = Manager.visitDetails;
+            VisitShort visitShort = visit.Shorten();
+            Patient patient = Manager.patient;
+            patient.Record.Visits.Add(visitShort);
+            await Manager.databaseManager.UpsertPatient(patient);
         }
     }
 }

@@ -37,7 +37,7 @@ namespace DAPS
 
         }
 
-        private async void displayEvent()
+        private void displayEvent()
         {
 
             /*            MySqlConnection conn = new MySqlConnection(connstring);

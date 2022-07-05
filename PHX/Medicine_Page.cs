@@ -32,11 +32,11 @@ namespace PHX
             medicine_item medicine_Item = new medicine_item();
             New_Med_page new_Med_Page = new New_Med_page();
             
-            medicine_Item.Controls[6].Text = new_Med_Page.Controls[0].Controls[7].Text;
-            medicine_Item.Controls[5].Text = new_Med_Page.Controls[0].Controls[5].Text;
-            medicine_Item.Controls[4].Text = new_Med_Page.Controls[0].Controls[9].Text;
-            medicine_Item.Controls[3].Text = new_Med_Page.Controls[0].Controls[3].Text;
-            medicine_Item.Controls[2].Text = new_Med_Page.Controls[0].Controls[1].Text;
+            medicine_Item.Controls[5].Text = new_Med_Page.Controls[0].Controls[7].Text;
+            medicine_Item.Controls[4].Text = new_Med_Page.Controls[0].Controls[5].Text;
+            medicine_Item.Controls[3].Text = new_Med_Page.Controls[0].Controls[9].Text;
+            medicine_Item.Controls[2].Text = new_Med_Page.Controls[0].Controls[3].Text;
+            medicine_Item.Controls[1].Text = new_Med_Page.Controls[0].Controls[1].Text;
             flowPanelcontainer.Parent.Controls[1].Controls.Add(medicine_Item);
         }
     }

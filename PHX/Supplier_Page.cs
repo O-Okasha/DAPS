@@ -29,9 +29,9 @@ namespace PHX
             Add_Supplier add_Supplier = new Add_Supplier();
             Supplier_item supplier_Item = new Supplier_item();
 
-            supplier_Item.Controls[4].Text = add_Supplier.Controls[0].Controls[1].Text;
-            supplier_Item.Controls[2].Text = add_Supplier.Controls[0].Controls[0].Text;
-            supplier_Item.Controls[3].Text = add_Supplier.Controls[0].Controls[7].Text;
+            supplier_Item.Controls[3].Text = add_Supplier.Controls[0].Controls[1].Text;
+            supplier_Item.Controls[1].Text = add_Supplier.Controls[0].Controls[0].Text;
+            supplier_Item.Controls[2].Text = add_Supplier.Controls[0].Controls[7].Text;
 
             flowLayoutPanel1.Parent.Controls[0].Controls.Add(supplier_Item);
         }

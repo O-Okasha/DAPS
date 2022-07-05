@@ -32,11 +32,11 @@ namespace PHX
         {
             Sales_item sales_Item = new Sales_item();
             New_Purchase_Page new_Purchase_Page = new New_Purchase_Page();
-            sales_Item.Controls[6].Text = new_Purchase_Page.Controls[0].Controls[0].Text;
-            sales_Item.Controls[4].Text = new_Purchase_Page.Controls[0].Controls[19].Controls[0].Text;
-            sales_Item.Controls[3].Text = new_Purchase_Page.Controls[0].Controls[8].Text;
-            sales_Item.Controls[5].Text = new_Purchase_Page.Controls[0].Controls[14].Text;
-            sales_Item.Controls[2].Text = new_Purchase_Page.Controls[0].Controls[9].Text;
+            sales_Item.Controls[5].Text = new_Purchase_Page.Controls[0].Controls[0].Text;
+            sales_Item.Controls[3].Text = new_Purchase_Page.Controls[0].Controls[19].Controls[0].Text;
+            sales_Item.Controls[2].Text = new_Purchase_Page.Controls[0].Controls[8].Text;
+            sales_Item.Controls[4].Text = new_Purchase_Page.Controls[0].Controls[14].Text;
+            sales_Item.Controls[1].Text = new_Purchase_Page.Controls[0].Controls[9].Text;
             flowLayoutPanel1.Parent.Controls[0].Controls.Add(sales_Item);
         }
     }

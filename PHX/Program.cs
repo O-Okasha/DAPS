@@ -16,7 +16,7 @@ namespace PHX
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main_Page());
+            Application.Run(new Login_Page());
         }
     }
 }
